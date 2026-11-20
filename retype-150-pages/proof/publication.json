@@ -22,8 +22,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ff286e8b25c50caee07454bcd02d90bdeb58e2fbb3b97fc59d7e8a4b7aa1df65",
-      "bytes": 6156
+      "sha256": "13e2adb34bed670770167418fe94d54c488b8f1ff42b9aea4416b1ff55f5a23d",
+      "bytes": 6143
     },
     {
       "path": "input/review.csv",
@@ -182,8 +182,8 @@
     },
     {
       "path": "output/page-previews/screenshots.json",
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4",
-      "bytes": 816
+      "sha256": "0a3f885c50142e9574cddecf31c01631334dfa5dace937b9f396b768d995fed6",
+      "bytes": 1977
     },
     {
       "path": "output/pages.json",
@@ -1697,7 +1697,7 @@
     },
     {
       "path": "output/report.json",
-      "sha256": "c2c56efddc5a88ecc173ae3283d1c67bb375d6e68001d9a3130c74cbeacf6aed",
+      "sha256": "ee73f9a62d996f5041d907c7de834d35996c7847f515098c048bd4b680985267",
       "bytes": 35606
     },
     {
@@ -1707,7 +1707,7 @@
     },
     {
       "path": "output/runtime.json",
-      "sha256": "c4d079822e3def9274fe45f0782cdcd06e76b743135088e6a37c86d0ade58fbf",
+      "sha256": "fe3889f8f47e1380a44a473a0af0994f5c3b781192e6708336f6d9633266ca2b",
       "bytes": 335
     },
     {
@@ -1772,8 +1772,8 @@
     },
     {
       "path": "proof/page-previews/screenshots.json",
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4",
-      "bytes": 816
+      "sha256": "0a3f885c50142e9574cddecf31c01631334dfa5dace937b9f396b768d995fed6",
+      "bytes": 1977
     },
     {
       "path": "proof/repeat-run.log",
@@ -1787,7 +1787,7 @@
     },
     {
       "path": "proof/report.json",
-      "sha256": "c2c56efddc5a88ecc173ae3283d1c67bb375d6e68001d9a3130c74cbeacf6aed",
+      "sha256": "ee73f9a62d996f5041d907c7de834d35996c7847f515098c048bd4b680985267",
       "bytes": 35606
     },
     {
@@ -1797,7 +1797,7 @@
     },
     {
       "path": "proof/runtime.json",
-      "sha256": "c4d079822e3def9274fe45f0782cdcd06e76b743135088e6a37c86d0ade58fbf",
+      "sha256": "fe3889f8f47e1380a44a473a0af0994f5c3b781192e6708336f6d9633266ca2b",
       "bytes": 335
     },
     {
@@ -1822,7 +1822,7 @@
     },
     {
       "path": "source/asset-manifest.json",
-      "sha256": "b39dd396cf0188f5e7dfe978bfde5848ed09394e6f8edc02703c3cb9822a89de",
+      "sha256": "537d327f8ee0dad12fa4c55a13b9787382d2af4eb36250d5d2f2b8e3447101ce",
       "bytes": 120131
     },
     {

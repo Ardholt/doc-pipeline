@@ -57,11 +57,6 @@
       "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
     },
     {
-      "path": "data-to-powerpoint/output/claims.json",
-      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
-      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
-    },
-    {
       "path": "data-to-powerpoint/output/contact-sheet.png",
       "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
       "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"

@@ -59,11 +59,6 @@
       "sha256": "71bc6f1a41b462cf9f20b5a1db5399b4313b0e8a5a8d01ce2fc1e25c43dd12d8"
     },
     {
-      "path": "output/claims.json",
-      "bytes": 836,
-      "sha256": "8d4717dd04d0c0f5a0f1c7a5e2902ec45001215e6460d64a588c4e6ec5b907c9"
-    },
-    {
       "path": "output/contact-sheet.png",
       "bytes": 311867,
       "sha256": "5a6039dd6c7526181b538217b63b62c54010ed3432b4b888689eb6d8404027e8"
@@ -130,8 +125,8 @@
     },
     {
       "path": "output/page-previews/screenshots.json",
-      "bytes": 816,
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "bytes": 1977,
+      "sha256": "591dbe326c09ad4f6d2e5809a2451d34d8c91fd704bad891765225b32d5a7af5"
     },
     {
       "path": "output/pdf-fonts.txt",
@@ -156,7 +151,7 @@
     {
       "path": "output/runtime.json",
       "bytes": 311,
-      "sha256": "c91b2cdbd03bcb980dc85065e5b7a28291e699cc38f09e68a87bc01701888354"
+      "sha256": "f6e0a3bb0612161f9164505b1f99cc82cb75da04093e7c615fa38ce5390012e0"
     },
     {
       "path": "output/slides/slide-01.png",
@@ -205,8 +200,8 @@
     },
     {
       "path": "proof/asset-manifest.json",
-      "bytes": 26788,
-      "sha256": "3137f373ff79b6a4b10565fc4dcea5c296d2b5ee1884240e371e00987e83e89d"
+      "bytes": 26312,
+      "sha256": "8cee38de7ca8e489476dc2f307fc8d95d95625c1d34e41cdf78afe930cfc0050"
     },
     {
       "path": "proof/check.log",
@@ -245,8 +240,8 @@
     },
     {
       "path": "proof/page-previews/screenshots.json",
-      "bytes": 816,
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "bytes": 1977,
+      "sha256": "591dbe326c09ad4f6d2e5809a2451d34d8c91fd704bad891765225b32d5a7af5"
     },
     {
       "path": "proof/regression.json",
@@ -266,7 +261,7 @@
     {
       "path": "proof/runtime.json",
       "bytes": 311,
-      "sha256": "c91b2cdbd03bcb980dc85065e5b7a28291e699cc38f09e68a87bc01701888354"
+      "sha256": "f6e0a3bb0612161f9164505b1f99cc82cb75da04093e7c615fa38ce5390012e0"
     },
     {
       "path": "proof/visual-review.json",
@@ -300,8 +295,8 @@
     },
     {
       "path": "source/pipeline.py",
-      "bytes": 20398,
-      "sha256": "e25c836ffd23587b58f8c65596bca42c0dd6c8ce4a0d37c828ca075af6360d46"
+      "bytes": 19759,
+      "sha256": "94c60c3db651ff7c5d4e0a9399cfec2b12937f348557b2edc49ead9ea1365e74"
     },
     {
       "path": "tests/acceptance.py",

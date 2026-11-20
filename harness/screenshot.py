@@ -1,5 +1,5 @@
 """Offline README previews using a local GitHub-style frame and the Pages layout."""
-import base64, html, json, re, shutil, subprocess, sys, tempfile
+import base64, hashlib, html, json, re, shutil, subprocess, sys, tempfile
 from pathlib import Path
 import markdown
 from PIL import Image
@@ -28,16 +28,38 @@ layout=re.sub(r'{% assign hero[\s\S]*?{% endif %}','',layout)
 layout=re.sub(r'{%[\s\S]*?%}','',layout)
 layout=layout.replace("{{ '/' | relative_url }}",'../').replace('{{ site.title }}','Document pipelines').replace('{{ content }}',body)
 layout=re.sub(r'{{[^}]*}}','',layout).replace('</head>','<style>'+(here/'pages/assets/site.css').read_text()+font_css+'</style></head>')
+# Headless Chromium will not make its window narrower than 500 px, so each page is shown in an iframe of exactly the stated width:
+# the page then lays out, and its media queries apply, at 390 or 1366 CSS pixels. The wrapper is a render source only and is not kept.
+CHROME=['chromium','--headless','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-proxy-server','--hide-scrollbars','--force-device-scale-factor=1']
+def wrapper(content,w,h,script=''):
+    return f'<!doctype html><meta charset="utf-8"><body style="margin:0;background:#fff"><iframe id="v" srcdoc="{html.escape(content,quote=True)}" style="display:block;border:0;width:{w}px;height:{h}px"></iframe>{script}</body>'
+# Added to a separate copy of the wrapper, never to the screenshot: measures sideways overflow of the README content inside the frame.
+MEASURE='''<script>addEventListener('load',()=>{const f=document.getElementById('v'),d=f.contentDocument,root=d.documentElement,scope=d.querySelector('article.markdown-body,main.md'),edge=e=>e.getBoundingClientRect().right;let right=0,who='';
+for(const e of scope.querySelectorAll('*')){if(e.closest('pre')||!e.getClientRects().length)continue;if(edge(e)>right){right=edge(e);who=e.tagName.toLowerCase()}}
+const bad=[...scope.querySelectorAll('table')].filter(t=>t.scrollWidth>t.clientWidth+1||edge(t)>root.clientWidth+1).map(t=>{const c=[...t.querySelectorAll('th,td')].sort((a,b)=>b.getBoundingClientRect().width-a.getBoundingClientRect().width).slice(0,12).map(c=>({text:c.textContent.trim().slice(0,60),width:Math.round(c.getBoundingClientRect().width)}));return {table_width:Math.round(t.getBoundingClientRect().width),scroll_width:t.scrollWidth,client_width:t.clientWidth,widest_cells:c}});
+const m=document.createElement('pre');m.id='dp-measure';m.textContent=JSON.stringify({viewport_width:root.clientWidth,document_scroll_width:root.scrollWidth,content_right_edge:Math.round(right*10)/10,widest_element:who,tables_wider_than_view:bad});document.body.appendChild(m)})</script>'''
+def measure(content,w,h,probe):
+    probe.write_text(wrapper(content,w,h,MEASURE))
+    proc=subprocess.run(CHROME+[f'--window-size={max(w,500)},{h}','--virtual-time-budget=1500','--dump-dom',probe.as_uri()],capture_output=True,timeout=60,text=True)
+    found=re.search(r'<pre id="dp-measure">(.*?)</pre>',proc.stdout,re.S)
+    if proc.returncode or not found: raise ValueError('Chromium overflow measurement failed')
+    m=json.loads(html.unescape(found.group(1)))
+    if m['viewport_width']!=w: raise ValueError(f'Frame laid out at {m["viewport_width"]} px, not {w} px')
+    m['horizontal_overflow']=m['document_scroll_width']>m['viewport_width'] or m['content_right_edge']>m['viewport_width']+0.5 or bool(m['tables_wider_than_view'])
+    return m
 records=[]
 work=Path(tempfile.mkdtemp(prefix='dp-render-'))  # the local frame and Pages-layout pages are only render sources; neither is kept in the output
 for kind,content in [('github',gh),('pages',layout)]:
-    path=work/(kind+'.html'); path.write_text(content)
     for w,h in [(390,844),(1366,768)]:
+        path=work/f'{kind}-{w}.html'; path.write_text(wrapper(content,w,h))
         shot=out/f'{kind}-{w}.png'
-        proc=subprocess.run(['chromium','--headless','--no-sandbox','--disable-gpu','--disable-dev-shm-usage','--no-proxy-server','--hide-scrollbars','--force-device-scale-factor=1',f'--window-size={w},{h}','--run-all-compositor-stages-before-draw','--virtual-time-budget=1500',f'--screenshot={shot}',path.as_uri()],capture_output=True,timeout=60)
+        proc=subprocess.run(CHROME+[f'--window-size={max(w,500)},{h}','--run-all-compositor-stages-before-draw','--virtual-time-budget=1500',f'--screenshot={shot}',path.as_uri()],capture_output=True,timeout=60)
         if proc.returncode or not shot.is_file(): raise ValueError('Chromium screenshot failed')
-        im=Image.open(shot).convert('RGB'); im.save(shot)
-        records.append({'file':shot.name,'css_width':w,'css_height':h,'device_scale_factor':1})
+        im=Image.open(shot).convert('RGB').crop((0,0,w,h)); im.save(shot)
+        records.append({'file':shot.name,'css_width':w,'css_height':h,'device_scale_factor':1,'measured':measure(content,w,h,work/f'{kind}-{w}-measure.html')})
 shutil.rmtree(work)
-(out/'screenshots.json').write_text(json.dumps({'schema_version':1,'renderer':subprocess.check_output(['chromium','--version'],text=True).strip(),'screenshots':records,'surface':'offline local render in a local GitHub-style frame, not a live github.com capture','badge':'offline placeholder says CI status requires network; no passing CI claim'},indent=2)+'\n')
-print('PASS: case-page screenshots at 390 and 1366 CSS pixels')
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+(out/'screenshots.json').write_text(json.dumps({'schema_version':1,'renderer':subprocess.check_output(['chromium','--version'],text=True).strip(),'screenshots':records,'measured_files':{'README.md':sha(case/'README.md'),'site.css':sha(here/'pages/assets/site.css')},'surface':'offline local render in a local GitHub-style frame, not a live github.com capture','badge':'offline placeholder says CI status requires network; no passing CI claim'},indent=2)+'\n')
+wide=[r['file'] for r in records if r['measured']['horizontal_overflow']]
+if wide: raise ValueError('Horizontal overflow in the rendered README at: '+', '.join(wide)+' (see screenshots.json)')
+print('PASS: case-page screenshots at 390 and 1366 CSS pixels, no horizontal overflow')

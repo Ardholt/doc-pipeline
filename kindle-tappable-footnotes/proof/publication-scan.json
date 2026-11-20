@@ -16,8 +16,8 @@
     },
     {
       "file": "README.md",
-      "sha256": "201b0da66353c1e87ebd8e54b558b14255a5a3353b54a236011753d72994352d",
-      "bytes": 3864
+      "sha256": "a2a0d219c700c9b2edba5ee85623f66a190b3e2cab39c0d86332dea1d1066632",
+      "bytes": 4116
     },
     {
       "file": "input/book.json",
@@ -136,8 +136,8 @@
     },
     {
       "file": "output/page-previews/github-390.png",
-      "sha256": "cb04630582dbae38afa3f2f6ae4cfd995e56f26a296687bf78c4cc25eef4dbdd",
-      "bytes": 61164
+      "sha256": "d1ad53bff04c8ef94a5d44de05e9dfa8c4ff1e62e8aed62a4ef7c93cf33dc03f",
+      "bytes": 61132
     },
     {
       "file": "output/page-previews/pages-1366.png",
@@ -151,8 +151,8 @@
     },
     {
       "file": "output/page-previews/screenshots.json",
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4",
-      "bytes": 816
+      "sha256": "6c4cb990a9ab9b6edcccaf575c884405d6924ee4084714612944f46c89273c86",
+      "bytes": 1977
     },
     {
       "file": "output/passage-detail.png",
@@ -221,7 +221,7 @@
     },
     {
       "file": "output/runtime.json",
-      "sha256": "775b5841ff9ae2303b8e0c870c2bb01d43e7a475f354d3c0d6a0818eff7e52f8",
+      "sha256": "6c41ff5dabe42e1c3f442c8e06d50383695321e51796e72914bb7d05e4443284",
       "bytes": 347
     },
     {
@@ -266,7 +266,7 @@
     },
     {
       "file": "proof/runtime.json",
-      "sha256": "775b5841ff9ae2303b8e0c870c2bb01d43e7a475f354d3c0d6a0818eff7e52f8",
+      "sha256": "6c41ff5dabe42e1c3f442c8e06d50383695321e51796e72914bb7d05e4443284",
       "bytes": 347
     },
     {
@@ -276,7 +276,7 @@
     },
     {
       "file": "proof/visual-review.json",
-      "sha256": "964afef8c1aef5e58078343a506529145ab058903ec9be29ce638b5c17317c52",
+      "sha256": "acdc8c107d68cec6ec7903d5da967bb0042a9959fb7a12d0492328c117a27b76",
       "bytes": 2691
     },
     {

@@ -21,13 +21,15 @@ Tested in a browser, not on a Kindle or the Kindle Previewer; neither was availa
 
 ## Proof and downloads
 
-| Check | Result and measured evidence |
+| Check | Result |
 |---|---|
-| Markers and shared notes | [22 references to 18 notes](output/report.json), counted by [Python 3.11.2](output/report.json) |
-| Tap and return | [88 completed journeys](output/browser-audit.json), [Chromium 156.0.8078.79](output/report.json) at [390 and 1366 CSS pixels, normal and 150% text](output/report.json) |
-| EPUB validation | [No errors or warnings](output/epubcheck.log), [EPUBCheck 4.2.6](output/report.json) |
-| Text preservation | [Full body, note and reference map](output/source-map.json), compared with the manuscript using [Pandoc 2.17.1.1 and Python 3.11.2](output/report.json) |
-| Failure detection | [Damaged forward links, return links, body text and note text rejected](output/negative-tests.json) |
+| Markers and shared notes | [22 references to 18 notes](output/report.json) |
+| Tap and return | [88 completed journeys](output/browser-audit.json) |
+| EPUB validation | [No errors or warnings](output/epubcheck.log) |
+| Text preservation | [Full text, note and reference map](output/source-map.json) |
+| Failure detection | [Damaged links and text rejected](output/negative-tests.json) |
+
+Python 3.11.2 counted the markers and notes. [Chromium 156.0.8078.79](output/report.json) ran the tap-and-return journeys at [390 and 1366 CSS pixels, with normal and 150% text](output/report.json). [EPUBCheck 4.2.6](output/report.json) validated the book. [Pandoc 2.17.1.1 and Python 3.11.2](output/report.json) compared the text with the manuscript. The damage checks changed forward links, return links, body text and note text, and each change was rejected.
 
 **Downloads:** [EPUB book](output/book.epub) · [editable manuscript](https://raw.githubusercontent.com/Ardholt/doc-pipeline/main/kindle-tappable-footnotes/input/manuscript.md) · [book settings](input/book.json) · [full report](output/report.json) · [runtime](output/runtime.json).
 
@@ -50,7 +52,7 @@ For another book, use `./run.sh --input "/absolute/input directory" --output "/a
 [![Tests](https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg)](https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml)
 
 - EPUBCheck inspects the archive. Independent checks resolve every forward and return link and compare delivered text against the source.
-- Chromium clicks every reference and its own return link, including shared notes, at both widths and text sizes. Checks reject horizontal overflow and clipped text blocks.
+- Chromium clicks every reference and its own return link, including shared notes, at both widths and text sizes. The book checks reject horizontal overflow and clipped text blocks in the reader, and a page check measures this page for horizontal overflow at 390 and 1366 CSS pixels and fails the run if it finds any.
 - Damage checks alter actual EPUB links and text and require rejection. [Claims](proof/claims.json) distinguish machine evidence, visual review and untested compatibility.
 
 Fixed price in a written scope, sent within hours

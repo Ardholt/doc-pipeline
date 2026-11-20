@@ -134,11 +134,6 @@
       "sha256": "5229f5f4f3c861877a092616e429cc94f4f86d09b9f7c691cdaa28304ad5a364"
     },
     {
-      "path": "output/claims.json",
-      "bytes": 722,
-      "sha256": "1fbf2bd79c32173168dfd54fab7b5a909dea1a2f69cf33ee5f1837cd2a64baca"
-    },
-    {
       "path": "output/contact-sheet.png",
       "bytes": 587690,
       "sha256": "d99d20d9afd534157deddd789e07dbff16ef49874c18b1cd21ba039277682feb"
@@ -250,8 +245,8 @@
     },
     {
       "path": "output/page-previews/screenshots.json",
-      "bytes": 816,
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "bytes": 1977,
+      "sha256": "0ca248a65d2d79a2beabb1cdba6f9f3ecad178178da0e9ba5e9ecd7186aa9202"
     },
     {
       "path": "output/pages/page-01.png",
@@ -395,8 +390,8 @@
     },
     {
       "path": "output/runtime.json",
-      "bytes": 320,
-      "sha256": "6c86c5ae2e039b47c50e44dc92087840624d05e4be55001fbea8ce692103ea41"
+      "bytes": 319,
+      "sha256": "036e90abb204ceb409689fa86176d6a04b8da44c9a248c51e2a26fa6534606e9"
     },
     {
       "path": "output/source-map.json",
@@ -445,8 +440,8 @@
     },
     {
       "path": "proof/runtime.json",
-      "bytes": 320,
-      "sha256": "6c86c5ae2e039b47c50e44dc92087840624d05e4be55001fbea8ce692103ea41"
+      "bytes": 319,
+      "sha256": "036e90abb204ceb409689fa86176d6a04b8da44c9a248c51e2a26fa6534606e9"
     },
     {
       "path": "proof/schema-tests.json",
@@ -475,8 +470,8 @@
     },
     {
       "path": "source/README.md",
-      "bytes": 4753,
-      "sha256": "b1ab20a1edd89662dc9b843dc1922c32895c6bb67ee5f14d4d1ebafd381c3358"
+      "bytes": 4738,
+      "sha256": "4e82649e1ade22b8178968acbe926fd66af2dc92ae263af2b550c64ee122066e"
     },
     {
       "path": "source/inspect_pdf.py",
@@ -490,8 +485,8 @@
     },
     {
       "path": "source/pipeline.py",
-      "bytes": 13163,
-      "sha256": "982ae7c8890cd4ca6360ce46a8f47e1706e136a5fe9ff695b216a29231f654ae"
+      "bytes": 12678,
+      "sha256": "c0858a9a5e8cb835cdce3ec982017c7200ea222f74a42fc2281679de972738e9"
     },
     {
       "path": "tests/check.py",

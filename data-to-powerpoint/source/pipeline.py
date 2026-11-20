@@ -248,7 +248,6 @@ def main():
         else: shutil.copy(out/'contact-sheet.png',preview/'media/hero.png')
         run([sys.executable,'/harness/screenshot.py',str(preview),str(out/'page-previews')])
     write_json(out/'runtime.json',{'schema_version':1,'scope':'Document generation, rendering and checks; excludes image build and manual review. Shell stdout includes setup.','elapsed_seconds':round(time.monotonic()-started,3),'limits':{'cpus':2,'memory':'2g','workload_seconds':1080,'build_seconds':1500},'status':'PASS'})
-    write_json(out/'claims.json',{'schema_version':1,'claims':[{'claim':'Editable deck with reconciled charts','evidence':{'path':'output/report.json','field':'/checks'},'calculation':'CSV decimal sums = chart caches = embedded workbook numeric cells; profit = revenue − cost.'},{'claim':'Source rows beside matching rendered profit chart','evidence':{'path':'output/hero-map.json','field':'/' }},{'claim':'All reported counts and totals','evidence':{'path':'output/report.json','field':'/counts'}},{'claim':'Compatibility evidence is LibreOffice rendering only','evidence':{'path':'output/report.json','field':'/tools/LibreOffice'}}]})
     for c in checks: print('PASS: '+c['name'])
     print('PASS: deliberate damage and invalid-input checks')
     print('PASS: case-page screenshots at 390 and 1366 CSS pixels')

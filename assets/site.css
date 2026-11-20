@@ -35,7 +35,7 @@ a:hover,a:focus-visible{text-decoration-color:var(--acc)}
 .md table{width:100%;border-collapse:collapse;margin:0 0 18px;font-variant-numeric:tabular-nums}
 .md th{font:600 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);text-align:left;padding:0 10px 10px 0;border-bottom:1px solid var(--line-2)}
 .md td{padding:12px 10px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
-.md td:not(:first-child){font:400 clamp(20px,5vw,26px)/1.1 var(--serif);white-space:nowrap}
+.md td:not(:first-child){font:400 clamp(20px,5vw,26px)/1.1 var(--serif)}
 .md td a{text-decoration-color:var(--acc)}
 
 .md code{font:.88em var(--mono);background:var(--bg-2);border:1px solid var(--line);border-radius:4px;padding:.1em .35em}

@@ -47,7 +47,7 @@ git clone https://github.com/Ardholt/doc-pipeline.git
 cd doc-pipeline/<case folder> && ./run.sh
 ```
 
-Each case builds its pinned tools in Docker, regenerates its outputs from `input/` and runs its checks; the document work itself runs offline. `./run.sh --check` inspects existing output without rebuilding, and `./run.sh --input "/absolute/input directory" --output "/absolute/output directory"` runs your own files. The tools, base image and package versions are recorded in [toolchain/](https://github.com/Ardholt/doc-pipeline/tree/main/toolchain), and every file's source and licence is in [ASSET-LICENSES.md](ASSET-LICENSES.md).
+Each case builds its pinned tools in Docker, regenerates its outputs from `input/` and runs its checks; the document work itself runs offline. `./run.sh --check` inspects existing output without rebuilding (it also fails if the stored measurements of the case page show horizontal overflow at 390 or 1366 CSS pixels), and `./run.sh --input "/absolute/input directory" --output "/absolute/output directory"` runs your own files. The tools, base image and package versions are recorded in [toolchain/](https://github.com/Ardholt/doc-pipeline/tree/main/toolchain), and every file's source and licence is in [ASSET-LICENSES.md](ASSET-LICENSES.md).
 
 [![Checks](https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg)](https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml)
 

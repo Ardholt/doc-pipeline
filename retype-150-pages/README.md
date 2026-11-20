@@ -23,7 +23,7 @@ The input is a 150-page typed scan that I generated for this case, not a camera 
 
 ## Proof and downloads
 
-| Measured accuracy | Raw OCR | Delivered DOCX |
+| Measured | Raw OCR | Final DOCX |
 |---|---|---|
 | Characters | [99.801%](output/accuracy.json) | [99.813%](output/accuracy.json) |
 | Words | [99.159%](output/accuracy.json) | [99.204%](output/accuracy.json) |

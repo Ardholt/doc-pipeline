@@ -6,27 +6,63 @@
       "file": "github-390.png",
       "css_width": 390,
       "css_height": 844,
-      "device_scale_factor": 1
+      "device_scale_factor": 1,
+      "measured": {
+        "viewport_width": 390,
+        "document_scroll_width": 390,
+        "content_right_edge": 357,
+        "widest_element": "h1",
+        "tables_wider_than_view": [],
+        "horizontal_overflow": false
+      }
     },
     {
       "file": "github-1366.png",
       "css_width": 1366,
       "css_height": 768,
-      "device_scale_factor": 1
+      "device_scale_factor": 1,
+      "measured": {
+        "viewport_width": 1366,
+        "document_scroll_width": 1366,
+        "content_right_edge": 1317,
+        "widest_element": "h1",
+        "tables_wider_than_view": [],
+        "horizontal_overflow": false
+      }
     },
     {
       "file": "pages-390.png",
       "css_width": 390,
       "css_height": 844,
-      "device_scale_factor": 1
+      "device_scale_factor": 1,
+      "measured": {
+        "viewport_width": 390,
+        "document_scroll_width": 390,
+        "content_right_edge": 370,
+        "widest_element": "h1",
+        "tables_wider_than_view": [],
+        "horizontal_overflow": false
+      }
     },
     {
       "file": "pages-1366.png",
       "css_width": 1366,
       "css_height": 768,
-      "device_scale_factor": 1
+      "device_scale_factor": 1,
+      "measured": {
+        "viewport_width": 1366,
+        "document_scroll_width": 1366,
+        "content_right_edge": 1033,
+        "widest_element": "h1",
+        "tables_wider_than_view": [],
+        "horizontal_overflow": false
+      }
     }
   ],
+  "measured_files": {
+    "README.md": "2d7bd329c75bd415b6ed2e6981903614944ae4f1d72395d19f7eb9200c551070",
+    "site.css": "33c4674d5459057b900b67bc4e6c339e64edf4fc8b13751fe75f76e5a4e830b3"
+  },
   "surface": "offline local render in a local GitHub-style frame, not a live github.com capture",
   "badge": "offline placeholder says CI status requires network; no passing CI claim"
 }

@@ -26,7 +26,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "ff286e8b25c50caee07454bcd02d90bdeb58e2fbb3b97fc59d7e8a4b7aa1df65"
+      "sha256": "13e2adb34bed670770167418fe94d54c488b8f1ff42b9aea4416b1ff55f5a23d"
     },
     {
       "path": "input/review.csv",
@@ -389,7 +389,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "sha256": "0a3f885c50142e9574cddecf31c01631334dfa5dace937b9f396b768d995fed6"
     },
     {
       "path": "output/pages.json",
@@ -3120,7 +3120,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "c2c56efddc5a88ecc173ae3283d1c67bb375d6e68001d9a3130c74cbeacf6aed"
+      "sha256": "ee73f9a62d996f5041d907c7de834d35996c7847f515098c048bd4b680985267"
     },
     {
       "path": "output/retyped.docx",
@@ -3142,7 +3142,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "c4d079822e3def9274fe45f0782cdcd06e76b743135088e6a37c86d0ade58fbf"
+      "sha256": "fe3889f8f47e1380a44a473a0af0994f5c3b781192e6708336f6d9633266ca2b"
     },
     {
       "path": "proof/adversarial.json",
@@ -3275,7 +3275,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "sha256": "0a3f885c50142e9574cddecf31c01631334dfa5dace937b9f396b768d995fed6"
     },
     {
       "path": "proof/publication.json",
@@ -3311,7 +3311,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "c2c56efddc5a88ecc173ae3283d1c67bb375d6e68001d9a3130c74cbeacf6aed"
+      "sha256": "ee73f9a62d996f5041d907c7de834d35996c7847f515098c048bd4b680985267"
     },
     {
       "path": "proof/run.log",
@@ -3329,7 +3329,7 @@
       "sources": [
         "LICENSE"
       ],
-      "sha256": "c4d079822e3def9274fe45f0782cdcd06e76b743135088e6a37c86d0ade58fbf"
+      "sha256": "fe3889f8f47e1380a44a473a0af0994f5c3b781192e6708336f6d9633266ca2b"
     },
     {
       "path": "proof/visual-review.json",

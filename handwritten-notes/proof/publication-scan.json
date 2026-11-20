@@ -93,8 +93,8 @@
     },
     {
       "file": "output/page-previews/screenshots.json",
-      "bytes": 816,
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "bytes": 1977,
+      "sha256": "dcf065a0817203be0d387d04e0da1c783b20bceb4e7e5a9f543da88a5f135032"
     },
     {
       "file": "output/pdf-fonts.txt",
@@ -114,12 +114,12 @@
     {
       "file": "output/report.json",
       "bytes": 4032,
-      "sha256": "5d4fe47951c8e4b03e358cca442f06f920e6815d123bc607ba096440537ee18e"
+      "sha256": "97c4b19345c275b497e869d8034a42d5feedac5dfc0816aa2654c1e12b05d6f9"
     },
     {
       "file": "output/runtime.json",
       "bytes": 329,
-      "sha256": "8403c26d3ad610a96ef99f61901550e1a5974a6c13684e29f43e37fb0b7fce0b"
+      "sha256": "ff27e7b7d0c56922b2d17983cff15070d0019952556561f33ce510c27e4c9732"
     },
     {
       "file": "output/uncertainties.json",
@@ -144,7 +144,7 @@
     {
       "file": "proof/report.json",
       "bytes": 4032,
-      "sha256": "5d4fe47951c8e4b03e358cca442f06f920e6815d123bc607ba096440537ee18e"
+      "sha256": "97c4b19345c275b497e869d8034a42d5feedac5dfc0816aa2654c1e12b05d6f9"
     },
     {
       "file": "proof/reproducibility.json",
@@ -159,7 +159,7 @@
     {
       "file": "proof/runtime.json",
       "bytes": 329,
-      "sha256": "8403c26d3ad610a96ef99f61901550e1a5974a6c13684e29f43e37fb0b7fce0b"
+      "sha256": "ff27e7b7d0c56922b2d17983cff15070d0019952556561f33ce510c27e4c9732"
     },
     {
       "file": "proof/source-raster-check.json",

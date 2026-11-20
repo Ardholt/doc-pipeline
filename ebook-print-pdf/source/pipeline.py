@@ -145,7 +145,7 @@ def run(root,out):
     if not any(not c['passed'] for c in inspection['checks']):
         subprocess.run([sys.executable,'/case/tests/validation.py',str(root),str(out),str(out/'validation.json')],check=True,timeout=180)
     report={'schema_version':1,'case':'ebook-print-pdf','input_hashes':hashes,
-            'output_hashes':{p.name:sha(p) for p in sorted(out.iterdir()) if p.is_file() and p.name not in ('report.json','runtime.json','claims.json')},
+            'output_hashes':{p.name:sha(p) for p in sorted(out.iterdir()) if p.is_file() and p.name not in ('report.json','runtime.json')},
             'transformations':[{'operation':'Pandoc Markdown parse','format':'markdown; raw HTML and unsupported blocks rejected'},
                                {'operation':'paged typesetting','settings':cfg,'running_heads':'book title on verso; chapter title on recto; suppressed on front matter, blank and chapter-opening pages','chapter_openings':'recto','footnotes':'page-bottom floats'},
                                {'operation':'deterministic embedded-font timestamps','source_date_epoch':0},
@@ -155,7 +155,6 @@ def run(root,out):
             'uncertainties':['No printer upload, PDF/X certification, physical proof or cover was tested.','No Microsoft Word, LibreOffice, Kindle device or Kindle Previewer was run.','Visual review applies to the shipped manuscript; replacement manuscripts require fresh page review.'],
             'human_steps':['Original manuscript and SVG authored for this delivery.','See proof/visual-review.json for the recorded inspection of rendered pages.']}
     dump(out/'report.json',report)
-    dump(out/'claims.json',{'schema_version':1,'claims':[{'claim':'Interior page, chapter, note and embedded-font counts','evidence':[{'path':'output/report.json','field':'/counts'}]},{'claim':'Trim, bleed and safe margins checked from PDF bytes','evidence':[{'path':'output/geometry.json','field':'/pages'},{'path':'output/report.json','field':'/checks'}]},{'claim':'Source-derived before/after figure','evidence':[{'path':'output/render-map.json','field':'/hero'}]}]})
     failures=[c['name'] for c in inspection['checks'] if not c['passed']]
     if failures: raise ValueError('PDF checks failed: '+', '.join(failures))
     subprocess.run([sys.executable,'/case/tests/check.py',str(root),str(out)],check=True,timeout=120)

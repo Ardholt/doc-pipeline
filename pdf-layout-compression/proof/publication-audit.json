@@ -23,13 +23,13 @@
     },
     {
       "path": "harness/README.md",
-      "bytes": 4759,
-      "sha256": "e3ddf378e321b5a57d7f252d401b6a78f601ee0bb693814d99595039f009adaa"
+      "bytes": 5476,
+      "sha256": "bf7851e9f099482328ba3357e8a6141fc4e6088dd902517be7db2f833c5986ab"
     },
     {
       "path": "harness/entrypoint.sh",
-      "bytes": 290,
-      "sha256": "0844c81e344008682304d0189ea0d24239e5fc99a74d27580392e59aeb585e60"
+      "bytes": 339,
+      "sha256": "b94b27e285b639ce98ba075bb9b6c58f03da9b3a6601dfc0241f9b947739ad40"
     },
     {
       "path": "harness/licenses/github-markdown-css.txt",
@@ -48,8 +48,13 @@
     },
     {
       "path": "harness/pages/assets/site.css",
-      "bytes": 3782,
-      "sha256": "d55fdd5fb64d0cf9219296c65a95de94f385c83315496c296af718c79f783111"
+      "bytes": 3763,
+      "sha256": "33c4674d5459057b900b67bc4e6c339e64edf4fc8b13751fe75f76e5a4e830b3"
+    },
+    {
+      "path": "harness/preview_check.py",
+      "bytes": 2286,
+      "sha256": "aedae12f1f6c88de8c53c9721d41f0d98e15c4b1d44ef6b6460b61b6d9e622fa"
     },
     {
       "path": "harness/run-container.sh",
@@ -58,8 +63,8 @@
     },
     {
       "path": "harness/screenshot.py",
-      "bytes": 4638,
-      "sha256": "005305064f151a1b96a364b754712a525f09d2933aa47317f177eec61431b1be"
+      "bytes": 7747,
+      "sha256": "deb19b2d319119ca3a920f6b8e7dccff55ec54584916a0fcd74fb3d2f3133bed"
     },
     {
       "path": "harness/vendor/github-frame.css",
@@ -143,8 +148,8 @@
     },
     {
       "path": "pdf-layout-compression/output/page-previews/screenshots.json",
-      "bytes": 816,
-      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+      "bytes": 1977,
+      "sha256": "cf4484cf92f1b7659f8b60d41312653ef3c5f0fbe763bd8b717592181b9129a2"
     },
     {
       "path": "pdf-layout-compression/output/previews/after-1.png",
@@ -244,7 +249,7 @@
     {
       "path": "pdf-layout-compression/output/runtime.json",
       "bytes": 261,
-      "sha256": "645aac54dc0d5d10931ebb9382c617e049f2459318afd390d36068fc8b965e5b"
+      "sha256": "6dde9d8c18f897a1b3c6cf96f7848ed0a66eb3ebbea754463b59bc380a0cafd5"
     },
     {
       "path": "pdf-layout-compression/proof/adversarial.log",
@@ -289,7 +294,7 @@
     {
       "path": "pdf-layout-compression/proof/runtime.json",
       "bytes": 261,
-      "sha256": "645aac54dc0d5d10931ebb9382c617e049f2459318afd390d36068fc8b965e5b"
+      "sha256": "6dde9d8c18f897a1b3c6cf96f7848ed0a66eb3ebbea754463b59bc380a0cafd5"
     },
     {
       "path": "pdf-layout-compression/proof/visual-review.json",
