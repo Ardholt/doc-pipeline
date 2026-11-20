@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "case": "ebook-print-pdf",
+  "image_tag": "dp-ebook:1",
+  "base": "debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+  "recipe": "harness/Dockerfile",
+  "case_recipe_copy": "ebook-print-pdf/Dockerfile",
+  "additional_apt": [
+    "pandoc=2.17.1.1-2~deb12u1",
+    "weasyprint=57.2-1",
+    "python3-bs4=4.11.2-2"
+  ],
+  "shared_pip": [
+    "pypdf==5.1.0"
+  ],
+  "fonts": {
+    "package": "fonts-dejavu-core=2.37-6",
+    "faces": [
+      "DejaVuSerif.ttf",
+      "DejaVuSerif-Bold.ttf",
+      "DejaVuSerif-Italic.ttf",
+      "DejaVuSans.ttf",
+      "DejaVuSansMono.ttf"
+    ],
+    "licence": "Bitstream Vera terms and DejaVu public domain changes"
+  },
+  "resolved_packages": "ebook-print-pdf/output/packages.tsv",
+  "actual_versions": "ebook-print-pdf/output/report.json#/tools",
+  "runtime_limits": {
+    "cpus": 2,
+    "memory": "2g",
+    "network": "none",
+    "build_timeout_seconds": 1500,
+    "workload_timeout_seconds": 1080
+  },
+  "cold_build": "The exact shared recipe is built with the additional apt packages. No private registry or pre-existing dp-base image is required.",
+  "built_image_id": "sha256:3d8782cf6c4484c6e33c246a40fda9f09d8e2a371001db15b4eb3dde82151f6b"
+}

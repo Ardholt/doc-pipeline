@@ -1,0 +1,19 @@
+DRY STORAGE / 082
+
+Record D06-07. Round 06. Sheet 082.
+
+Dry storage depends on routine observation as well as closed lids. Check the seal before moving a container and look for a change in the paper liner. A small curl at an edge may be the first visible sign that conditions have changed.
+
+The tray for item K082 showed an uneven stack of thin pieces. The stack was divided into smaller groups on the mat. Each group was counted before the pieces were returned to the container.
+
+Separate observations from explanations. Record a damp patch as a damp patch; do not record a leak unless its path has been found. Move the affected material to the holding shelf and preserve the arrangement that will help the next inspection.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K082	62	3	65
+R082	66	4	70
+
+The first row records 62 ready pieces and 3 held pieces, giving 65 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D06-07 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

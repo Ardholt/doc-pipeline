@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "scope": "Full offline pipeline runs in temporary directories, including rendering and checks. Excludes Docker argument parser; separate shell evidence covers mount paths.",
+  "checks": [
+    {
+      "test": "identical runs and paths containing spaces",
+      "passed": true,
+      "content": {
+        "pptx_package_content_sha256": "76ac30e3d79b076f823f5f7d0b0ffe52f0379eddf6c35bbbfae7e5b078f95bd4",
+        "pdf_text_sha256": "9a3ff0272458f899b7a7f7a1c5f19d9294f1525dba567886ef701395c1dec4ca"
+      },
+      "report_fields_compared": [
+        "input_hashes",
+        "transformations",
+        "counts",
+        "checks",
+        "tools",
+        "uncertainties",
+        "human_steps"
+      ],
+      "input_hashes_unchanged": true
+    },
+    {
+      "test": "replacement values, cents, order and adaptive pagination",
+      "passed": true,
+      "counts": {
+        "source_rows": 16,
+        "departments": 4,
+        "periods": 4,
+        "slides": 9,
+        "editable_charts": 13,
+        "totals": {
+          "revenue": "16040.16",
+          "cost": "10420.08",
+          "profit": "5620.08"
+        }
+      },
+      "native_chart_checks": [
+        {
+          "name": "Chart caches and embedded workbooks reconcile",
+          "passed": true,
+          "observation": "28 plotted values matched exact decimal input aggregates across 13 native charts."
+        },
+        {
+          "name": "Department order, colours, axes and source mapping",
+          "passed": true,
+          "observation": "Order and colours match deck.json; axes include zero and all values; source line maps match chart parts."
+        },
+        {
+          "name": "Editable text and rendered totals",
+          "passed": true,
+          "observation": "9 native slides and PDF pages; title and revenue/cost/profit totals present; no raster slide pictures."
+        },
+        {
+          "name": "Package metadata and hashes",
+          "passed": true,
+          "observation": "No PPTX/workbook properties, comments, external relationships, PDF metadata/annotations or PNG metadata; input/output hashes match."
+        }
+      ]
+    }
+  ]
+}

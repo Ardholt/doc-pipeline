@@ -1,0 +1,5 @@
+PASS: 7 rejection checks including a damaged DOCX value
+PASS: transcript assembled; source mapping, literal uncertainty, formatting and PDF text verified
+PASS: offline case screenshots at 390 and 1366 CSS pixels
+PASS: elapsed 11.177 seconds (workload only)
+PASS: run completed; elapsed 13 seconds (including setup)

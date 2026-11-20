@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "runs": 2,
+  "report_facts_and_output_hashes_identical": true,
+  "scope": "Two consecutive identical default runs; runtime timing intentionally excluded. All report fields, input hashes and document/preview output hashes compared.",
+  "status": "PASS"
+}

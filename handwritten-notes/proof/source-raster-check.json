@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "source": "source/pen-strokes.svg",
+  "source_sha256": "8ef321df59809de50e41b3c9cd262122ba381da31434fbfc84bdde337bfba305",
+  "raster": "input/page-01.png",
+  "raster_sha256": "d8a34af8785e0a76ac8ff33f6ebbf4d3c1b156657a5e6168ef9df35a24c6d3ca",
+  "observation": "Editable SVG and original PNG rendered to identical RGB pixels. No text elements or font resources in SVG.",
+  "renderer": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)"
+}

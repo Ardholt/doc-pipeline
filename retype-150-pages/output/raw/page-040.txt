@@ -1,0 +1,19 @@
+HOLDING AREA / 040
+
+Record DO3-10. Round 03. Sheet 040.
+
+The holding area separates unresolved items from ready stock. Each tray needs one clear reason for being held and a next action that can be completed. A short specific note is better than a broad word that leaves the next reader guessing.
+
+The tray for item K040 showed a folded corner on the liner. The corner was opened without pulling the rest of the liner free. No loose pieces were found beneath the fold.
+
+Review the oldest tray first, but do not release it merely because it has waited. Check that the stated reason has been resolved and preserve the evidence of that check. Move the material and its note together when the status changes.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K040	33	1	34
+R040	S7/	2	39
+
+The first row records 33 ready pieces and 1 held pieces, giving 34 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D03-10 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "Two complete independent runs over the full corpus. Second run uses input and output paths containing spaces. Timestamps and archive ordering may differ; measured report facts and document content must agree.",
+  "checks": {
+    "docx_text_and_structure": true,
+    "pdf_text": true,
+    "page_map": true,
+    "report_facts": true,
+    "accuracy": true,
+    "docx_bytes_equal": true,
+    "pdf_bytes_equal": true
+  },
+  "input_hashes": {
+    "scan.pdf": "0a1aedb3bad92508ee96b54a2fc311d94816baa98c5315fe1a7881b1e21d905e",
+    "review.csv": "29eb041fd796f834df4ee2c52b7cb017041b812819306eaecd390fabfa02f447"
+  },
+  "first_output_hashes": {
+    "retyped.docx": "73bfd4f0cec2028ba68e566ba37398ceed00245df2f28f85937b3b34be43f853",
+    "preview.pdf": "c171135a2133b1912b4b8e3e361df9e8554b8369152ae535c8ecab69b58a9247",
+    "pages.json": "3d9389856c18ac9b64be643b44caa4c916632703dc8809ddf64b81527feebd3d"
+  },
+  "second_output_hashes": {
+    "retyped.docx": "73bfd4f0cec2028ba68e566ba37398ceed00245df2f28f85937b3b34be43f853",
+    "preview.pdf": "c171135a2133b1912b4b8e3e361df9e8554b8369152ae535c8ecab69b58a9247",
+    "pages.json": "3d9389856c18ac9b64be643b44caa4c916632703dc8809ddf64b81527feebd3d"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "case": "handwritten-notes",
+  "image": "dp-handwritten-notes:1",
+  "base_image": "debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+  "recipe": "harness/Dockerfile",
+  "case_recipe": "handwritten-notes/Dockerfile",
+  "optional_apt": "libreoffice-writer=4:7.4.7-1+deb12u14 python3-docx=0.8.11+dfsg1-5",
+  "optional_pip": "",
+  "actual_tools": {
+    "python": "3.11.2",
+    "python-docx": "0.8.11",
+    "pypdf": "5.1.0",
+    "Pillow": "9.4.0",
+    "libreoffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "pdftoppm": "pdftoppm version 22.12.0",
+    "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)",
+    "pdffonts": "pdffonts version 22.12.0",
+    "pdftotext": "pdftotext version 22.12.0",
+    "lxml": "4.9.2",
+    "fontconfig": "fontconfig version 2.14.1"
+  },
+  "resolved_package_inventory": "handwritten-notes/output/packages.tsv",
+  "resolved_package_inventory_sha256": "38bf8e780496f197a4f1dfb229bf2dfe9f0864fdd863af87af4c2fa4b9c5b244",
+  "font_files": {
+    "handwritten-notes/source/fonts/Inter-Regular.ttf": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+    "handwritten-notes/source/fonts/Inter-SemiBold.ttf": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3"
+  },
+  "limits": {
+    "cpus": 2,
+    "memory_gb": 2,
+    "network": "none during document workload",
+    "build_seconds": 1500,
+    "workload_seconds": 1080
+  },
+  "cold_build": "Shared pinned recipe plus Writer group builds from public Debian sources; no private image prerequisite.",
+  "built_image_config": "sha256:bff11b32fcf5fb37092d93801771e62782902a4c2e17a568fb228af989f18173",
+  "recipe_sha256": "79643d5ae83c35504d8699cc63ab495880c78548a434402e9f9d4626cacde505"
+}

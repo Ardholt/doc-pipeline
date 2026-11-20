@@ -1,0 +1,19 @@
+DRY STORAGE / 022
+
+Record D02-07. Round 02. Sheet 022.
+
+Dry storage depends on routine observation as well as closed lids. Check the seal before moving a container and look for a change in the paper liner. A small curl at an edge may be the first visible sign that conditions have changed.
+
+The tray for item K022 showed a loose inner divider. The divider was lifted out and placed beside the tray. The contents stayed in their original groups while the support was checked.
+
+Separate observations from explanations. Record a damp patch as a damp patch; do not record a leak unless its path has been found. Move the affected material to the holding shelf and preserve the arrangement that will help the next inspection.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K@22	66	3	69
+RO22	70	4	74
+
+The first row records 66 ready pieces and 3 held pieces, giving 69 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D02-07 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

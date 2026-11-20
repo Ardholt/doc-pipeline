@@ -1,0 +1,12 @@
+html { color: #222c32; background: #fffdf8; }
+body { font-family: "DejaVu Serif", serif; font-size: 1em; line-height: 1.6; max-width: 42em; margin: 1.25em auto; padding: 0 1.25em; box-sizing: border-box; overflow-wrap: anywhere; }
+h1, h2, h3 { line-height: 1.2; font-weight: normal; }
+h1 { font-size: 1.65em; } h2 { font-size: 1.3em; }
+p { margin: .8em 0; }
+a { color: #005a77; text-decoration: underline; text-underline-offset: .15em; }
+a[epub\:type="noteref"] { padding: .2em; font-weight: bold; }
+aside { margin-bottom: 3em; }
+aside:target { border-left: .2em solid #00836f; padding-left: .8em; }
+a:target { outline: 2px solid #00836f; outline-offset: 2px; }
+.return { display: inline-block; margin-right: .5em; }
+blockquote { margin-inline: 1em; border-left: .15em solid #aaa; padding-left: 1em; }

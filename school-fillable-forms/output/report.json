@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "case": "school-fillable-forms",
+  "input_hashes": {
+    "forms.json": "28d21b8422dcc0f77fde4bf20a69e923468eae36acb9b7a7f9f1d8d744dbcc33",
+    "values.json": "3d5568e67be35c02ccb3c10434d68083334c3e94b193ef4d158f50d9ce6979d0"
+  },
+  "output_hashes": {
+    "trip-permission-blank.docx": "9177bff981005542125698db7fe64ac31a6b5e3db99a190592c24c1ead46639f",
+    "trip-permission-blank.pdf": "84be2d5504e8cdc8c1df1dbd27456b9471b278491805808152faec39ce3ba7f7",
+    "trip-permission-blank.png": "c3cf29bf35d39d633bbd53700eae5cf903ec304b0614bb66b1d980f10cf5c7d8",
+    "trip-permission-filled.docx": "26da3043323f2b65821856f857e884db33dd8b05d3afe2a6bc6c35926233aace",
+    "trip-permission-filled.pdf": "173cba064535fcb479452937af0ebae3711768e3e72fbe2a93ba3c4b3f1e4f54",
+    "trip-permission-filled.png": "35f3e00ea3587448ae1ad9b269e0d39f14be3bd4d7caf2b2c96825cf054b2bba",
+    "absence-request-blank.docx": "a68616fe01754cbb6010becb903669ad4662ef7249a5da5cd4d9c6ad75f1d8e7",
+    "absence-request-blank.pdf": "6965f15d4d686ef342e9b6c37a277ed84928d2b48a350728e355ae6fd569335e",
+    "absence-request-blank.png": "a0a9a1676260cfa757519c3ccb2de8637068236e0073f6bf733fc4bc3a9ee209",
+    "absence-request-filled.docx": "c08df6ab7201d12e8f60cf93a8959978d1f437ce869c6431b321b7ebb307c0e7",
+    "absence-request-filled.pdf": "2aba5ceda441e97fcd8564ea4f0c23a8b1a4cc7058671a2eecc095826a0fdabf",
+    "absence-request-filled.png": "a50cd2d4a47c6129e9959c728972753957195034a1ea709d34a454d9054f6c7d",
+    "hero.png": "3df8a066742122b153a3bdc56ae879853af5d631e66eca682aed6e1e169795af",
+    "preview-map.json": "43b7040925aa8d15c6829d9426129b634ac43188c22f8696c08055ed4af13564",
+    "roundtrip.json": "9ce11b7f7875281ec9ad16e954c5494f46eeee2d39c6066224c3196773418774",
+    "selftest.json": "a82bb510e0b2b7f8df70859d3734fb3f50bd3c10d5dcfba6ead6f564d3d5c1e1",
+    "rendered-negative.json": "cb530fc71e48879fa49c506fd68e02588fe2758d79d6104f4f1949e10a3987b6",
+    "packages.tsv": "918bacd325a607691dc17fcad69fa9d2c75b762b27babfb6eb779fcb978ff754",
+    "font-licenses/fonts-dejavu-core.txt": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+    "font-licenses/fonts-liberation.txt": "bcb5f95766d5dc969748869eef4559dd991fd31f7e0d30c29e140276cc3c24ee",
+    "page-previews/github-1366.png": "59fb82c033ed41ce7e2b8749e54bf8f7f428bc0c60525ef9c2af6126cd209f31",
+    "page-previews/github-390.png": "de2a06bc28ebd6972e7aff777ff0e8b7c007213720e55a55f4bf9d161756ae40",
+    "page-previews/pages-1366.png": "d03a598076391319ead799b148fc083c4e34af86d6aa39979b493dd9e2f314e4",
+    "page-previews/pages-390.png": "b249b059ac766f9ee0f75d89ecd85aa7f55c5c91ffd46b65bdc2382e49b60f49",
+    "page-previews/screenshots.json": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+  },
+  "transformations": [
+    {
+      "operation": "generate OOXML rich-text and checkbox controls",
+      "font": "DejaVu Sans",
+      "fixed_text_row_twips": 1400,
+      "fixed_checkbox_row_twips": 620
+    },
+    {
+      "operation": "normalize blank through LibreOffice DOCX export; enter values using UNO cursors and checkbox Checked; save DOCX; close"
+    },
+    {
+      "operation": "remove DOCX properties; reopen in LibreOffice; inspect and export PDF"
+    },
+    {
+      "operation": "remove PDF Info/XMP; rasterize sanitized PDFs with Poppler"
+    }
+  ],
+  "counts": {
+    "forms": 2,
+    "controls": 7,
+    "text_controls": 4,
+    "checkbox_controls": 3
+  },
+  "measurements": [
+    {
+      "form": "trip-permission",
+      "blank_pages": 1,
+      "filled_pages": 1,
+      "controls": 3,
+      "label_position_drift_pt": 0
+    },
+    {
+      "form": "absence-request",
+      "blank_pages": 1,
+      "filled_pages": 1,
+      "controls": 4,
+      "label_position_drift_pt": 0
+    }
+  ],
+  "layout_tolerance_pt": 0.5,
+  "checks": [
+    {
+      "name": "existing-output inspection",
+      "passed": true,
+      "observation": [
+        {
+          "form": "trip-permission",
+          "blank_pages": 1,
+          "filled_pages": 1,
+          "controls": 3,
+          "label_position_drift_pt": 0
+        },
+        {
+          "form": "absence-request",
+          "blank_pages": 1,
+          "filled_pages": 1,
+          "controls": 4,
+          "label_position_drift_pt": 0
+        }
+      ]
+    },
+    {
+      "name": "negative tests",
+      "passed": true,
+      "observation": "See selftest.json and rendered-negative.json for rejected schemas, damaged controls, values, links and PDF pages"
+    }
+  ],
+  "tools": {
+    "LibreOffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "Python": "Python 3.11.2",
+    "Poppler": "pdftoppm version 22.12.0\nCopyright 2005-2022 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+    "Chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)",
+    "pypdf": "5.1.0",
+    "Pillow": "9.4.0"
+  },
+  "uncertainties": [
+    "Microsoft Word was not run. DOCX filling and round-trip were exercised in LibreOffice only.",
+    "The templates are not locked forms. Manual editing can exceed field space; the pipeline rejects values outside supported bounds.",
+    "Control IDs are mapped by source order and adjacent labels read through UNO; Writer may drop alias/tag metadata and add XML container wrappers. Raw wrapper counts are retained in roundtrip.json."
+  ],
+  "human_steps": []
+}

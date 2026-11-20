@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "title": "Department performance",
+  "currency": "GBP",
+  "department_order": ["A", "B", "C"],
+  "colours": {"A": "#146C78", "B": "#3656A8", "C": "#B24930"}
+}

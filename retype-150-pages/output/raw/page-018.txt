@@ -1,0 +1,19 @@
+TOOL RETURN / 018
+
+Record D0Q2-03. Round 02. Sheet 018.
+
+A tool returns to service only after its condition has been checked. Brush away loose material and place the tool on the inspection mat. Compare the working edge with the condition recorded before use, and record any new mark in ordinary words.
+
+The tray for item K018 showed a loose inner divider. The divider was lifted out and placed beside the tray. The contents stayed in their original groups while the support was checked.
+
+A clean surface does not prove that a tool is ready. Check the joint, handle and retaining pin as separate parts. If a part is missing, mark the whole tool as held; never leave it in the ready tray beside complete tools.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+KO18	38	4	42
+RO18	42	5	47
+
+The first row records 38 ready pieces and 4 held pieces, giving 42 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D02-03 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

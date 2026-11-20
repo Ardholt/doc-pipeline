@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "renderer": "pdftoppm",
+  "dpi": 96,
+  "detail_dpi": 144,
+  "detail_pages": [
+    1,
+    3,
+    7,
+    9,
+    11,
+    15,
+    19,
+    23,
+    26
+  ],
+  "hero": {
+    "before": "before-detail.png",
+    "after": "details/page-03.png",
+    "kind": "close crops plus folio crop; full pages in page-pair.png"
+  },
+  "contact_sheet": "all interior pages in file order"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {"id":"A1","title":"Keep every edge readable","subtitle":"Sheet A1 / Inspection notes","lines":["Check every edge.","Keep the outer rule.","Item A17: retain the label, arrow and measurement.","Read the small note below the image at normal size."],"caption":"Surface study A17: layered contours in blue and amber.","note":"Small-print check: 0.75 mm clearance; keep labels A17, B24 and C31.","footer":"End of sheet A1 / All four corners belong to this page."},
+    {"id":"B2","title":"Turn the page the right way","subtitle":"Sheet B2 / Orientation notes","lines":["Read the heading from left to right.","Keep the diagram arrow pointing towards the upper edge.","Item B24: align the label with the vertical guide.","The image and text must turn together."],"caption":"Surface study B24: flowing bands across a curved field.","note":"Small-print check: 12.50 units; upper arrow UP; lower marker BASE.","footer":"End of sheet B2 / Orientation checked against the heading."},
+    {"id":"C3","title":"Keep detail in a smaller file","subtitle":"Sheet C3 / Delivery notes","lines":["Searchable text should remain text after compression.","Keep the coloured image and the fine vector diagram.","Item C31: compare the narrow lines and the shaded areas.","Read the final note before sharing the repaired PDF."],"caption":"Surface study C31: close contours with a warm central ridge.","note":"Small-print check: revision C; 8.25 units; no change to the wording.","footer":"End of sheet C3 / The final line must remain on the page."}
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "normalization": "Collapse Unicode whitespace to one space; remove generated note markers, note headings and return labels. Punctuation, case and Unicode are retained. Identical note bodies share one destination.",
+  "body_text": "A place to begin A useful notebook leaves room for doubt. I keep mine beside a shallow tray, where a smooth stone stops the pages lifting in a draught. The stone has no special history. Its value is that it stays where I put it. The first entry describes the shelf itself: pale wood, a dark knot, and a line of dust behind the tray. These details are ordinary enough to overlook. Writing them down changes the pace of looking, though it does not make the shelf more important than it was. I write “perhaps” when an explanation arrives before the evidence. A curled leaf might have dried in sunlight; it might also have been curled when it came indoors. The sentence can hold both possibilities without choosing between them. Three habits Name the thing before describing its mood. Separate what happened from what might explain it. Leave a blank line before revising a first impression. These are habits, not rules for winning an argument. On a hurried morning I may forget all of them and write only: rain, cold handle, sleeve caught on the latch. That small record is still useful. Light across the room By the afternoon, a narrow band of light reaches the tray. The stone throws a short shadow across the paper. I move neither object, because a moving observer already introduces enough change. The page is cream rather than white, a difference that is obvious beside the window and almost invisible under the lamp. The words remain the same in both places. Their surroundings alter the ease with which I can read them. A measured interval helps me notice slow changes. I look up from the page, count without haste, then look again. This is a way to interrupt distraction, not a substitute for a clock. A description can be precise about what it leaves unresolved. That sentence returns me to the first habit of leaving room for doubt. The return matters: a note is useful only if I can find my way back to the thought that needed it. The edge of a shadow The edge looks sharp until I lean closer. Then I see a soft grey band between the dark centre and the lit paper. “Sharp” was not wrong at the original distance, but it was incomplete. I add the viewing distance to the entry. A short description of where I stood can do more work than another adjective. It makes a later observation easier to compare without pretending that the room has stopped changing. Keeping a record I number the leaves of the notebook after writing on them. This avoids treating an empty page as a task that has been left unfinished. A page can wait; the shelf will still be there tomorrow. When an entry needs correction, I draw a single line through the doubtful phrase. I want to read the earlier thought as well as the replacement. The gap between them is part of the record. An index can be very small: Objects: stone, tray, leaf. Conditions: light, draught, distance. Questions: what changed, and what did I merely notice later? I do not copy every entry into the index. Repeated words are useful signposts, but an index that repeats the whole book has lost its purpose. When a note is shared The same explanation may support two different passages. I would rather give it one clear home and provide a separate path back to each passage. The reader should not have to remember which page held the original question. The colour of the paper is one such shared observation. Its second appearance does not create a second sheet of paper. It creates another reason to consult the explanation. Putting the book away Before closing the notebook, I read the last entry aloud. A missing word is easier to hear when I am no longer supplying it silently. This catches some mistakes, never all of them. The final line says: “The shelf is still ordinary; my attention is less hurried.” I resist adding a lesson. An observation does not need to become advice before it earns its place on the page. I put the stone back on the tray and leave the notebook open until the ink is dry. Then I close it. The next entry will begin with whatever is there, including anything that refuses to fit today's explanation. There is room for that uncertainty too.",
+  "structure": [
+    {
+      "tag": "h1",
+      "text": "A place to begin"
+    },
+    {
+      "tag": "h2",
+      "text": "Three habits"
+    },
+    {
+      "tag": "ul",
+      "text": "Name the thing before describing its mood. Separate what happened from what might explain it. Leave a blank line before revising a first impression."
+    },
+    {
+      "tag": "li",
+      "text": "Name the thing before describing its mood."
+    },
+    {
+      "tag": "li",
+      "text": "Separate what happened from what might explain it."
+    },
+    {
+      "tag": "li",
+      "text": "Leave a blank line before revising a first impression."
+    },
+    {
+      "tag": "h1",
+      "text": "Light across the room"
+    },
+    {
+      "tag": "blockquote",
+      "text": "A description can be precise about what it leaves unresolved."
+    },
+    {
+      "tag": "h2",
+      "text": "The edge of a shadow"
+    },
+    {
+      "tag": "h1",
+      "text": "Keeping a record"
+    },
+    {
+      "tag": "ol",
+      "text": "Objects: stone, tray, leaf. Conditions: light, draught, distance. Questions: what changed, and what did I merely notice later?"
+    },
+    {
+      "tag": "li",
+      "text": "Objects: stone, tray, leaf."
+    },
+    {
+      "tag": "li",
+      "text": "Conditions: light, draught, distance."
+    },
+    {
+      "tag": "li",
+      "text": "Questions: what changed, and what did I merely notice later?"
+    },
+    {
+      "tag": "h2",
+      "text": "When a note is shared"
+    },
+    {
+      "tag": "h1",
+      "text": "Putting the book away"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "text": "Doubt keeps an observation separate from its possible explanation."
+    },
+    {
+      "id": "note-2",
+      "text": "The dust line marks the tray's recent position. It does not establish how long the tray remained there."
+    },
+    {
+      "id": "note-3",
+      "text": "“Perhaps” records uncertainty. It should not disguise a statement that could readily be checked."
+    },
+    {
+      "id": "note-4",
+      "text": "A concrete name gives the reader something to locate: a latch, a leaf, or a shallow tray."
+    },
+    {
+      "id": "note-5",
+      "text": "Viewing distance affects which details are visible. Recording it helps comparisons made from another position."
+    },
+    {
+      "id": "note-6",
+      "text": "A blank line separates the first account from a later response without erasing either one."
+    },
+    {
+      "id": "note-7",
+      "text": "The band of light is described relative to the tray, not to a measured compass direction."
+    },
+    {
+      "id": "note-8",
+      "text": "Cream and white are ordinary colour descriptions here. No colour instrument or calibrated surface was used."
+    },
+    {
+      "id": "note-9",
+      "text": "Counting provides a pause of roughly repeatable length. It does not produce a calibrated time measurement."
+    },
+    {
+      "id": "note-10",
+      "text": "An unresolved description can still identify the object, the conditions, and the limits of the observer's knowledge."
+    },
+    {
+      "id": "note-11",
+      "text": "The soft border of the shadow becomes easier to see at a shorter viewing distance."
+    },
+    {
+      "id": "note-12",
+      "text": "A leaf is a physical sheet. In this notebook, numbering refers to the written side being discussed."
+    },
+    {
+      "id": "note-13",
+      "text": "Keeping a correction visible records a change in judgement. It is not a claim that every earlier phrase is reliable."
+    },
+    {
+      "id": "note-14",
+      "text": "Conditions describe the setting of an observation. Keeping them beside objects makes later comparisons easier."
+    },
+    {
+      "id": "note-15",
+      "text": "A shared note needs a distinct return destination for every referring passage; one return path cannot identify several starting points."
+    },
+    {
+      "id": "note-16",
+      "text": "Reading aloud changes the way a sentence is reviewed. It complements a visual check of spelling and punctuation."
+    },
+    {
+      "id": "note-17",
+      "text": "The last line records the writer's pace of attention, not a measured change in the room."
+    },
+    {
+      "id": "note-18",
+      "text": "Closing a wet page can transfer ink to the facing sheet. Waiting protects the record without adding anything to it."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref-1",
+      "note_id": "note-1",
+      "forward": "notes.xhtml#note-1",
+      "return": "chapter.xhtml#ref-1",
+      "number": 1
+    },
+    {
+      "reference_id": "ref-2",
+      "note_id": "note-2",
+      "forward": "notes.xhtml#note-2",
+      "return": "chapter.xhtml#ref-2",
+      "number": 2
+    },
+    {
+      "reference_id": "ref-3",
+      "note_id": "note-3",
+      "forward": "notes.xhtml#note-3",
+      "return": "chapter.xhtml#ref-3",
+      "number": 3
+    },
+    {
+      "reference_id": "ref-4",
+      "note_id": "note-4",
+      "forward": "notes.xhtml#note-4",
+      "return": "chapter.xhtml#ref-4",
+      "number": 4
+    },
+    {
+      "reference_id": "ref-5",
+      "note_id": "note-5",
+      "forward": "notes.xhtml#note-5",
+      "return": "chapter.xhtml#ref-5",
+      "number": 5
+    },
+    {
+      "reference_id": "ref-6",
+      "note_id": "note-6",
+      "forward": "notes.xhtml#note-6",
+      "return": "chapter.xhtml#ref-6",
+      "number": 6
+    },
+    {
+      "reference_id": "ref-7",
+      "note_id": "note-7",
+      "forward": "notes.xhtml#note-7",
+      "return": "chapter.xhtml#ref-7",
+      "number": 7
+    },
+    {
+      "reference_id": "ref-8",
+      "note_id": "note-8",
+      "forward": "notes.xhtml#note-8",
+      "return": "chapter.xhtml#ref-8",
+      "number": 8
+    },
+    {
+      "reference_id": "ref-9",
+      "note_id": "note-9",
+      "forward": "notes.xhtml#note-9",
+      "return": "chapter.xhtml#ref-9",
+      "number": 9
+    },
+    {
+      "reference_id": "ref-10",
+      "note_id": "note-10",
+      "forward": "notes.xhtml#note-10",
+      "return": "chapter.xhtml#ref-10",
+      "number": 10
+    },
+    {
+      "reference_id": "ref-11",
+      "note_id": "note-1",
+      "forward": "notes.xhtml#note-1",
+      "return": "chapter.xhtml#ref-11",
+      "number": 1
+    },
+    {
+      "reference_id": "ref-12",
+      "note_id": "note-11",
+      "forward": "notes.xhtml#note-11",
+      "return": "chapter.xhtml#ref-12",
+      "number": 11
+    },
+    {
+      "reference_id": "ref-13",
+      "note_id": "note-5",
+      "forward": "notes.xhtml#note-5",
+      "return": "chapter.xhtml#ref-13",
+      "number": 5
+    },
+    {
+      "reference_id": "ref-14",
+      "note_id": "note-12",
+      "forward": "notes.xhtml#note-12",
+      "return": "chapter.xhtml#ref-14",
+      "number": 12
+    },
+    {
+      "reference_id": "ref-15",
+      "note_id": "note-13",
+      "forward": "notes.xhtml#note-13",
+      "return": "chapter.xhtml#ref-15",
+      "number": 13
+    },
+    {
+      "reference_id": "ref-16",
+      "note_id": "note-14",
+      "forward": "notes.xhtml#note-14",
+      "return": "chapter.xhtml#ref-16",
+      "number": 14
+    },
+    {
+      "reference_id": "ref-17",
+      "note_id": "note-15",
+      "forward": "notes.xhtml#note-15",
+      "return": "chapter.xhtml#ref-17",
+      "number": 15
+    },
+    {
+      "reference_id": "ref-18",
+      "note_id": "note-8",
+      "forward": "notes.xhtml#note-8",
+      "return": "chapter.xhtml#ref-18",
+      "number": 8
+    },
+    {
+      "reference_id": "ref-19",
+      "note_id": "note-16",
+      "forward": "notes.xhtml#note-16",
+      "return": "chapter.xhtml#ref-19",
+      "number": 16
+    },
+    {
+      "reference_id": "ref-20",
+      "note_id": "note-17",
+      "forward": "notes.xhtml#note-17",
+      "return": "chapter.xhtml#ref-20",
+      "number": 17
+    },
+    {
+      "reference_id": "ref-21",
+      "note_id": "note-18",
+      "forward": "notes.xhtml#note-18",
+      "return": "chapter.xhtml#ref-21",
+      "number": 18
+    },
+    {
+      "reference_id": "ref-22",
+      "note_id": "note-1",
+      "forward": "notes.xhtml#note-1",
+      "return": "chapter.xhtml#ref-22",
+      "number": 1
+    }
+  ]
+}

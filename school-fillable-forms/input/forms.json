@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "forms": [
+    {
+      "id": "trip-permission",
+      "title": "School trip permission",
+      "instructions": "Select each shaded field to enter text. Select the box to change its state. Keep a saved copy of the completed form. Required fields are marked with an asterisk.",
+      "fields": [
+        {"id": "activity", "label": "Activity reference", "type": "text", "required": true, "max_chars": 80},
+        {"id": "arrangements", "label": "Travel arrangements", "type": "text", "required": true, "max_chars": 160},
+        {"id": "permission", "label": "Permission for the stated activity", "type": "checkbox", "required": true}
+      ]
+    },
+    {
+      "id": "absence-request",
+      "title": "School absence request",
+      "instructions": "Select each shaded field to enter text. Select the box to change its state. This form records a request; it does not confirm approval. Required fields are marked with an asterisk.",
+      "fields": [
+        {"id": "period", "label": "Requested period", "type": "text", "required": true, "max_chars": 80},
+        {"id": "reason", "label": "Reason and return arrangements", "type": "text", "required": true, "max_chars": 160},
+        {"id": "acknowledged", "label": "I understand approval is required", "type": "checkbox", "required": true},
+        {"id": "work", "label": "Learning materials requested", "type": "checkbox", "required": false}
+      ]
+    }
+  ]
+}

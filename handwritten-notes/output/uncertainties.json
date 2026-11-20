@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "uncertainties": [
+    {
+      "page_id": "sheet-a",
+      "block_id": "move",
+      "token": "[unclear]",
+      "reason": "Overlapping pen strokes do not resolve into a readable word between Move and shelf."
+    }
+  ]
+}

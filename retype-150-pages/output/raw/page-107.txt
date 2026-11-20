@@ -1,0 +1,19 @@
+SHELF ORDER / 107
+
+Record D08-02. Round 08. Sheet 107.
+
+A shelf is easiest to use when its order is visible from the aisle. Place the heavier containers on the lower level and keep each item code facing forward. Leave enough room to remove a container without disturbing the next one.
+
+The tray for item K107 showed a detached paper tab. The tab was kept with the tray rather than discarded. Its wording was copied into the record before a fresh tab was attached.
+
+An empty space is part of the arrangement. Do not fill a gap merely because a small box will fit there. First check whether the gap marks an item awaiting return, a cleaning interval, or a limit on the load of that shelf.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K107	25	3	28
+R107	29	4	33
+
+The first row records 25 ready pieces and 3 held pieces, giving 28 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D08-02 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

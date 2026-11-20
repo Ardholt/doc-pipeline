@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "case": "school-fillable-forms",
+  "build_status": "Built successfully with rootless Docker; pinned optional Writer group installed, workload ran offline.",
+  "image": "dp-school-forms:1",
+  "base": "debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+  "shared_recipe": "harness/Dockerfile",
+  "shared_runner": "harness/run-container.sh",
+  "extra_apt": {
+    "libreoffice-writer": "4:7.4.7-1+deb12u14",
+    "python3-uno": "4:7.4.7-1+deb12u14"
+  },
+  "shared_direct_apt_pins": {
+    "ca-certificates": "20230311+deb12u1",
+    "python3": "3.11.2-1+b1",
+    "python3-venv": "3.11.2-1+b1",
+    "python3-pil": "9.4.0-1.1+deb12u1",
+    "python3-reportlab": "3.6.12-1+deb12u1",
+    "python3-markdown": "3.4.1-2+deb12u1",
+    "ghostscript": "10.0.0~dfsg-11+deb12u9",
+    "qpdf": "11.3.0-1+deb12u1",
+    "poppler-utils": "22.12.0-2+deb12u3",
+    "chromium": "156.0.8078.79-1~deb12u1",
+    "fonts-dejavu-core": "2.37-6",
+    "fonts-liberation": "1:1.07.4-11"
+  },
+  "shared_pip_pins": {
+    "pypdf": "5.1.0"
+  },
+  "actually_run_locally": {
+    "CPython": "3.12.3"
+  },
+  "not_run": [
+    "Microsoft Word",
+    "GitHub Actions"
+  ],
+  "font_evidence": "DOCX references DejaVu Sans; PDFs embed subsets. Screenshots use DejaVu Sans, Serif and Mono from fonts-dejavu-core 2.37-6. Required font notices in output/font-licenses/. Liberation is an installed shared-base dependency; no claim it was used in the document.",
+  "resolved_package_inventory": "school-fillable-forms/output/packages.tsv",
+  "image_config_digest": "sha256:7701ae488aeb88fdcf79d5fb4001c7b742f0f9a3d594c560dc816ff5472d56ab",
+  "actually_run_in_container": {
+    "LibreOffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "Python": "Python 3.11.2",
+    "Poppler": "pdftoppm version 22.12.0\nCopyright 2005-2022 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+    "Chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)",
+    "pypdf": "5.1.0",
+    "Pillow": "9.4.0"
+  }
+}

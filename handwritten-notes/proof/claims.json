@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "claim": "The unclear word remains marked in editable notes.",
+      "evidence": [
+        {
+          "path": "input/transcript.json",
+          "field": "/pages/0/blocks/2/text"
+        },
+        {
+          "path": "output/notes.docx",
+          "field": "word/document.xml, paragraph 2, w:t"
+        },
+        {
+          "path": "output/preview.pdf",
+          "frame": "page 1, bullet instruction"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/checks/0"
+        }
+      ]
+    },
+    {
+      "claim": "1 source page, 3 text blocks, 1 unresolved token.",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/counts/source_pages"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/counts/blocks"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/counts/unclear_tokens"
+        },
+        {
+          "path": "output/uncertainties.json",
+          "field": "/uncertainties"
+        }
+      ],
+      "measurement": "Python 3.11.2 reads source JSON and actual DOCX XML; pypdf 5.1.0 checks rendered PDF text; python-docx 0.8.11 assembles the DOCX. No accuracy percentage is asserted."
+    },
+    {
+      "claim": "Original digital pen strokes, not a photograph or a handwriting typeface.",
+      "evidence": [
+        {
+          "path": "source/pen-strokes.svg",
+          "field": "Full-word coordinate paths; no text elements or font resources"
+        },
+        {
+          "path": "source/authorship.md",
+          "field": "Stroke source and review record"
+        },
+        {
+          "path": "input/page-01.png",
+          "frame": "full image"
+        },
+        {
+          "path": "proof/source-raster-check.json",
+          "field": "/observation"
+        }
+      ]
+    },
+    {
+      "claim": "The hero shows the source and actual rendered result.",
+      "evidence": [
+        {
+          "path": "input/page-01.png",
+          "frame": "crop x40 y278 x680 y390"
+        },
+        {
+          "path": "output/preview.png",
+          "frame": "bullet line containing [unclear], crop located with pdftotext bounding boxes"
+        },
+        {
+          "path": "output/hero.png",
+          "frame": "upper source crop; lower rendered PDF crop"
+        },
+        {
+          "path": "source/pipeline.py",
+          "field": "Source and PDF crop generation"
+        }
+      ]
+    },
+    {
+      "claim": "Heading, paragraph, bullet and text retained with a page/block map.",
+      "evidence": [
+        {
+          "path": "output/mapping.json",
+          "field": "/pages/0/blocks"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/checks/0"
+        },
+        {
+          "path": "tests/check.py",
+          "field": "Actual w:pStyle and w:t comparison against supplied transcript"
+        }
+      ]
+    },
+    {
+      "claim": "LibreOffice 7.4.7.2 rendered the DOCX; Microsoft Word was not run.",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/tools/libreoffice"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/uncertainties/1"
+        }
+      ]
+    },
+    {
+      "claim": "The command formats supplied text and requires image-reading review beforehand; no handwriting accuracy or speed score.",
+      "evidence": [
+        {
+          "path": "source/usage.md",
+          "field": "Inputs and scope"
+        },
+        {
+          "path": "source/authorship.md",
+          "field": "Review record; manual review time not measured"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/human_steps"
+        }
+      ]
+    },
+    {
+      "claim": "Struck-out words are omitted and omissions recorded at review; none occur in this page.",
+      "evidence": [
+        {
+          "path": "source/authorship.md",
+          "field": "The unresolved mark is not a struck-out word; no struck-out words occur"
+        },
+        {
+          "path": "output/mapping.json",
+          "field": "/crossed_out_policy"
+        },
+        {
+          "path": "input/page-01.png",
+          "frame": "full image, visually reviewed"
+        }
+      ]
+    },
+    {
+      "claim": "Checks reject invalid page/block mapping, missing uncertainty entries and a damaged DOCX value.",
+      "evidence": [
+        {
+          "path": "tests/regression.py",
+          "field": "Input mutation and actual DOCX mutation tests"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/checks/1"
+        }
+      ]
+    },
+    {
+      "claim": "First-screen proof at phone and desktop dimensions.",
+      "evidence": [
+        {
+          "path": "output/page-previews/screenshots.json",
+          "field": "/screenshots"
+        },
+        {
+          "path": "proof/visual-review.md",
+          "field": "Visual inspection of all delivered page/document renders"
+        }
+      ],
+      "measurement": "Chromium at CSS viewports 390×844 and 1366×768, device scale 1; offline local GitHub-style frame and Pages layout, not live captures."
+    },
+    {
+      "claim": "Fixed price in a written scope, sent within hours.",
+      "evidence": [
+        {
+          "path": "README.md",
+          "field": "Price line"
+        }
+      ],
+      "boundary": "Offer wording for scoped work, not a measured delivery-time result."
+    },
+    {
+      "claim": "The stock instruction retains the original number 12.",
+      "evidence": [
+        {
+          "path": "input/transcript.json",
+          "field": "/pages/0/blocks/1/text"
+        },
+        {
+          "path": "input/page-01.png",
+          "frame": "middle line"
+        },
+        {
+          "path": "output/notes.docx",
+          "field": "word/document.xml, paragraph 1"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/checks/0"
+        }
+      ]
+    }
+  ]
+}

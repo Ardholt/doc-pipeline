@@ -1,0 +1,31 @@
+title: Document pipelines
+description: Document repairs with files, measurements and reproducible checks.
+repository: Ardholt/doc-pipeline
+url: https://ardholt.github.io
+baseurl: /doc-pipeline
+lang: en-GB
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+titles_from_headings:
+  strip_title: false
+relative_links:
+  enabled: true
+  collections: false
+include:
+  - README.md
+exclude:
+  - harness
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

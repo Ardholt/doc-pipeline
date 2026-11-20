@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "scope": "Case file tree.",
+  "scanner": "Python standard-library static publication audit",
+  "scanner_version": "3.11.2",
+  "coverage": [
+    "All files hashed and inventoried",
+    "Credential-shaped strings and email-shaped text in public text files; email/private-path checks in DOCX XML",
+    "PNG ancillary metadata",
+    "DOCX package properties, macros, embedded payloads and external relationships",
+    "PDF active-content and attachment signatures",
+    "Unexpected native executable headers and private file paths"
+  ],
+  "limitations": [
+    "Static inspection is not an antivirus signature database or a malware-free certification.",
+    "Live links are not fetched in this offline scan."
+  ],
+  "files": [
+    {
+      "file": "Dockerfile",
+      "bytes": 1230,
+      "sha256": "1fb9c2e21bc5a443e3e2918ff8adf339db5f2b30ca1979d244f9d5e8ba1921d0"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3673,
+      "sha256": "fb42dbab11af66eee307aafe822bc1d7741d5181a261a50841920d7bc82848a6"
+    },
+    {
+      "file": "input/page-01.png",
+      "bytes": 46388,
+      "sha256": "d8a34af8785e0a76ac8ff33f6ebbf4d3c1b156657a5e6168ef9df35a24c6d3ca"
+    },
+    {
+      "file": "input/pages.json",
+      "bytes": 69,
+      "sha256": "870b89bf1a0a2e515717cadd6560aee35f8d30a5fc282d15d880f514689a4d1c"
+    },
+    {
+      "file": "input/transcript.json",
+      "bytes": 384,
+      "sha256": "56cac114f96dd00f3859d82ac2bd8226ec7cb7ae4f44a36e380f9684c5bcfe54"
+    },
+    {
+      "file": "media/hero.png",
+      "bytes": 34773,
+      "sha256": "24608349ea687ca6f8d3a457019629dc6788ea4322dc2c7158b7846d231b5fbd"
+    },
+    {
+      "file": "output/hero.png",
+      "bytes": 34773,
+      "sha256": "24608349ea687ca6f8d3a457019629dc6788ea4322dc2c7158b7846d231b5fbd"
+    },
+    {
+      "file": "output/mapping.json",
+      "bytes": 745,
+      "sha256": "fd14171c28b04e33ebd6d657837c1ecbed75fa5ce1eb9f214cb7ca8e15dd4c73"
+    },
+    {
+      "file": "output/notes.docx",
+      "bytes": 33686,
+      "sha256": "60e5455979068cc51eb711f6950d6126191279c70a2c712dbea6b03c4d0a07f6"
+    },
+    {
+      "file": "output/notes.txt",
+      "bytes": 49,
+      "sha256": "84bb577677c49cd54ba1774883e850b54c779501e239a96fc4bd10e2aec6b89a"
+    },
+    {
+      "file": "output/packages.tsv",
+      "bytes": 10436,
+      "sha256": "38bf8e780496f197a4f1dfb229bf2dfe9f0864fdd863af87af4c2fa4b9c5b244"
+    },
+    {
+      "file": "output/page-previews/github-1366.png",
+      "bytes": 107162,
+      "sha256": "a6d718ea09a2248067291352f4f9f8b0fe4279f0bd25ef32f93ba52bc2946d62"
+    },
+    {
+      "file": "output/page-previews/github-390.png",
+      "bytes": 62968,
+      "sha256": "694516c727237472e34d775c5bce5fe046d41c05531627e29aae44fd5f715fa0"
+    },
+    {
+      "file": "output/page-previews/pages-1366.png",
+      "bytes": 104629,
+      "sha256": "848ec5f6c376718750e03116caa31555d118cc3f4174124cc11f12733f3ef758"
+    },
+    {
+      "file": "output/page-previews/pages-390.png",
+      "bytes": 86631,
+      "sha256": "4d2dbfe506268496a9eda8317a6feb3fbf4b60a45d9f9305d0cc9a2d135a339a"
+    },
+    {
+      "file": "output/page-previews/screenshots.json",
+      "bytes": 816,
+      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+    },
+    {
+      "file": "output/pdf-fonts.txt",
+      "bytes": 376,
+      "sha256": "6d18904f06b78bd8dfefed1dc0ae21af30d91d7bf7de060fa63cfbc4f0015575"
+    },
+    {
+      "file": "output/preview.pdf",
+      "bytes": 13166,
+      "sha256": "d24d9c06aa44d3a82e3d45e588dc660de357c22a948826fe8477ac14f15449e6"
+    },
+    {
+      "file": "output/preview.png",
+      "bytes": 22367,
+      "sha256": "7430a92ab4f1ae65475295f3b912b9bc356a1fdd5e0f6c87dd41836d42aa9bf2"
+    },
+    {
+      "file": "output/report.json",
+      "bytes": 4032,
+      "sha256": "5d4fe47951c8e4b03e358cca442f06f920e6815d123bc607ba096440537ee18e"
+    },
+    {
+      "file": "output/runtime.json",
+      "bytes": 329,
+      "sha256": "8403c26d3ad610a96ef99f61901550e1a5974a6c13684e29f43e37fb0b7fce0b"
+    },
+    {
+      "file": "output/uncertainties.json",
+      "bytes": 248,
+      "sha256": "a96a1c2f5aefd23d4320ec356dc2b37db2cba00a599c5f0aab41d422a8ab7e9a"
+    },
+    {
+      "file": "proof/boundary-checks.json",
+      "bytes": 1787,
+      "sha256": "e8d012a2e5f6a8e0e8a91afc22ed3106b0b1fbe53427c97a12a37f781e8dcb82"
+    },
+    {
+      "file": "proof/claims.json",
+      "bytes": 5993,
+      "sha256": "b14ab227cc8c19fd8eccd22cb1d24dbba320e82b2a167a839cfbcec5e65385cb"
+    },
+    {
+      "file": "proof/links.json",
+      "bytes": 3688,
+      "sha256": "a95e8b519ab70e72096a50607e2317a10c1c74b1b517d28b5961dd0c7645850a"
+    },
+    {
+      "file": "proof/report.json",
+      "bytes": 4032,
+      "sha256": "5d4fe47951c8e4b03e358cca442f06f920e6815d123bc607ba096440537ee18e"
+    },
+    {
+      "file": "proof/reproducibility.json",
+      "bytes": 281,
+      "sha256": "1b49922327fc4e28eee232dea83a959131453b401d5ce3f2c180908ee4417ea1"
+    },
+    {
+      "file": "proof/run.txt",
+      "bytes": 315,
+      "sha256": "28a37d56d813e4ecd063d7e6fc6c5b33b338c6ee8cf4fab8bbae4fe6a6dd818c"
+    },
+    {
+      "file": "proof/runtime.json",
+      "bytes": 329,
+      "sha256": "8403c26d3ad610a96ef99f61901550e1a5974a6c13684e29f43e37fb0b7fce0b"
+    },
+    {
+      "file": "proof/source-raster-check.json",
+      "bytes": 498,
+      "sha256": "60d8e720d9bce8e631a1cff18a8191b3aa2c2a91939fd59762afb83b0ebbf4e6"
+    },
+    {
+      "file": "proof/visual-review.md",
+      "bytes": 2134,
+      "sha256": "b0d5daeccd5e6d3ee97c6e482be1cbe7a52317812342dd690974b257cf1804f6"
+    },
+    {
+      "file": "run.sh",
+      "bytes": 259,
+      "sha256": "78e7a2633cf2ca64e6d0c33bdaf5b5e9a913edd8a0d28eebeffac3939803edb4"
+    },
+    {
+      "file": "source/authorship.md",
+      "bytes": 1424,
+      "sha256": "b41f2b058d7ca7bd4b168477fb9b49cd2c22d424df38d028001e58cd1315a037"
+    },
+    {
+      "file": "source/fonts/Inter-Regular.ttf",
+      "bytes": 411640,
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+    },
+    {
+      "file": "source/fonts/Inter-SemiBold.ttf",
+      "bytes": 419744,
+      "sha256": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3"
+    },
+    {
+      "file": "source/fonts/LICENSE-Inter.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "file": "source/model.py",
+      "bytes": 4499,
+      "sha256": "4dfe632a271b134b6be512d0da4be97b6b63e999ee8ca78a57ed521de7edffd8"
+    },
+    {
+      "file": "source/pen-strokes.svg",
+      "bytes": 2223,
+      "sha256": "8ef321df59809de50e41b3c9cd262122ba381da31434fbfc84bdde337bfba305"
+    },
+    {
+      "file": "source/pipeline.py",
+      "bytes": 11373,
+      "sha256": "dca3e6033eee31d7b06f9bc7deb92798f40577cacdd514f29e2c510269a5cb43"
+    },
+    {
+      "file": "source/publish-check.py",
+      "bytes": 3073,
+      "sha256": "2357d7a40f100ce1c4b3c042bb7846520a01b503e2a8e9e7d392564922fb8d0e"
+    },
+    {
+      "file": "source/usage.md",
+      "bytes": 2730,
+      "sha256": "174381477013a353beb6a20aaeb2743ef5a387656b32b1e0c389d6e0aa54ce97"
+    },
+    {
+      "file": "tests/check.py",
+      "bytes": 3196,
+      "sha256": "a07af7d9a7808eeaf532e9bfc99363396416c3d8627b34448b8360b856c217c2"
+    },
+    {
+      "file": "tests/prepare-boundary.py",
+      "bytes": 905,
+      "sha256": "cfd0bbac81e3bcade6fa548718b0126ef9984c40d1711c66262ab35ee59fe50f"
+    },
+    {
+      "file": "tests/provenance.py",
+      "bytes": 1436,
+      "sha256": "228dcacec68e527e5a89f7d0ccd1a3ea36ba3c7777579113892911b243de19ed"
+    },
+    {
+      "file": "tests/regression.py",
+      "bytes": 1782,
+      "sha256": "4ca4d2cf9ea361893ad75b8e1c8c4d1e83f065121456591e397855844572cd73"
+    }
+  ],
+  "issues": [],
+  "status": "PASS"
+}

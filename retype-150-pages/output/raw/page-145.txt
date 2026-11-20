@@ -1,0 +1,19 @@
+HOLDING AREA / 145
+
+Record D10-10. Round 10. Sheet 145.
+
+The holding area separates unresolved items from ready stock. Each tray needs one clear reason for being held and a next action that can be completed. A short specific note is better than a broad word that leaves the next reader guessing.
+
+The tray for item K145 showed a small difference in the tally. The affected group was counted again from the beginning. The first tally remains in the record beside the second result.
+
+Review the oldest tray first, but do not release it merely because it has waited. Check that the stated reason has been resolved and preserve the evidence of that check. Move the material and its note together when the status changes.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K145	26	1	27
+R145	30	2	32
+
+The first row records 26 ready pieces and 1 held pieces, giving 27 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D10-10 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

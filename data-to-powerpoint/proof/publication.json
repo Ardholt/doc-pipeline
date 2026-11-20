@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "scope": "Exact case folder, including recursive PPTX/XLSX package bytes; local README links.",
+  "scanner": "Python standard-library static credential/contact, active-content and archive checks; no signature antivirus engine was available.",
+  "inventory": [
+    {
+      "path": "Dockerfile",
+      "bytes": 1277,
+      "sha256": "f6631a3a91452458491824f500c950c60f04225e672ce662efedfd2e472c1f94"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "c0debea6e3254ecdcbafaa45e77895d2b0a9739e79f05a49774ffb8435771d94"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3582,
+      "sha256": "c1e0d5baf21ab638f497522276ef2fc8f73f16865de373bc3aaa82d538daa013"
+    },
+    {
+      "path": "input/data.csv",
+      "bytes": 269,
+      "sha256": "2b48feecd497ad932a8e1a2bd0aac267d5ec825739d09201558f3ea79e977c80"
+    },
+    {
+      "path": "input/deck.json",
+      "bytes": 186,
+      "sha256": "54e20b05a8b5348424c9e2343c0a402bbef79a827b7ecfa7422aeffed8b4756d"
+    },
+    {
+      "path": "media/hero.png",
+      "bytes": 107840,
+      "sha256": "c70f6b49b49f914f83b69d6981bf4b6c90cc3c710730e8d9b2ca224538da2805"
+    },
+    {
+      "path": "output/acceptance.json",
+      "bytes": 2160,
+      "sha256": "94e38597c9ab9d2ba4e33fb7d16b9237c67dcf30c20e269d90f497702d34e557"
+    },
+    {
+      "path": "output/acceptance.log",
+      "bytes": 74,
+      "sha256": "4e6ec99dd9ee212d28bc23a6fff6d63f01cf1a41604044405acdff29b16cd032"
+    },
+    {
+      "path": "output/arguments.log",
+      "bytes": 2755,
+      "sha256": "8037ab1d4bf7770eb099fbc0424af54da309ee72737b1193e7990a560aae225f"
+    },
+    {
+      "path": "output/chart-detail.png",
+      "bytes": 31370,
+      "sha256": "844688b6a3a77e66309b88492e67d73c378d40e2ce3f3f2cd5ba49cb7cdc703e"
+    },
+    {
+      "path": "output/check.log",
+      "bytes": 242,
+      "sha256": "71bc6f1a41b462cf9f20b5a1db5399b4313b0e8a5a8d01ce2fc1e25c43dd12d8"
+    },
+    {
+      "path": "output/claims.json",
+      "bytes": 836,
+      "sha256": "8d4717dd04d0c0f5a0f1c7a5e2902ec45001215e6460d64a588c4e6ec5b907c9"
+    },
+    {
+      "path": "output/contact-sheet.png",
+      "bytes": 311867,
+      "sha256": "5a6039dd6c7526181b538217b63b62c54010ed3432b4b888689eb6d8404027e8"
+    },
+    {
+      "path": "output/deck.pdf",
+      "bytes": 37842,
+      "sha256": "be8e097767a60eec8ed814ab76f15e44122e18b60170c37123fd5dd50ad252a5"
+    },
+    {
+      "path": "output/deck.pptx",
+      "bytes": 69595,
+      "sha256": "524bfe9bae7877dfdacea41d1d94dcb40267f8ab1e6b1ccd25f1be0d1b1106f2"
+    },
+    {
+      "path": "output/font-inventory.json",
+      "bytes": 1298,
+      "sha256": "d454a7d2ecadf214ba343c810757b2da0ca1c03a82cfa39bc107ff99a5a69182"
+    },
+    {
+      "path": "output/font-licences/DejaVu.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "output/hero-map.json",
+      "bytes": 414,
+      "sha256": "7488a1a2a334d4a76a311302d49c03b235a3c8020f351cbf24b35716306fd607"
+    },
+    {
+      "path": "output/hero.png",
+      "bytes": 107840,
+      "sha256": "c70f6b49b49f914f83b69d6981bf4b6c90cc3c710730e8d9b2ca224538da2805"
+    },
+    {
+      "path": "output/image-identity.txt",
+      "bytes": 72,
+      "sha256": "3dc56e7f81838bbeba2b39371371d82d49552b35b7a856aa2f9027b55d1a01da"
+    },
+    {
+      "path": "output/packages.tsv",
+      "bytes": 10475,
+      "sha256": "191046ee30e194e5bca7e8ac9bdb09f23fae02e75193ab6ea5555635c64d5fcb"
+    },
+    {
+      "path": "output/page-previews/github-1366.png",
+      "bytes": 98540,
+      "sha256": "d138c48d3325880ca312044942860c582072089b0dec3cca918e7ffdc5080a73"
+    },
+    {
+      "path": "output/page-previews/github-390.png",
+      "bytes": 52093,
+      "sha256": "ab261ed58adc2586647100141ec61d17b056ed86adcbba551ec859b0b56424a4"
+    },
+    {
+      "path": "output/page-previews/pages-1366.png",
+      "bytes": 92352,
+      "sha256": "b4661e29549d2519fc338fa6e110555e1469cde86447e80fd199c31fcb662558"
+    },
+    {
+      "path": "output/page-previews/pages-390.png",
+      "bytes": 62108,
+      "sha256": "1c41cd3b4713b5aec27a361f83070b47762a557cd87262c7f78047a407bd7ba4"
+    },
+    {
+      "path": "output/page-previews/screenshots.json",
+      "bytes": 816,
+      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+    },
+    {
+      "path": "output/pdf-fonts.txt",
+      "bytes": 376,
+      "sha256": "eac64cfad231fc1955f970ac7da27a8313f814c87d4b8e816ee4aca1ebc0a16f"
+    },
+    {
+      "path": "output/regression.json",
+      "bytes": 1780,
+      "sha256": "cef95ba93110d24725967e4c4f76ee25463f2a520ed42624f085ac114fa148c6"
+    },
+    {
+      "path": "output/report.json",
+      "bytes": 4169,
+      "sha256": "03f3607d4d66116f2108f94a53b32a6a8d2e5358f7938922068131e826288f0c"
+    },
+    {
+      "path": "output/run.log",
+      "bytes": 2665,
+      "sha256": "25a6f5d9422aea69fc60bcdf8dbf946db543a3e501777156e1555df9066b148b"
+    },
+    {
+      "path": "output/runtime.json",
+      "bytes": 311,
+      "sha256": "c91b2cdbd03bcb980dc85065e5b7a28291e699cc38f09e68a87bc01701888354"
+    },
+    {
+      "path": "output/slides/slide-01.png",
+      "bytes": 66567,
+      "sha256": "3411bb1add708387e6b9992913fe68c36995e16bf36c11d656dcba21f3a9f700"
+    },
+    {
+      "path": "output/slides/slide-02.png",
+      "bytes": 64489,
+      "sha256": "563b9a34ae065f964a956315c05e9b0d132fde72b564d79e5c3c236f4c1aa53c"
+    },
+    {
+      "path": "output/slides/slide-03.png",
+      "bytes": 96564,
+      "sha256": "2fd037f6b5c542a9e8c5eaf72c327d9abb9ad64f73b9cd12df15694e3fcffa6d"
+    },
+    {
+      "path": "output/slides/slide-04.png",
+      "bytes": 110109,
+      "sha256": "0629cbc75d2074d52e5b3db5c44d51636578b5132ff68e95fb65d1f980daa5a8"
+    },
+    {
+      "path": "output/slides/slide-05.png",
+      "bytes": 138021,
+      "sha256": "8f873a6bea940868466c5badc8d35dd09b9ff65a859ea477cef3aa934dbe4dc1"
+    },
+    {
+      "path": "output/source-map.json",
+      "bytes": 4359,
+      "sha256": "d6917fd388465474718173f6fc339480b876a9cf5198e393c66c0528f18b95d8"
+    },
+    {
+      "path": "proof/acceptance.json",
+      "bytes": 2160,
+      "sha256": "94e38597c9ab9d2ba4e33fb7d16b9237c67dcf30c20e269d90f497702d34e557"
+    },
+    {
+      "path": "proof/acceptance.log",
+      "bytes": 74,
+      "sha256": "4e6ec99dd9ee212d28bc23a6fff6d63f01cf1a41604044405acdff29b16cd032"
+    },
+    {
+      "path": "proof/arguments.log",
+      "bytes": 2755,
+      "sha256": "8037ab1d4bf7770eb099fbc0424af54da309ee72737b1193e7990a560aae225f"
+    },
+    {
+      "path": "proof/asset-manifest.json",
+      "bytes": 26788,
+      "sha256": "3137f373ff79b6a4b10565fc4dcea5c296d2b5ee1884240e371e00987e83e89d"
+    },
+    {
+      "path": "proof/check.log",
+      "bytes": 242,
+      "sha256": "71bc6f1a41b462cf9f20b5a1db5399b4313b0e8a5a8d01ce2fc1e25c43dd12d8"
+    },
+    {
+      "path": "proof/claims.json",
+      "bytes": 3667,
+      "sha256": "ed74187b416aa02307335c947d34e9ddd5bdebab3e784b2cfbcaf4443e610974"
+    },
+    {
+      "path": "proof/image-identity.txt",
+      "bytes": 72,
+      "sha256": "3dc56e7f81838bbeba2b39371371d82d49552b35b7a856aa2f9027b55d1a01da"
+    },
+    {
+      "path": "proof/page-previews/github-1366.png",
+      "bytes": 98540,
+      "sha256": "d138c48d3325880ca312044942860c582072089b0dec3cca918e7ffdc5080a73"
+    },
+    {
+      "path": "proof/page-previews/github-390.png",
+      "bytes": 52093,
+      "sha256": "ab261ed58adc2586647100141ec61d17b056ed86adcbba551ec859b0b56424a4"
+    },
+    {
+      "path": "proof/page-previews/pages-1366.png",
+      "bytes": 92352,
+      "sha256": "b4661e29549d2519fc338fa6e110555e1469cde86447e80fd199c31fcb662558"
+    },
+    {
+      "path": "proof/page-previews/pages-390.png",
+      "bytes": 62108,
+      "sha256": "1c41cd3b4713b5aec27a361f83070b47762a557cd87262c7f78047a407bd7ba4"
+    },
+    {
+      "path": "proof/page-previews/screenshots.json",
+      "bytes": 816,
+      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4"
+    },
+    {
+      "path": "proof/regression.json",
+      "bytes": 1780,
+      "sha256": "cef95ba93110d24725967e4c4f76ee25463f2a520ed42624f085ac114fa148c6"
+    },
+    {
+      "path": "proof/report.json",
+      "bytes": 4169,
+      "sha256": "03f3607d4d66116f2108f94a53b32a6a8d2e5358f7938922068131e826288f0c"
+    },
+    {
+      "path": "proof/run.log",
+      "bytes": 2665,
+      "sha256": "25a6f5d9422aea69fc60bcdf8dbf946db543a3e501777156e1555df9066b148b"
+    },
+    {
+      "path": "proof/runtime.json",
+      "bytes": 311,
+      "sha256": "c91b2cdbd03bcb980dc85065e5b7a28291e699cc38f09e68a87bc01701888354"
+    },
+    {
+      "path": "proof/visual-review.json",
+      "bytes": 4003,
+      "sha256": "16fb46704e0e6af910e93267e52f95bceb7931e609049eaafc8491e50cf47407"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 319,
+      "sha256": "a97291941d59f8bee8500df9d4dfde6fabfcfff609bf8ac7908bd53d5fd40956"
+    },
+    {
+      "path": "source/USAGE.md",
+      "bytes": 3381,
+      "sha256": "6561b470f7e5367debe84b609f445da8537344dd14960997bf30a0d10d29747d"
+    },
+    {
+      "path": "source/asset_manifest.py",
+      "bytes": 2005,
+      "sha256": "10d89e4647e50deac48cfcf6fb108fb29e438e273002d6ff4d7e5230fbfeb365"
+    },
+    {
+      "path": "source/data.py",
+      "bytes": 3863,
+      "sha256": "19db21e45c543ea77b95abd9802a902cb32e5f9df70f92aaf221583dccae83de"
+    },
+    {
+      "path": "source/fonts.conf",
+      "bytes": 465,
+      "sha256": "4f5a05f9e8d020ebb9ccb4f7bec27212f52b5106115c7978c6b631c392e50f6d"
+    },
+    {
+      "path": "source/pipeline.py",
+      "bytes": 20398,
+      "sha256": "e25c836ffd23587b58f8c65596bca42c0dd6c8ce4a0d37c828ca075af6360d46"
+    },
+    {
+      "path": "tests/acceptance.py",
+      "bytes": 3245,
+      "sha256": "b89f2461b80bfd9df63af612c00d6a49957d45e4ba7a6e01624238c2e2fe8bb0"
+    },
+    {
+      "path": "tests/acceptance.sh",
+      "bytes": 895,
+      "sha256": "2cab302f7f5f41a639a5ae21008e680f7e601af26673783d498deb39a44d0aac"
+    },
+    {
+      "path": "tests/check.py",
+      "bytes": 9274,
+      "sha256": "e570e63bf72a55c3b3aba8e63ad6cd367d1807d9db73cef18b63b9f5d4150a4b"
+    },
+    {
+      "path": "tests/publication.py",
+      "bytes": 3098,
+      "sha256": "9c943a1af22d079a8f370457cbb47b8b2a75e4c256f3bfce0317d2e5e58f9a8b"
+    },
+    {
+      "path": "tests/regression.py",
+      "bytes": 3864,
+      "sha256": "e5750d52e2153f7bda3a5ff20f0e7dfb76da162fe22d83a669aa9d22e33ef67e"
+    }
+  ],
+  "local_links": [
+    "../LICENSE",
+    "../README.md",
+    "input/data.csv",
+    "input/deck.json",
+    "media/hero.png",
+    "output/chart-detail.png",
+    "output/contact-sheet.png",
+    "output/deck.pdf",
+    "output/deck.pptx",
+    "output/hero-map.json",
+    "output/report.json",
+    "output/runtime.json",
+    "output/source-map.json",
+    "source/USAGE.md",
+    "tests/check.py",
+    "tests/regression.py"
+  ],
+  "external_links": [
+    "https://github.com/Ardholt/doc-pipeline",
+    "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml",
+    "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg",
+    "https://github.com/Ardholt/doc-pipeline/blob/main/data-to-powerpoint/proof/page-previews/screenshots.json"
+  ],
+  "findings": [],
+  "passed": true
+}

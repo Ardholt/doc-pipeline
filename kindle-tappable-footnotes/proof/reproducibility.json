@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "comparison": "Two consecutive ./run.sh runs with identical inputs, on the final files, produced a byte-identical EPUB, source map, audits and report.json (the two reports are proof/first-run-report.json and proof/second-run-report.json). Runtime is recorded separately and excluded.",
+  "first_report_sha256": "36988cc238c44212a91f2cf8c52222fa467a69aa459974b351841690fd1cfba2",
+  "second_report_sha256": "36988cc238c44212a91f2cf8c52222fa467a69aa459974b351841690fd1cfba2",
+  "document_sha256": "99213994b3a7d019ae7a920d9e9eb01389f561063155dace00a2bc98d1acba90",
+  "comparison_reports": [
+    "proof/first-run-report.json",
+    "proof/second-run-report.json"
+  ],
+  "final_document_matches_verified_pair": true,
+  "final_counts_match_verified_pair": true
+}

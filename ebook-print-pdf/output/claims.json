@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "claim": "Interior page, chapter, note and embedded-font counts",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/counts"
+        }
+      ]
+    },
+    {
+      "claim": "Trim, bleed and safe margins checked from PDF bytes",
+      "evidence": [
+        {
+          "path": "output/geometry.json",
+          "field": "/pages"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/checks"
+        }
+      ]
+    },
+    {
+      "claim": "Source-derived before/after figure",
+      "evidence": [
+        {
+          "path": "output/render-map.json",
+          "field": "/hero"
+        }
+      ]
+    }
+  ]
+}

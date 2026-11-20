@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "case": "kindle-tappable-footnotes",
+  "input_hashes": {
+    "manuscript.md": "5685238872cad0a6e648d8a73804b514ca8743da4304afcd3bfc3016c0a2d34f",
+    "book.json": "18e3b65f9a74c2b31337601aff886573fabdc113289ae1e157fe8b188879438c"
+  },
+  "output_hashes": {
+    "book.epub": "99213994b3a7d019ae7a920d9e9eb01389f561063155dace00a2bc98d1acba90",
+    "source-map.json": "f5419ebc6bd7874b32ba591bb207bb7b6a868b385c27d020206ad3f557253ba1",
+    "epubcheck.log": "42f2ce461c5b52f682d4c2a85dd87e636118c593580f79791b96e2ae4ddccba4",
+    "browser-audit.json": "0fd47be8444b0b48863392d39bdef69a79e37c47849fa2722b82724bc18e4b75",
+    "negative-tests.json": "510ecad7466580b1f20e6f73978897ec807bee90c1ecc4bf31fce474eb354991",
+    "hero.png": "fde1c59cfd79cd1b089c7e99124de3e4be0098b7ead0ef2df3fdf705dd2d6787"
+  },
+  "transformations": [
+    {
+      "operation": "parse Pandoc Markdown AST",
+      "parameters": {
+        "normalization": "Collapse Unicode whitespace to one space; remove generated note markers, note headings and return labels. Punctuation, case and Unicode are retained. Identical note bodies share one destination."
+      }
+    },
+    {
+      "operation": "deduplicate identical notes and allocate unique reference IDs",
+      "parameters": {
+        "return_policy": "one labelled backlink per reference"
+      }
+    },
+    {
+      "operation": "package reflowable EPUB 3",
+      "parameters": {
+        "spine": [
+          "chapter.xhtml",
+          "notes.xhtml"
+        ],
+        "metadata": "title, language, identifier and fixed required modified timestamp only",
+        "archive_timestamp": "2026-01-01T00:00:00Z"
+      }
+    },
+    {
+      "operation": "validate and render delivered EPUB",
+      "parameters": {
+        "browser": "Chromium",
+        "reader": "custom iframe reader",
+        "widths": [
+          390,
+          1366
+        ],
+        "text_percent": [
+          100,
+          150
+        ]
+      }
+    }
+  ],
+  "counts": {
+    "unique_notes": 18,
+    "references": 22,
+    "repeated_references": 4,
+    "browser_journeys": 88,
+    "viewport_widths_css_px": [
+      390,
+      1366
+    ],
+    "text_percent": [
+      100,
+      150
+    ],
+    "epubcheck_errors": 0,
+    "epubcheck_warnings": 0
+  },
+  "checks": [
+    {
+      "name": "EPUBCheck",
+      "passed": true,
+      "observation": "No errors or warnings; epubcheck.log"
+    },
+    {
+      "name": "source conservation",
+      "passed": true,
+      "observation": "All body and note text compared against parsed input under documented whitespace normalization; source-map.json"
+    },
+    {
+      "name": "forward and return links",
+      "passed": true,
+      "observation": "Every reference checked structurally and clicked in the browser at every width/text setting; browser-audit.json"
+    },
+    {
+      "name": "damage detection",
+      "passed": true,
+      "observation": "Broken forward, wrong return, lost body and lost note text rejected; negative-tests.json"
+    }
+  ],
+  "tools": {
+    "python": "3.11.2",
+    "pandoc": "pandoc 2.17.1.1",
+    "epubcheck": "EPUBCheck v4.2.6",
+    "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)",
+    "reader": "Custom iframe browser reader 1.0",
+    "playwright": "1.51.0",
+    "lxml": "5.3.1",
+    "Pillow": "9.4.0"
+  },
+  "uncertainties": [
+    "No Kindle device, Kindle Previewer, native note popup or KDP acceptance test was available.",
+    "Browser reader is a custom iframe reader using extracted EPUB XHTML; it is not a Kindle emulator.",
+    "Case-page screenshots are offline local renders, not published GitHub or Pages captures."
+  ],
+  "human_steps": [
+    "Original manuscript authored for this case.",
+    "Rendered reader and case-page screenshots reviewed after the run; review recorded separately in proof/visual-review.json."
+  ]
+}

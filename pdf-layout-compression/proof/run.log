@@ -1,0 +1,4 @@
+PASS: input hashes unchanged
+PASS: text, page geometry, images, metadata and visual comparison
+PASS: fixed.pdf, report.json, runtime.json and previews written
+PASS: run completed; elapsed 145 seconds (including setup)

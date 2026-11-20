@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scope": "offline conversion, rendering and content checks; excludes image build and case-page screenshots",
+  "elapsed_seconds": 7.307,
+  "limits": {
+    "cpus": 2,
+    "memory": "2g",
+    "network": "none"
+  },
+  "status": "PASS"
+}

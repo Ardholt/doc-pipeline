@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "compared_report_facts": [
+    "schema_version",
+    "case",
+    "input_hashes",
+    "transformations",
+    "counts",
+    "measurements",
+    "checks",
+    "tools",
+    "uncertainties",
+    "human_steps"
+  ],
+  "compared_docx": [
+    "absence-request-blank.docx",
+    "absence-request-filled.docx",
+    "trip-permission-blank.docx",
+    "trip-permission-filled.docx"
+  ],
+  "identical_rendered_images": [
+    "absence-request-blank.png",
+    "absence-request-filled.png",
+    "hero.png",
+    "trip-permission-blank.png",
+    "trip-permission-filled.png"
+  ],
+  "excluded": "Elapsed times, archive bytes and application-generated revision/control IDs are not a stability claim; DOCX inspection compares values, labels, controls, wrappers and row geometry."
+}

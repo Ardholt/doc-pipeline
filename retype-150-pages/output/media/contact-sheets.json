@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "output_pages": 150,
+  "sheets": [
+    "contact-001.png",
+    "contact-031.png",
+    "contact-061.png",
+    "contact-091.png",
+    "contact-121.png"
+  ],
+  "columns": 6,
+  "pages_per_sheet": 30,
+  "detail_pages": [
+    1,
+    31,
+    75,
+    121,
+    150
+  ]
+}

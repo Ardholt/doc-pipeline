@@ -1,0 +1,10 @@
+#6 DONE 0.2s
+PASS: input hashes unchanged
+PASS: text, page geometry, images, metadata and visual comparison
+PASS: fixed.pdf, report.json, runtime.json and previews written
+PASS: run completed; elapsed 10 seconds (including setup)
+PASS: existing output independently inspected; report and hashes match
+PASS: check completed; elapsed 3 seconds (including setup)
+PASS: repeat produced identical PDF bytes and report facts
+PASS: absolute paths with spaces and read-only input hashes
+PASS: missing input and overlapping paths rejected without modifying input

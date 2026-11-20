@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "claim": "Reflowable EPUB with tested tap-and-return navigation",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/book.epub",
+          "members": [
+            "EPUB/package.opf",
+            "EPUB/chapter.xhtml",
+            "EPUB/notes.xhtml"
+          ]
+        },
+        {
+          "path": "output/browser-audit.json",
+          "pointer": "/runs"
+        }
+      ]
+    },
+    {
+      "claim": "22 references to 18 notes",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "pointer": "/counts"
+        },
+        {
+          "path": "output/source-map.json",
+          "pointer": "/references"
+        }
+      ]
+    },
+    {
+      "claim": "88 completed browser journeys",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/browser-audit.json",
+          "pointer": "/runs"
+        }
+      ],
+      "calculation": "reference count × 2 viewport widths × 2 text sizes"
+    },
+    {
+      "claim": "390 and 1366 CSS pixel widths, 100% and 150% text",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/browser-audit.json",
+          "pointer": "/runs"
+        }
+      ]
+    },
+    {
+      "claim": "No EPUBCheck errors or warnings",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/epubcheck.log",
+          "line": 2
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/tools/epubcheck"
+        }
+      ]
+    },
+    {
+      "claim": "Body, Unicode, lists and notes preserved under documented normalization",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/source-map.json",
+          "pointer": ""
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/checks/1"
+        }
+      ]
+    },
+    {
+      "claim": "Damaged links and text are rejected",
+      "kind": "machine",
+      "evidence": [
+        {
+          "path": "output/negative-tests.json",
+          "pointer": "/tests"
+        }
+      ]
+    },
+    {
+      "claim": "Hero and reader images show delivered EPUB content; numbers in the figures identify notes and return passages",
+      "kind": "render",
+      "evidence": [
+        {
+          "path": "output/hero.png",
+          "frame": "complete image: passage and first note crops"
+        },
+        {
+          "path": "output/browser-audit.json",
+          "pointer": "/runs"
+        },
+        {
+          "path": "output/source-map.json",
+          "pointer": "/references"
+        }
+      ]
+    },
+    {
+      "claim": "Visual readability review is separate from automated link checks",
+      "kind": "visual review",
+      "evidence": [
+        {
+          "path": "proof/visual-review.json",
+          "pointer": "/images"
+        }
+      ]
+    },
+    {
+      "claim": "Kindle device, Previewer, native popup and KDP acceptance not tested",
+      "kind": "untested compatibility",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "pointer": "/uncertainties/0"
+        }
+      ]
+    }
+  ]
+}

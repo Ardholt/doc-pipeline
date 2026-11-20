@@ -1,0 +1,19 @@
+RECEIPT CHECK / 016
+
+Record DO2-01. Round 02. Sheet 016.
+
+A package is counted before it joins the working stock. The outer label is useful for routing, but the contents decide the record. Open one container at a time and keep its loose pieces together until the count is complete.
+
+The tray for item K016 showed a loose inner divider. The divider was lifted out and placed beside the tray. The contents stayed in their original groups while the support was checked.
+
+If the label and the contents disagree, preserve both readings in the note. A neat total is less useful than a traceable difference. Set the container aside without changing the label, then ask for a second count using the same unit.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K016	24	2	26
+R016	28	3	Syl
+
+The first row records 24 ready pieces and 2 held pieces, giving 26 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D02-01 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

@@ -1,0 +1,19 @@
+REGETRT IGHECK 7/ e121
+
+Record DO9-01. Round 09. Sheet 121.
+
+A package is counted before it joins the working stock. The outer label is useful for routing, but the contents decide the record. Open one container at a time and keep its loose pieces together until the count is complete.
+
+The tray for item K121 showed a displaced protective strip. The strip was returned to its marked position after the edge was checked. The note records both the observation and the action.
+
+If the label and the contents disagree, preserve both readings in the note. A neat total is less useful than a traceable difference. Set the container aside without changing the label, then ask for a second count using the same unit.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K121	70	2	72
+R121	74	3	Ui
+
+The first row records 70 ready pieces and 2 held pieces, giving 72 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D09-01 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

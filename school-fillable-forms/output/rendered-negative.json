@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "name": "changed saved field value",
+      "passed": true,
+      "diagnostic": "changed-value.docx: value mismatch for activity"
+    },
+    {
+      "name": "injected external document link",
+      "passed": true,
+      "diagnostic": "external-link.docx: external relationship"
+    },
+    {
+      "name": "extra rendered page",
+      "passed": true,
+      "diagnostic": "extra-page.pdf: expected one page"
+    },
+    {
+      "name": "damaged page geometry",
+      "passed": true,
+      "diagnostic": "wrong-page.pdf: page geometry changed"
+    }
+  ],
+  "passed": 4
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "Two complete offline container runs, second with absolute input/output paths containing spaces; unchanged input hashes, identical document bytes and report facts. Runtime elapsed seconds excluded.",
+  "checks": [
+    {
+      "name": "input_hashes",
+      "passed": true
+    },
+    {
+      "name": "output_hashes",
+      "passed": true
+    },
+    {
+      "name": "counts",
+      "passed": true
+    },
+    {
+      "name": "checks",
+      "passed": true
+    },
+    {
+      "name": "transformations",
+      "passed": true
+    },
+    {
+      "name": "tools",
+      "passed": true
+    }
+  ],
+  "interior_sha256": "a5f818c115f985ccaa631cd3a958442967b517d2afc1f24a670e5289c38b29ee"
+}

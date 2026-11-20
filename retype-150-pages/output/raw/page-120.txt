@@ -1,0 +1,19 @@
+CLOSING ROUND / 120
+
+Record D08-15. Round 08. Sheet 120.
+
+The closing round leaves the area understandable for the next opening. Return ready items to their marked positions and gather unresolved work into the holding area. Check that every tray has a status note before switching off the task lighting.
+
+The tray for item K120 showed a detached paper tab. The tab was kept with the tray rather than discarded. Its wording was copied into the record before a fresh tab was attached.
+
+Finish by reading the outstanding list against the physical trays. A written action without a tray may be complete; a tray without an action may be forgotten. Resolve the difference while the work is still fresh, and leave a brief reason for any remaining hold.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K120	63	1	64
+R120	67	2	69
+
+The first row records 63 ready pieces and 1 held pieces, giving 64 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D08-15 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

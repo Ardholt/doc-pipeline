@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "name": "missing page",
+      "passed": true,
+      "diagnostic": "page_count: {'before': 3, 'after': 2}"
+    },
+    {
+      "name": "changed text",
+      "passed": true,
+      "diagnostic": "page_1_text: {'input_words': 68, 'output_words': 64, 'comparison': 'exact words in page reading order; whitespace normalized'}"
+    },
+    {
+      "name": "cropped page",
+      "passed": true,
+      "diagnostic": "page_1_geometry: {'media_box_pt': [0.0, 0.0, 595.28, 841.89], 'rotation': 0}"
+    },
+    {
+      "name": "missing image",
+      "passed": true,
+      "diagnostic": "page_1_images: {'before': 1, 'after': 0}"
+    },
+    {
+      "name": "encrypted input",
+      "passed": true,
+      "diagnostic": "encrypted input.pdf is not supported"
+    },
+    {
+      "name": "malformed input",
+      "passed": true,
+      "diagnostic": "malformed input.pdf: PdfReadError"
+    },
+    {
+      "name": "missing input",
+      "passed": true,
+      "diagnostic": "missing input file: input.pdf"
+    },
+    {
+      "name": "annotation before processing",
+      "passed": true,
+      "diagnostic": "page 1: annotations/actions require separate review; nothing processed"
+    },
+    {
+      "name": "out-of-range margin",
+      "passed": true,
+      "diagnostic": "margin_mm must be 8–20"
+    },
+    {
+      "name": "wrong value type",
+      "passed": true,
+      "diagnostic": "repair.json: margin_mm must be a finite number"
+    },
+    {
+      "name": "authored reference matches every output word",
+      "passed": true
+    },
+    {
+      "name": "physical quarter-turn text conservation",
+      "passed": true
+    },
+    {
+      "name": "ten-page input, padded preview filenames, margin 20 mm and image setting 200 dpi",
+      "passed": true,
+      "observed_pages": 10
+    }
+  ]
+}

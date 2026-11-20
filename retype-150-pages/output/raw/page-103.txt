@@ -1,0 +1,19 @@
+REPEAT CHECK / 103
+
+Record DOQ7-13. Round 07. Sheet 103.
+
+A repeat check should use the same method as the first check unless a change is recorded. Start with the same unit, position and grouping. This makes it possible to tell whether a different result comes from the material or from the method.
+
+The tray for item K103 showed a light scuff near the rim. The scuff was compared with the earlier condition note. It was kept in the record even though it did not prevent the next check.
+
+Do not erase the first result after a second result is obtained. Keep both values and describe the reason for repeating the work. Agreement supports the record; disagreement points to a question that still needs attention.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K103	50	4	54
+R103	54	5	59
+
+The first row records 50 ready pieces and 4 held pieces, giving 54 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record DO7-13 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

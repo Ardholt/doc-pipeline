@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case": "data-to-powerpoint",
+  "recipe": "harness/Dockerfile",
+  "case_recipe": "data-to-powerpoint/Dockerfile",
+  "local_image": "dp-deck:1",
+  "base": "debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+  "extra_apt": [
+    "libreoffice-impress=4:7.4.7-1+deb12u14"
+  ],
+  "pip": [
+    "pypdf==5.1.0",
+    "python-pptx==1.0.2",
+    "XlsxWriter==3.3.1",
+    "lxml==6.1.3",
+    "typing-extensions==4.16.0"
+  ],
+  "system_pins": {
+    "python3": "3.11.2-1+b1",
+    "python3-pil": "9.4.0-1.1+deb12u1",
+    "python3-markdown": "3.4.1-2+deb12u1",
+    "poppler-utils": "22.12.0-2+deb12u3",
+    "chromium": "156.0.8078.79-1~deb12u1",
+    "fonts-dejavu-core": "2.37-6",
+    "fonts-liberation": "1:1.07.4-11"
+  },
+  "fonts_used": [
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+      "licence": "Bitstream Vera licence; DejaVu changes public domain",
+      "notice": "data-to-powerpoint/output/font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+      "licence": "Bitstream Vera licence; DejaVu changes public domain",
+      "notice": "data-to-powerpoint/output/font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+      "use": "offline case-page headings",
+      "licence": "Bitstream Vera licence; DejaVu changes public domain",
+      "notice": "data-to-powerpoint/output/font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+      "use": "offline case-page code and labels",
+      "licence": "Bitstream Vera licence; DejaVu changes public domain",
+      "notice": "data-to-powerpoint/output/font-licences/DejaVu.txt"
+    }
+  ],
+  "resolved_apt_inventory": "data-to-powerpoint/output/packages.tsv",
+  "actual_application_versions": "data-to-powerpoint/output/report.json#/tools",
+  "dependency_policy": "Base digest, direct apt pins, and all pip dependencies pinned. Remaining apt dependencies are resolved by the pinned direct packages and recorded in packages.tsv; mirrors must still carry the requested versions.",
+  "ci_actions": {
+    "actions/checkout": "11bd71901bbe5b1630ceea73d27597364c9af683",
+    "actions/upload-artifact": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+  },
+  "fonts_available_inventory": "data-to-powerpoint/output/font-inventory.json",
+  "font_notices": [
+    "data-to-powerpoint/output/font-licences/DejaVu.txt"
+  ],
+  "font_configuration": "data-to-powerpoint/source/fonts.conf",
+  "font_policy": "Only DejaVu fonts are visible to document and page renderers. Other font packages in the shared base are not used by this case.",
+  "built_image_id": "sha256:f4ccf03f2a754bb35b40eef79a502e8f0406996655c967e259b3528cda31264a"
+}

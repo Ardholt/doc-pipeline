@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "scope": "stdlib schema and OOXML checks; no LibreOffice or rendered PDF validation",
+  "checks": [
+    {
+      "name": "unsupported schema",
+      "passed": true
+    },
+    {
+      "name": "boolean schema",
+      "passed": true
+    },
+    {
+      "name": "unknown field type",
+      "passed": true
+    },
+    {
+      "name": "duplicate form ID",
+      "passed": true
+    },
+    {
+      "name": "duplicate field ID",
+      "passed": true
+    },
+    {
+      "name": "path traversal ID",
+      "passed": true
+    },
+    {
+      "name": "overlong text",
+      "passed": true
+    },
+    {
+      "name": "too many lines",
+      "passed": true
+    },
+    {
+      "name": "wrong checkbox value",
+      "passed": true
+    },
+    {
+      "name": "missing required value",
+      "passed": true
+    },
+    {
+      "name": "unknown supplied field",
+      "passed": true
+    },
+    {
+      "name": "unsupported maximum",
+      "passed": true
+    },
+    {
+      "name": "checkbox maximum",
+      "passed": true
+    },
+    {
+      "name": "control characters",
+      "passed": true
+    },
+    {
+      "name": "missing inputs",
+      "passed": true
+    },
+    {
+      "name": "deterministic DOCX generation and valid controls",
+      "passed": true
+    },
+    {
+      "name": "damaged control",
+      "passed": true
+    },
+    {
+      "name": "missing label",
+      "passed": true
+    },
+    {
+      "name": "changed fixed row",
+      "passed": true
+    },
+    {
+      "name": "selected blank checkbox",
+      "passed": true
+    },
+    {
+      "name": "changed blank value",
+      "passed": true
+    },
+    {
+      "name": "external relationship",
+      "passed": true
+    }
+  ],
+  "passed": 22
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "scope": "Visual layout inspection of the exact delivered pixels; not proofreading every word.",
+  "reviewed_files": [
+    {
+      "path": "media/hero.png",
+      "sha256": "82f21721f7726b80d57656877304fdccd1d363b4ef08c20be2c6db2ed21fbd85"
+    },
+    {
+      "path": "output/media/contact-001.png",
+      "sha256": "49c2aa8186aec71377652fe0b369b5b344e597ad3be29b1609a8e170afeaa4b3"
+    },
+    {
+      "path": "output/media/contact-031.png",
+      "sha256": "2890fb5b3d1744e77ce16f6b3b38f60f1c0ced6c5f33cf587eaf40ac06ccabae"
+    },
+    {
+      "path": "output/media/contact-061.png",
+      "sha256": "149bb8aac9f5449d334d74d76751d2465b1c6481613b53b488c0527d6d7a3ac9"
+    },
+    {
+      "path": "output/media/contact-091.png",
+      "sha256": "67f73f1434560f4df266405b5e913f1fa5da9b8757dcfece15855c222e72f355"
+    },
+    {
+      "path": "output/media/contact-121.png",
+      "sha256": "da8bda16ed880932f4adde39e6918a933cd03204dfcd4f8b9220984dccdc2428"
+    },
+    {
+      "path": "output/media/detail-001.png",
+      "sha256": "7c7e4aeb4606947b74a6661a34cfe910da7a65f7a53e10169942f8c2c1b2f128"
+    },
+    {
+      "path": "output/media/detail-031.png",
+      "sha256": "3717c876a70ca9988e45172b46d521bdb1cbeb58c777b69c4710562bd45163c5"
+    },
+    {
+      "path": "output/media/detail-075.png",
+      "sha256": "6d8754c2964db2dfacf2b88637709bbb13f18fe65dca6ac623effdfe68b3febd"
+    },
+    {
+      "path": "output/media/detail-121.png",
+      "sha256": "028ec31af6dc05df83c880eefaa4eae0510302ab98c5fb6a8676d39a3688df08"
+    },
+    {
+      "path": "output/media/detail-150.png",
+      "sha256": "55339894054611edb1fa2f7c2023c42003e75dd94d5793bc3778c79a23edb6c2"
+    },
+    {
+      "path": "proof/page-previews/github-1366.png",
+      "sha256": "ec0ee95147b67d99783189c1a0f48c2caa606eb496d98dcc8bc11da6f7658db8"
+    },
+    {
+      "path": "proof/page-previews/github-390.png",
+      "sha256": "c9ebe8e5c00de0edb7eac400d91286fb09ab36184ec9be028cad57b372a7af8d"
+    },
+    {
+      "path": "proof/page-previews/pages-1366.png",
+      "sha256": "73c1ec00f1441fa2a31ccf30950eeb3e3b6e4953467d6c128a4cb490c911d409"
+    },
+    {
+      "path": "proof/page-previews/pages-390.png",
+      "sha256": "90db17691574edfccebcc993afcb8e08ac7e625c05565e8c941b33a9379c0fa4"
+    }
+  ],
+  "observations": [
+    "All PDF pages were inspected in contact sheets. Larger views cover pages 1, 31, 75, 121 and 150. No clipped body text, overlapping table cells or unexpected blank output pages were seen.",
+    "Input scan pages 1, 31 and 121 were read for the literal corrections documented in source/review-record.md. Other OCR differences remain and are counted.",
+    "At both 390 by 844 and 1366 by 768 CSS pixels, the GitHub-frame and Pages captures show the problem, first-person result, legible table totals and the input-manifest link without scrolling.",
+    "The GitHub capture uses the local offline frame with repository chrome; it is not a capture of a published github.com page."
+  ],
+  "source_scan_sha256": "0a1aedb3bad92508ee96b54a2fc311d94816baa98c5315fe1a7881b1e21d905e",
+  "figure_evidence": "output/media/figure-map.json",
+  "publication_links": "All relative README links are checked against this case folder. Live URLs and the CI workflow are not fetched in the offline run.",
+  "untested": [
+    "Microsoft Word",
+    "Microsoft 365",
+    "Live GitHub and Pages rendering"
+  ]
+}

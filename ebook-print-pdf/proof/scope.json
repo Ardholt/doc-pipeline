@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "offer": "Fixed price in a written scope, sent within hours",
+  "reason": "Book interior layout, page geometry, footnotes and visual review are quoted in a written scope.",
+  "page_count_evidence": "output/report.json#/counts/pages",
+  "not_tested": [
+    "Printer upload",
+    "PDF/X certification",
+    "Physical proof",
+    "Cover",
+    "Microsoft Word",
+    "LibreOffice",
+    "Kindle device",
+    "Kindle Previewer"
+  ]
+}

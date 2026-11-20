@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "case": "retype-150-pages",
+  "container": {
+    "base": "debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+    "shared_recipe": "harness/Dockerfile",
+    "case_recipe": "retype-150-pages/Dockerfile",
+    "runner": "harness/run-container.sh",
+    "case_configuration": "retype-150-pages/source/container.env",
+    "image_tag": "dp-retype:1",
+    "observed_image_id": "sha256:2799b5a47725d954ab73e1bbc5a623050f0ffb9f949d22093dc71b28308335bc",
+    "cold_build": "Builds from the pinned public Debian image; no pre-existing dp-base tag is required."
+  },
+  "apt_pins": {
+    "libreoffice-writer": "4:7.4.7-1+deb12u14",
+    "python3-docx": "0.8.11+dfsg1-5",
+    "tesseract-ocr": "5.3.0-2",
+    "tesseract-ocr-eng": "1:4.1.0-2",
+    "ca-certificates": "20230311+deb12u1",
+    "python3": "3.11.2-1+b1",
+    "python3-venv": "3.11.2-1+b1",
+    "python3-pil": "9.4.0-1.1+deb12u1",
+    "python3-reportlab": "3.6.12-1+deb12u1",
+    "python3-markdown": "3.4.1-2+deb12u1",
+    "ghostscript": "10.0.0~dfsg-11+deb12u9",
+    "qpdf": "11.3.0-1+deb12u1",
+    "poppler-utils": "22.12.0-2+deb12u3",
+    "chromium": "156.0.8078.79-1~deb12u1",
+    "fonts-dejavu-core": "2.37-6",
+    "fonts-liberation": "1:1.07.4-11"
+  },
+  "pip_pins": {
+    "pypdf": "5.1.0"
+  },
+  "resolved_inventory": "retype-150-pages/output/packages.tsv",
+  "actual_tools": {
+    "python": "3.11.2",
+    "text_metric": "source/common.py SHA-256 05e18130253b4a0be59311625f091edcf4c99e918fe5a29f72063978ebfd96e3",
+    "tesseract": "tesseract 5.3.0",
+    "ocr_language": "eng",
+    "libreoffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "poppler": "pdftoppm version 22.12.0",
+    "pypdf": "5.1.0",
+    "python-docx": "0.8.11",
+    "Pillow": "9.4.0",
+    "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)"
+  },
+  "generation_tools": {
+    "Pillow": "9.4.0",
+    "ReportLab": "3.6.12",
+    "Python": "3.11.2"
+  },
+  "fonts": {
+    "bundled_file": "retype-150-pages/source/DejaVuSansMono.ttf",
+    "sha256": "c805f9436dbc268644c1d9584f01a601a653e028e08fd74b9b949f6cf8304d88",
+    "version": "2.37",
+    "licence": "Bitstream Vera permission; DejaVu changes public domain",
+    "notice": "retype-150-pages/licenses/DejaVu.txt",
+    "runtime_package": "fonts-dejavu-core=2.37-6"
+  },
+  "separate_publication_scan": {
+    "recipe": "retype-150-pages/tests/security.sh",
+    "apt_pins": {
+      "clamav": "1.4.3+dfsg-1~deb12u2",
+      "clamav-freshclam": "1.4.3+dfsg-1~deb12u2"
+    },
+    "definition_acquisition": "Bounded freshclam download; result and database version in proof/antivirus.log and proof/antivirus-update.log. Not part of the normal offline document workload."
+  },
+  "actions": {
+    "checkout": "11bd71901bbe5b1630ceea73d27597364c9af683",
+    "upload-artifact": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+  }
+}

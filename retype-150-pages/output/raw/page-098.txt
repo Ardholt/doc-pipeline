@@ -1,0 +1,19 @@
+TRANSFER NOTE / 098
+
+Record DO7-08. Round 07. Sheet 098.
+
+A transfer note follows the material through each change of location. Record the starting shelf, destination code and quantity before the move. Keep the note with the tray until the receiving position has been checked against the written destination.
+
+The tray for item K098 showed a light scuff near the rim. The scuff was compared with the earlier condition note. It was kept in the record even though it did not prevent the next check.
+
+Complete a transfer only after the final count. If the move is interrupted, leave a clear status note and keep the unfinished tray separate. The next shift must be able to tell whether a quantity is waiting to move or has already arrived.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K098	68	4	72
+R098	72	5	Wi
+
+The first row records 68 ready pieces and 4 held pieces, giving 72 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D07-08 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

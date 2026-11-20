@@ -1,0 +1,1414 @@
+{
+  "schema_version": 1,
+  "review_supplied": true,
+  "applied_rows": 12,
+  "events": [
+    {
+      "page": 1,
+      "find": "DQ1-01",
+      "replace": "D01-01",
+      "reason": "Opening record code read from scan page 1",
+      "row": 2,
+      "matches": 1
+    },
+    {
+      "page": 1,
+      "find": "KOO1",
+      "replace": "K001",
+      "reason": "First table item code read from scan page 1",
+      "row": 3,
+      "matches": 1
+    },
+    {
+      "page": 1,
+      "find": "ROO1",
+      "replace": "R001",
+      "reason": "Second table item code read from scan page 1",
+      "row": 4,
+      "matches": 1
+    },
+    {
+      "page": 1,
+      "find": "2.\t27",
+      "replace": "2\t27",
+      "reason": "Held count has no full stop in scan page 1",
+      "row": 5,
+      "matches": 1
+    },
+    {
+      "page": 1,
+      "find": "DO1-01",
+      "replace": "D01-01",
+      "reason": "Closing record code read from scan page 1",
+      "row": 6,
+      "matches": 1
+    },
+    {
+      "page": 31,
+      "find": "DOQ3-01",
+      "replace": "D03-01",
+      "reason": "Opening record code read from scan page 31",
+      "row": 7,
+      "matches": 1
+    },
+    {
+      "page": 31,
+      "find": "KO31",
+      "replace": "K031",
+      "reason": "First table item code read from scan page 31",
+      "row": 8,
+      "matches": 1
+    },
+    {
+      "page": 31,
+      "find": "RO31",
+      "replace": "R031",
+      "reason": "Second table item code read from scan page 31",
+      "row": 9,
+      "matches": 1
+    },
+    {
+      "page": 31,
+      "find": "23\t72\t25",
+      "replace": "23\t2\t25",
+      "reason": "Held count read as 2 from scan page 31",
+      "row": 10,
+      "matches": 1
+    },
+    {
+      "page": 121,
+      "find": "REGETRT IGHECK 7/ e121",
+      "replace": "RECEIPT CHECK / 121",
+      "reason": "Heading read from scan page 121",
+      "row": 11,
+      "matches": 1
+    },
+    {
+      "page": 121,
+      "find": "DO9-01",
+      "replace": "D09-01",
+      "reason": "Opening record code read from scan page 121",
+      "row": 12,
+      "matches": 1
+    },
+    {
+      "page": 121,
+      "find": "74\t3\tUi",
+      "replace": "74\t3\t77",
+      "reason": "Second row total read as 77 from scan page 121",
+      "row": 13,
+      "matches": 1
+    }
+  ],
+  "uncertainties": [
+    {
+      "page": 1,
+      "low_confidence_words": 8
+    },
+    {
+      "page": 2,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 3,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 4,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 5,
+      "low_confidence_words": 8
+    },
+    {
+      "page": 6,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 7,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 8,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 9,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 10,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 11,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 12,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 13,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 14,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 15,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 16,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 17,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 18,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 19,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 20,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 21,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 22,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 23,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 24,
+      "low_confidence_words": 9
+    },
+    {
+      "page": 25,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 26,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 27,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 28,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 29,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 30,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 31,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 32,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 33,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 34,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 35,
+      "low_confidence_words": 8
+    },
+    {
+      "page": 36,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 37,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 38,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 39,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 40,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 41,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 42,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 43,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 44,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 45,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 46,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 47,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 48,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 49,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 50,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 51,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 52,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 53,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 54,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 55,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 56,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 57,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 58,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 59,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 60,
+      "low_confidence_words": 8
+    },
+    {
+      "page": 61,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 62,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 63,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 64,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 65,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 66,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 67,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 68,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 69,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 70,
+      "low_confidence_words": 8
+    },
+    {
+      "page": 71,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 72,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 73,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 74,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 75,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 76,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 77,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 78,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 79,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 80,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 81,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 82,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 83,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 84,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 85,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 86,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 87,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 88,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 89,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 90,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 91,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 92,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 93,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 94,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 95,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 96,
+      "low_confidence_words": 6
+    },
+    {
+      "page": 97,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 98,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 99,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 100,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 101,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 102,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 103,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 104,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 105,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 106,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 107,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 108,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 109,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 110,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 111,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 112,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 113,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 114,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 115,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 116,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 117,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 118,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 119,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 120,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 121,
+      "low_confidence_words": 7
+    },
+    {
+      "page": 122,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 123,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 124,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 125,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 126,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 127,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 128,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 129,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 130,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 131,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 132,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 133,
+      "low_confidence_words": 4
+    },
+    {
+      "page": 134,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 135,
+      "low_confidence_words": 5
+    },
+    {
+      "page": 136,
+      "low_confidence_words": 1
+    },
+    {
+      "page": 137,
+      "low_confidence_words": 1
+    },
+    {
+      "page": 141,
+      "low_confidence_words": 3
+    },
+    {
+      "page": 144,
+      "low_confidence_words": 1
+    },
+    {
+      "page": 146,
+      "low_confidence_words": 1
+    },
+    {
+      "page": 148,
+      "low_confidence_words": 2
+    },
+    {
+      "page": 150,
+      "low_confidence_words": 1
+    }
+  ],
+  "note": "Confidence below 85 is a review cue, not a probability of correctness. No automatic spelling correction. No human page-by-page proofreading is included in this command.",
+  "independent_reference_disagreements": [
+    {
+      "page": 2,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 3,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 4,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 5,
+      "character_edits": 6,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 6,
+      "character_edits": 5,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 7,
+      "character_edits": 6,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 8,
+      "character_edits": 4,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 9,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 10,
+      "character_edits": 6,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 11,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 12,
+      "character_edits": 5,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 13,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 14,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 15,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 16,
+      "character_edits": 4,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 17,
+      "character_edits": 5,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 18,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 20,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 21,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 22,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 23,
+      "character_edits": 4,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 24,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 25,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 26,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 27,
+      "character_edits": 4,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 28,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 29,
+      "character_edits": 4,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 30,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 32,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 33,
+      "character_edits": 4,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 34,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 35,
+      "character_edits": 9,
+      "word_edits": 6,
+      "tables_exact": false
+    },
+    {
+      "page": 36,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 37,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 38,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 39,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 40,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 41,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 42,
+      "character_edits": 4,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 43,
+      "character_edits": 2,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 44,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 45,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": true
+    },
+    {
+      "page": 46,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 47,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 48,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 50,
+      "character_edits": 5,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 51,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 52,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 54,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 55,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 56,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 58,
+      "character_edits": 4,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 60,
+      "character_edits": 4,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 61,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 62,
+      "character_edits": 5,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 63,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 64,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 65,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 66,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 67,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 68,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 69,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 70,
+      "character_edits": 8,
+      "word_edits": 5,
+      "tables_exact": false
+    },
+    {
+      "page": 71,
+      "character_edits": 4,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 72,
+      "character_edits": 4,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 73,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 74,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 75,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 76,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 77,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 78,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 79,
+      "character_edits": 5,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 80,
+      "character_edits": 6,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 81,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 84,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 85,
+      "character_edits": 4,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 86,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 87,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 88,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 89,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 90,
+      "character_edits": 5,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 91,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 92,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 93,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 94,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 95,
+      "character_edits": 7,
+      "word_edits": 4,
+      "tables_exact": false
+    },
+    {
+      "page": 96,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 97,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 98,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 99,
+      "character_edits": 3,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 100,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 101,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": true
+    },
+    {
+      "page": 102,
+      "character_edits": 6,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 103,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": true
+    },
+    {
+      "page": 104,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 105,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": true
+    },
+    {
+      "page": 106,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 108,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 109,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 110,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 111,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 112,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 113,
+      "character_edits": 5,
+      "word_edits": 3,
+      "tables_exact": false
+    },
+    {
+      "page": 114,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 115,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 116,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 117,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": true
+    },
+    {
+      "page": 118,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 119,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 122,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 125,
+      "character_edits": 4,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 126,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 127,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 130,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 131,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": true
+    },
+    {
+      "page": 132,
+      "character_edits": 2,
+      "word_edits": 2,
+      "tables_exact": true
+    },
+    {
+      "page": 133,
+      "character_edits": 4,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 135,
+      "character_edits": 3,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 136,
+      "character_edits": 1,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 141,
+      "character_edits": 3,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 144,
+      "character_edits": 4,
+      "word_edits": 1,
+      "tables_exact": false
+    },
+    {
+      "page": 148,
+      "character_edits": 6,
+      "word_edits": 2,
+      "tables_exact": false
+    },
+    {
+      "page": 150,
+      "character_edits": 2,
+      "word_edits": 1,
+      "tables_exact": false
+    }
+  ]
+}

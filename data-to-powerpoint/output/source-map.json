@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "slides": [
+    {
+      "slide": 1,
+      "headline": "GBP 20,000 remains after costs",
+      "source_lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "slide": 2,
+      "headline": "A has the highest revenue in this group",
+      "source_lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "slide": 3,
+      "headline": "C records a loss over the period",
+      "source_lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "slide": 4,
+      "headline": "C has negative monthly profit",
+      "source_lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "slide": 5,
+      "headline": "Every plotted value traces back to the source",
+      "source_lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "slide": 2,
+      "part": "ppt/charts/chart1.xml",
+      "kind": "overview",
+      "department": null,
+      "categories": [
+        "A",
+        "B",
+        "C"
+      ],
+      "series": [
+        {
+          "name": "Revenue",
+          "values": [
+            "42000.00",
+            "28500.00",
+            "19500.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "slide": 3,
+      "part": "ppt/charts/chart2.xml",
+      "kind": "comparison",
+      "department": "A",
+      "categories": [
+        "A"
+      ],
+      "series": [
+        {
+          "name": "Revenue",
+          "values": [
+            "42000.00"
+          ]
+        },
+        {
+          "name": "Cost",
+          "values": [
+            "25500.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        2,
+        5,
+        8
+      ]
+    },
+    {
+      "slide": 3,
+      "part": "ppt/charts/chart3.xml",
+      "kind": "comparison",
+      "department": "B",
+      "categories": [
+        "B"
+      ],
+      "series": [
+        {
+          "name": "Revenue",
+          "values": [
+            "28500.00"
+          ]
+        },
+        {
+          "name": "Cost",
+          "values": [
+            "24000.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "slide": 3,
+      "part": "ppt/charts/chart4.xml",
+      "kind": "comparison",
+      "department": "C",
+      "categories": [
+        "C"
+      ],
+      "series": [
+        {
+          "name": "Revenue",
+          "values": [
+            "19500.00"
+          ]
+        },
+        {
+          "name": "Cost",
+          "values": [
+            "20500.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "slide": 4,
+      "part": "ppt/charts/chart5.xml",
+      "kind": "trend",
+      "department": "A",
+      "categories": [
+        "01",
+        "02",
+        "03"
+      ],
+      "series": [
+        {
+          "name": "A profit",
+          "values": [
+            "4000.00",
+            "5500.00",
+            "7000.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        2,
+        5,
+        8
+      ]
+    },
+    {
+      "slide": 4,
+      "part": "ppt/charts/chart6.xml",
+      "kind": "trend",
+      "department": "B",
+      "categories": [
+        "01",
+        "02",
+        "03"
+      ],
+      "series": [
+        {
+          "name": "B profit",
+          "values": [
+            "1500.00",
+            "1500.00",
+            "1500.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "slide": 4,
+      "part": "ppt/charts/chart7.xml",
+      "kind": "trend",
+      "department": "C",
+      "categories": [
+        "01",
+        "02",
+        "03"
+      ],
+      "series": [
+        {
+          "name": "C profit",
+          "values": [
+            "0.00",
+            "-500.00",
+            "-500.00"
+          ]
+        }
+      ],
+      "source_lines": [
+        4,
+        7,
+        10
+      ]
+    }
+  ]
+}

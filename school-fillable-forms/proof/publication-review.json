@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "status": "reviewed",
+  "scope": "Visual and content read of this case; current artifact hashes are in output/report.json and publication-audit.json. No live URL was fetched.",
+  "visual_review": {
+    "documents": [
+      {
+        "path": "output/trip-permission-blank.png",
+        "observation": "Instructions and labels readable, entry areas intact; text and checkbox glyphs fit."
+      },
+      {
+        "path": "output/trip-permission-filled.png",
+        "observation": "Instructions and labels readable, entry areas intact; text and checkbox glyphs fit."
+      },
+      {
+        "path": "output/absence-request-blank.png",
+        "observation": "Instructions and labels readable, entry areas intact; text and checkbox glyphs fit."
+      },
+      {
+        "path": "output/absence-request-filled.png",
+        "observation": "Instructions and labels readable, entry areas intact; text and checkbox glyphs fit."
+      }
+    ],
+    "proof_crop": {
+      "path": "media/hero.png",
+      "source_map": "output/preview-map.json",
+      "observation": "Actual text and checkbox crops remain legible at phone width; captions identify the blank and filled states. Full-page output links preserve context."
+    },
+    "page_screenshots": [
+      {
+        "path": "output/page-previews/github-390.png",
+        "css_width": 390,
+        "css_height": 844,
+        "observation": "Problem, first-person result, typed text and selected checkbox visible before scrolling; GitHub frame retained."
+      },
+      {
+        "path": "output/page-previews/github-1366.png",
+        "css_width": 1366,
+        "css_height": 768,
+        "observation": "Problem, first-person result, typed text and selected checkbox visible before scrolling; GitHub frame retained."
+      },
+      {
+        "path": "output/page-previews/pages-390.png",
+        "css_width": 390,
+        "css_height": 844,
+        "observation": "Problem, first-person result, typed text and selected checkbox visible before scrolling; GitHub frame retained."
+      },
+      {
+        "path": "output/page-previews/pages-1366.png",
+        "css_width": 1366,
+        "css_height": 768,
+        "observation": "Problem, first-person result, typed text and selected checkbox visible before scrolling; GitHub frame retained."
+      }
+    ],
+    "surface_limit": "Offline shared GitHub-frame and Pages render, not a live published-URL capture."
+  },
+  "content_read": {
+    "generic_school_content": true,
+    "pupil_identities_or_contacts": false,
+    "unsupported_office_application_claims": false,
+    "code_review": "Read pipeline, UNO field-entry and check code. Network is limited to dependency build; document workload uses the shared offline read-only container mounts. No macro, shell execution from input, external messaging or embedded payload path was found.",
+    "licence_notice_exception": "Upstream font legal records are retained verbatim, including their legal contact references; these are not contacts in forms, metadata, images or case-page content."
+  },
+  "antivirus_scope": "A bounded static active-content scan is provided by tests/publication_audit.py. No general antivirus engine was installed or run.",
+  "link_review": {
+    "method": "All relative Markdown/HTML case-page and schema links resolve to delivered files; external URLs checked for correct target strings only. Live reachability was not fetched in the offline run.",
+    "links": [
+      {
+        "source": "README.md",
+        "target": "output/report.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/roundtrip.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/report.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/trip-permission-blank.docx",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/trip-permission-filled.docx",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/trip-permission-filled.pdf",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/absence-request-blank.docx",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/absence-request-filled.docx",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/absence-request-filled.pdf",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/trip-permission-filled.png",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/absence-request-filled.png",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "media/hero.png",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/trip-permission-blank.pdf",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/trip-permission-filled.pdf",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "INPUT.md",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "input/forms.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "input/values.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/report.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/runtime.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "proof/claims.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg",
+        "local_exists": false
+      },
+      {
+        "source": "README.md",
+        "target": "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml",
+        "local_exists": false
+      },
+      {
+        "source": "README.md",
+        "target": "output/rendered-negative.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/selftest.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "tests/check.py",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "output/page-previews/screenshots.json",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "LICENSE",
+        "local_exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "media/hero.png",
+        "local_exists": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.20kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc
+#4 resolve docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc 0.0s done
+#4 DONE 0.1s
+
+#5 [2/2] RUN printf 'Acquire::Retries "2"; Acquire::http::Timeout "30"; Acquire::https::Timeout "30"; Acquire::Check-Valid-Until "false";\n' > /etc/apt/apt.conf.d/80bounded  && timeout 180 apt-get update  && timeout 900 apt-get install -y --no-install-recommends     ca-certificates=20230311+deb12u1     python3=3.11.2-1+b1 python3-venv=3.11.2-1+b1     python3-pil=9.4.0-1.1+deb12u1 python3-reportlab=3.6.12-1+deb12u1     python3-markdown=3.4.1-2+deb12u1     ghostscript=10.0.0~dfsg-11+deb12u9 qpdf=11.3.0-1+deb12u1     poppler-utils=22.12.0-2+deb12u3 chromium=156.0.8078.79-1~deb12u1     fonts-dejavu-core=2.37-6 fonts-liberation=1:1.07.4-11 pandoc=2.17.1.1-2~deb12u1 epubcheck=4.2.6-2  && python3 -m venv --system-site-packages /opt/venv  && timeout 180 /opt/venv/bin/pip install --no-cache-dir --retries 2 --timeout 30 pypdf==5.1.0 playwright==1.51.0 lxml==5.3.1  && dpkg-query -W -f='${Package}\t${Version}\n' > /opt/packages.tsv  && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 exporting to image
+#6 exporting layers done
+#6 exporting manifest sha256:f180e94d6332bcf356c7ee4c030eb76dcc227e1691750430d44291837d303fb0 done
+#6 exporting config sha256:cf8a2e42018035322e154cd16155f053f95b9e87fe4d847b59b795b3203bd075 done
+#6 exporting attestation manifest sha256:fa953564867c73d5fce75b537cf46ade178aa99cfa6513d3bac09ac71555925a
+#6 exporting attestation manifest sha256:fa953564867c73d5fce75b537cf46ade178aa99cfa6513d3bac09ac71555925a 0.1s done
+#6 exporting manifest list sha256:4127263f6f21e304b7127c3aa1b1cd0d03524c36b9e0ac38e82717e8ea1d3a97 0.0s done
+#6 naming to docker.io/library/dp-kindle:1
+#6 naming to docker.io/library/dp-kindle:1 done
+#6 unpacking to docker.io/library/dp-kindle:1 done
+#6 DONE 0.2s
+PASS: EPUBCheck; no errors or warnings
+PASS: 88 browser tap-and-return journeys at narrow/wide widths and enlarged text
+PASS: case-page screenshots at 390 and 1366 CSS pixels
+PASS: source text and note text preserved; four damaged-file checks rejected
+PASS: run completed; elapsed 49 seconds (including setup)

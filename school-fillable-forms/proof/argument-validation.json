@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "custom_input": {
+    "source": "tests/fixtures/replacement/",
+    "input_path_contains_spaces": true,
+    "output_path_contains_spaces": true,
+    "run_output": [
+      "PASS: LibreOffice field entry, DOCX save/reopen, PDF layout and negative tests",
+      "PASS: run completed; elapsed 13 seconds (including setup)"
+    ],
+    "check_output": [
+      "PASS: existing DOCX controls, values, labels, fixed rows, PDF content, geometry, fonts, metadata and hashes",
+      "PASS: check completed; elapsed 1 seconds (including setup)"
+    ],
+    "observed_counts": {
+      "forms": 1,
+      "controls": 3,
+      "text_controls": 2,
+      "checkbox_controls": 1
+    },
+    "observed_measurements": [
+      {
+        "form": "office-request",
+        "blank_pages": 1,
+        "filled_pages": 1,
+        "controls": 3,
+        "label_position_drift_pt": 0
+      }
+    ],
+    "optional_text_omitted": true,
+    "required_checkbox_explicit_false": true,
+    "passed": true
+  },
+  "rejections": [
+    {
+      "name": "overlong answer",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "elapsed_seconds": 233.537,
+      "diagnostic": "FAIL: trip-permission/activity: empty or too long"
+    },
+    {
+      "name": "missing input directory",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "elapsed_seconds": 0.193,
+      "diagnostic": "ERROR: input directory does not exist"
+    },
+    {
+      "name": "overlapping output",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "elapsed_seconds": 0.179,
+      "diagnostic": "ERROR: output must be separate from input"
+    }
+  ],
+  "elapsed_scope": "Gate invocation wall-clock, including shared-slot queueing, cached setup and workload; not conversion-only timing."
+}

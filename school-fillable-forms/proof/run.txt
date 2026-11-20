@@ -1,0 +1,9 @@
+Commands, run in the container on the final files: ./run.sh and then ./run.sh --check
+
+./run.sh
+PASS: LibreOffice field entry, DOCX save/reopen, PDF layout and negative tests
+PASS: run completed; elapsed 18 seconds (including setup)
+
+./run.sh --check
+PASS: existing DOCX controls, values, labels, fixed rows, PDF content, geometry, fonts, metadata and hashes
+PASS: check completed; elapsed 1 seconds (including setup)

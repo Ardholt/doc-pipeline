@@ -1,0 +1,19 @@
+RECEIPT CHECK / 046
+
+Record D0Q4-01. Round 04. Sheet 046.
+
+A package is counted before it joins the working stock. The outer label is useful for routing, but the contents decide the record. Open one container at a time and keep its loose pieces together until the count is complete.
+
+The tray for item K046 showed a faint code on the upper face. The code was read twice under steady light. Both readings were retained because the final character needs another inspection.
+
+If the label and the contents disagree, preserve both readings in the note. A neat total is less useful than a traceable difference. Set the container aside without changing the label, then ask for a second count using the same unit.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K046	22	2	24
+R046	26	3	29
+
+The first row records 22 ready pieces and 2 held pieces, giving 24 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D04-01 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

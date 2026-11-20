@@ -1,0 +1,5 @@
+PASS: Chart caches and embedded workbooks reconcile
+PASS: Department order, colours, axes and source mapping
+PASS: Editable text and rendered totals
+PASS: Package metadata and hashes
+PASS: check completed; elapsed 1 seconds (including setup)

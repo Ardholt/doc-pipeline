@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "scope": "Exact delivered case tree except this inventory output; static secret/contact markers, private filenames, executable signatures, EPUB active content and archive paths, PNG ancillary metadata. Prose and screenshots were read separately.",
+  "scanner": "Python standard-library publication policy check 1.0",
+  "malware_check": "Static executable-signature and EPUB active-content checks; not a signature antivirus scan. Only the documented browser reader contains local interaction JavaScript; offline page render retains the public analytics reference.",
+  "files": [
+    {
+      "file": "Dockerfile",
+      "sha256": "79643d5ae83c35504d8699cc63ab495880c78548a434402e9f9d4626cacde505",
+      "bytes": 1165
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "c0debea6e3254ecdcbafaa45e77895d2b0a9739e79f05a49774ffb8435771d94",
+      "bytes": 1070
+    },
+    {
+      "file": "README.md",
+      "sha256": "201b0da66353c1e87ebd8e54b558b14255a5a3353b54a236011753d72994352d",
+      "bytes": 3864
+    },
+    {
+      "file": "input/book.json",
+      "sha256": "18e3b65f9a74c2b31337601aff886573fabdc113289ae1e157fe8b188879438c",
+      "bytes": 156
+    },
+    {
+      "file": "input/manuscript.md",
+      "sha256": "5685238872cad0a6e648d8a73804b514ca8743da4304afcd3bfc3016c0a2d34f",
+      "bytes": 6451
+    },
+    {
+      "file": "media/hero.png",
+      "sha256": "fde1c59cfd79cd1b089c7e99124de3e4be0098b7ead0ef2df3fdf705dd2d6787",
+      "bytes": 16381
+    },
+    {
+      "file": "media/reader-note-1366-100.png",
+      "sha256": "d3bb40d4c0d812be4072999077648a2387639f4a43314bee6b328c2ea128904e",
+      "bytes": 81934
+    },
+    {
+      "file": "media/reader-note-1366-150.png",
+      "sha256": "f221782330ba6cd92a5f135f9a34d510eb9b707b39870ecc39d7fad302b4fc50",
+      "bytes": 84823
+    },
+    {
+      "file": "media/reader-note-390-100.png",
+      "sha256": "6046c37820fd2cba5d24cac5d1377a5137e258d034bf86a2ad09b33da6e42f0f",
+      "bytes": 56466
+    },
+    {
+      "file": "media/reader-note-390-150.png",
+      "sha256": "e26dc4dcbf232e9c909febd8c584a6026fb718f232003b525b39c1761347e9e4",
+      "bytes": 65625
+    },
+    {
+      "file": "media/reader-passage.png",
+      "sha256": "b31b92940e2959a62fad6c5deb3d2ebd431ff8cc4eb30739ac780fd2cf22e4dd",
+      "bytes": 89323
+    },
+    {
+      "file": "media/reader-return-1366-100.png",
+      "sha256": "cb199315c2a9ccbbb41190f1c6268f9219d2e193a7c4ff7bf4bfddfbffbddcff",
+      "bytes": 144542
+    },
+    {
+      "file": "media/reader-return-1366-150.png",
+      "sha256": "01d8ea039232f7b98377d55c6805198e2fd0be23368d544419d39c2f9e481dfe",
+      "bytes": 148398
+    },
+    {
+      "file": "media/reader-return-390-100.png",
+      "sha256": "baa8f195a35fb89379473fa7224a55eea3d1a23d399f2b5c1eb2b9a0b4796a9f",
+      "bytes": 92272
+    },
+    {
+      "file": "media/reader-return-390-150.png",
+      "sha256": "a3db21b3eafef8b98a833e4f7ead491db53af8381defa5d3d3ed39a1396c0e8b",
+      "bytes": 86498
+    },
+    {
+      "file": "output/book.epub",
+      "sha256": "99213994b3a7d019ae7a920d9e9eb01389f561063155dace00a2bc98d1acba90",
+      "bytes": 6471
+    },
+    {
+      "file": "output/browser-audit.json",
+      "sha256": "0fd47be8444b0b48863392d39bdef69a79e37c47849fa2722b82724bc18e4b75",
+      "bytes": 30047
+    },
+    {
+      "file": "output/claims.json",
+      "sha256": "fc6f22580277b2108c47db11a1a75d20d439a4644fb000eac729241f1b46b0c2",
+      "bytes": 3175
+    },
+    {
+      "file": "output/epubcheck.log",
+      "sha256": "42f2ce461c5b52f682d4c2a85dd87e636118c593580f79791b96e2ae4ddccba4",
+      "bytes": 147
+    },
+    {
+      "file": "output/font-license.txt",
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "bytes": 3859
+    },
+    {
+      "file": "output/font-selection.txt",
+      "sha256": "030a23e425eaf04c9a8a82f4af2e161e2a71779684d67cd9c284b691913f75e6",
+      "bytes": 122
+    },
+    {
+      "file": "output/hero.png",
+      "sha256": "fde1c59cfd79cd1b089c7e99124de3e4be0098b7ead0ef2df3fdf705dd2d6787",
+      "bytes": 16381
+    },
+    {
+      "file": "output/negative-tests.json",
+      "sha256": "510ecad7466580b1f20e6f73978897ec807bee90c1ecc4bf31fce474eb354991",
+      "bytes": 1397
+    },
+    {
+      "file": "output/note-detail.png",
+      "sha256": "ee9221464b78dd0def9483d3f0d51a770a1ced98adc0b66903ac925673ff6053",
+      "bytes": 11956
+    },
+    {
+      "file": "output/packages.tsv",
+      "sha256": "2f3e93ab17aaf3f693dbe4fda4b059a4ef4147ee9fdd6ece06cb2da768d3e7c2",
+      "bytes": 9046
+    },
+    {
+      "file": "output/page-previews/github-1366.png",
+      "sha256": "81a5f8c32e1d25e7f4b89b91399f68eb88f41dd3551aa4a2cfb61f9f6eb7e0e2",
+      "bytes": 70076
+    },
+    {
+      "file": "output/page-previews/github-390.png",
+      "sha256": "cb04630582dbae38afa3f2f6ae4cfd995e56f26a296687bf78c4cc25eef4dbdd",
+      "bytes": 61164
+    },
+    {
+      "file": "output/page-previews/pages-1366.png",
+      "sha256": "b155f6d3c1d95aee1a6b87deabb0e478bfe8d5cb30a2bdc2172c464c66d52cc3",
+      "bytes": 69534
+    },
+    {
+      "file": "output/page-previews/pages-390.png",
+      "sha256": "2e3b48ff86ac1714af0f3bbdd2d7e635249f98f35019c81b538d179b470c4e8c",
+      "bytes": 49899
+    },
+    {
+      "file": "output/page-previews/screenshots.json",
+      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4",
+      "bytes": 816
+    },
+    {
+      "file": "output/passage-detail.png",
+      "sha256": "b393fb309b6c983aa99d66a6f8de70720b2225d1e90244d5e2f9eed10ab49eef",
+      "bytes": 15252
+    },
+    {
+      "file": "output/pip-freeze.txt",
+      "sha256": "092066e53c7f614b73f1da12995d3b66c814c395d11b2f58ee83d7df573851c3",
+      "bytes": 147
+    },
+    {
+      "file": "output/reader-note-1366-100.png",
+      "sha256": "d3bb40d4c0d812be4072999077648a2387639f4a43314bee6b328c2ea128904e",
+      "bytes": 81934
+    },
+    {
+      "file": "output/reader-note-1366-150.png",
+      "sha256": "f221782330ba6cd92a5f135f9a34d510eb9b707b39870ecc39d7fad302b4fc50",
+      "bytes": 84823
+    },
+    {
+      "file": "output/reader-note-390-100.png",
+      "sha256": "6046c37820fd2cba5d24cac5d1377a5137e258d034bf86a2ad09b33da6e42f0f",
+      "bytes": 56466
+    },
+    {
+      "file": "output/reader-note-390-150.png",
+      "sha256": "e26dc4dcbf232e9c909febd8c584a6026fb718f232003b525b39c1761347e9e4",
+      "bytes": 65625
+    },
+    {
+      "file": "output/reader-passage.png",
+      "sha256": "b31b92940e2959a62fad6c5deb3d2ebd431ff8cc4eb30739ac780fd2cf22e4dd",
+      "bytes": 89323
+    },
+    {
+      "file": "output/reader-return-1366-100.png",
+      "sha256": "cb199315c2a9ccbbb41190f1c6268f9219d2e193a7c4ff7bf4bfddfbffbddcff",
+      "bytes": 144542
+    },
+    {
+      "file": "output/reader-return-1366-150.png",
+      "sha256": "01d8ea039232f7b98377d55c6805198e2fd0be23368d544419d39c2f9e481dfe",
+      "bytes": 148398
+    },
+    {
+      "file": "output/reader-return-390-100.png",
+      "sha256": "baa8f195a35fb89379473fa7224a55eea3d1a23d399f2b5c1eb2b9a0b4796a9f",
+      "bytes": 92272
+    },
+    {
+      "file": "output/reader-return-390-150.png",
+      "sha256": "a3db21b3eafef8b98a833e4f7ead491db53af8381defa5d3d3ed39a1396c0e8b",
+      "bytes": 86498
+    },
+    {
+      "file": "output/report.json",
+      "sha256": "36988cc238c44212a91f2cf8c52222fa467a69aa459974b351841690fd1cfba2",
+      "bytes": 3845
+    },
+    {
+      "file": "output/run.log",
+      "sha256": "f68e0b01b5a72b53a184f53af49e7722eed1bc4eefa24785a3eaf03095caa5f3",
+      "bytes": 2687
+    },
+    {
+      "file": "output/runtime.json",
+      "sha256": "775b5841ff9ae2303b8e0c870c2bb01d43e7a475f354d3c0d6a0818eff7e52f8",
+      "bytes": 347
+    },
+    {
+      "file": "output/source-map.json",
+      "sha256": "f5419ebc6bd7874b32ba591bb207bb7b6a868b385c27d020206ad3f557253ba1",
+      "bytes": 12485
+    },
+    {
+      "file": "proof/check-run.log",
+      "sha256": "d462b6a1d699965920b9e9f5afa9919efecb13ee531bcc382a19ed3b7a649e26",
+      "bytes": 148
+    },
+    {
+      "file": "proof/claims.json",
+      "sha256": "fc6f22580277b2108c47db11a1a75d20d439a4644fb000eac729241f1b46b0c2",
+      "bytes": 3175
+    },
+    {
+      "file": "proof/first-run-report.json",
+      "sha256": "36988cc238c44212a91f2cf8c52222fa467a69aa459974b351841690fd1cfba2",
+      "bytes": 3845
+    },
+    {
+      "file": "proof/link-audit.json",
+      "sha256": "84625398835b17b3425a525f9e2ed12e921728abe7fe731d06596e9bd7c1a5f6",
+      "bytes": 6132
+    },
+    {
+      "file": "proof/paths-run.log",
+      "sha256": "da6fbfb8bb4264b01d37c985a853cd8f807b5fe1776d403e10b9faebb95b8c69",
+      "bytes": 2811
+    },
+    {
+      "file": "proof/report.json",
+      "sha256": "36988cc238c44212a91f2cf8c52222fa467a69aa459974b351841690fd1cfba2",
+      "bytes": 3845
+    },
+    {
+      "file": "proof/reproducibility.json",
+      "sha256": "ec40766fc95633f5f2826dd019424a4dc368a6c986e4d9c998bb7ef03b411f8c",
+      "bytes": 803
+    },
+    {
+      "file": "proof/runtime.json",
+      "sha256": "775b5841ff9ae2303b8e0c870c2bb01d43e7a475f354d3c0d6a0818eff7e52f8",
+      "bytes": 347
+    },
+    {
+      "file": "proof/second-run-report.json",
+      "sha256": "36988cc238c44212a91f2cf8c52222fa467a69aa459974b351841690fd1cfba2",
+      "bytes": 3845
+    },
+    {
+      "file": "proof/visual-review.json",
+      "sha256": "964afef8c1aef5e58078343a506529145ab058903ec9be29ce638b5c17317c52",
+      "bytes": 2691
+    },
+    {
+      "file": "run.sh",
+      "sha256": "d5e6bc18df30a592f680738c8e22a4232ca8a2d9c5ea9cf4d40bda3055366b66",
+      "bytes": 294
+    },
+    {
+      "file": "source/INPUT.md",
+      "sha256": "2c3f87a46d1ddb0ea61289b622015449bc32c0d06a75e26bc4c0f0f4a7798e60",
+      "bytes": 3113
+    },
+    {
+      "file": "source/book.css",
+      "sha256": "8da63eceec2a20436eef31275c890efabc743496023c7ffbdef1944fe4b3dfb1",
+      "bytes": 802
+    },
+    {
+      "file": "source/book.py",
+      "sha256": "f3bcf6ca02c7c6ffc86c7b7158e2f87126bc23ccb7a1a72d34e273a6fe853f47",
+      "bytes": 11378
+    },
+    {
+      "file": "source/browser.py",
+      "sha256": "2e8c1038d3d863b6dce1925b589c8f3a767720038e2027cc329ce472262980ab",
+      "bytes": 4682
+    },
+    {
+      "file": "source/fonts.conf",
+      "sha256": "9760a7c54b44c3a43c6356d167c56888838e406a21d3db403c3954c7580dc96e",
+      "bytes": 195
+    },
+    {
+      "file": "source/licenses/dejavu.txt",
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "bytes": 3859
+    },
+    {
+      "file": "source/licenses/github-markdown-css.txt",
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+      "bytes": 1117
+    },
+    {
+      "file": "source/pipeline.py",
+      "sha256": "c9a4512192cd9b1f2ef79cac83a7fe3d5ba4e5df5613dd78b7e1f463d9165e6d",
+      "bytes": 8051
+    },
+    {
+      "file": "source/reader.html",
+      "sha256": "7cede13a19117eb03b6546fba2f87e854240149fa844e9d1c4dd5b0612f4a1e5",
+      "bytes": 1107
+    },
+    {
+      "file": "tests/check.py",
+      "sha256": "5536eecb99701dae0a4159bb4dbcba65062f085db13ad76e9c334bc20c1f9c77",
+      "bytes": 2730
+    },
+    {
+      "file": "tests/contracts.py",
+      "sha256": "1827b501bb85248fb1077e370d98c3cced3cc6c9638e41cb8fb5b03696898df5",
+      "bytes": 1931
+    },
+    {
+      "file": "tests/publication.py",
+      "sha256": "8ca23b1570c5fc2e699108d63e374a3067cfda48be331433ca5abe6ca11a54ec",
+      "bytes": 2503
+    }
+  ],
+  "findings": [],
+  "status": "PASS"
+}

@@ -1,0 +1,19 @@
+SHIFT RECORD / 042
+
+Record DO3-12. Round 03. Sheet 042.
+
+A shift record explains what changed during the work period. Begin with unfinished actions carried forward, then add completed work in the order it occurred. Use short sentences that distinguish an observation, an action and a result.
+
+The tray for item K042 showed a folded corner on the liner. The corner was opened without pulling the rest of the liner free. No loose pieces were found beneath the fold.
+
+Before closing the record, read it as if none of the events were familiar. Replace unclear pronouns with item codes and state where any held material can be found. A later reader needs the decision and its reason, not a reconstruction of the conversation.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K042	47	3	50
+R042	Syl	4	55
+
+The first row records 47 ready pieces and 3 held pieces, giving 50 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D03-12 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "data-to-powerpoint/Dockerfile",
+      "origin": "Shared document harness recipe adapted with the declared presentation dependency pins",
+      "licence": "MIT; installed dependencies retain their own package licences"
+    },
+    {
+      "path": "data-to-powerpoint/LICENSE",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/README.md",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/input/data.csv",
+      "origin": "Newly authored anonymous department figures and display settings, Genco Doganay",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/input/deck.json",
+      "origin": "Newly authored anonymous department figures and display settings, Genco Doganay",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/media/hero.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/acceptance.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/acceptance.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/arguments.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/chart-detail.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/check.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/claims.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/contact-sheet.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/deck.pdf",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/deck.pptx",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/font-inventory.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/font-licences/DejaVu.txt",
+      "origin": "Verbatim Debian fonts-dejavu-core 2.37-6 copyright and licence notice",
+      "licence": "Bitstream Vera licence; DejaVu changes public domain; retained packaging notices"
+    },
+    {
+      "path": "data-to-powerpoint/output/hero-map.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/hero.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/image-identity.txt",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/packages.tsv",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/page-previews/github-1366.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/page-previews/github-390.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/page-previews/pages-1366.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/page-previews/pages-390.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/page-previews/screenshots.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/pdf-fonts.txt",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/regression.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/report.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/run.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/runtime.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/slides/slide-01.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/slides/slide-02.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/slides/slide-03.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/slides/slide-04.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/slides/slide-05.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/output/source-map.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/acceptance.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/acceptance.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/arguments.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/check.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/claims.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/image-identity.txt",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/page-previews/github-1366.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/page-previews/github-390.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/page-previews/pages-1366.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/page-previews/pages-390.png",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/page-previews/screenshots.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/regression.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/report.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/run.log",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/runtime.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/proof/visual-review.json",
+      "origin": "Generated from input/data.csv and input/deck.json by this pipeline, or recorded from checks of those outputs; page captures use the shared harness layout and vendored GitHub Markdown CSS",
+      "licence": "MIT for original content and layouts; DejaVu font terms apply to embedded font programs; shared GitHub Markdown CSS retains its MIT notice in harness/licenses/github-markdown-css.txt"
+    },
+    {
+      "path": "data-to-powerpoint/run.sh",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/source/USAGE.md",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/source/asset_manifest.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/source/data.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/source/fonts.conf",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/source/pipeline.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/tests/acceptance.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/tests/acceptance.sh",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/tests/check.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/tests/publication.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    },
+    {
+      "path": "data-to-powerpoint/tests/regression.py",
+      "origin": "Original case text, implementation or verification code, Genco Doganay; README follows the shared case-page layout",
+      "licence": "MIT"
+    }
+  ],
+  "self_entry": {
+    "path": "data-to-powerpoint/proof/asset-manifest.json",
+    "origin": "Generated exhaustive file provenance inventory",
+    "licence": "MIT"
+  },
+  "audit_entry": {
+    "path": "data-to-powerpoint/proof/publication.json",
+    "origin": "Generated exact file hash and static safety inventory",
+    "licence": "MIT"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "reviewed_files": [
+    "output/previews/all-pages.png",
+    "output/previews/detail-1.png",
+    "output/previews/detail-2.png",
+    "output/previews/detail-3.png",
+    "output/previews/image-detail-3.png",
+    "output/page-previews/github-390.png",
+    "output/page-previews/github-1366.png",
+    "output/page-previews/pages-390.png",
+    "output/page-previews/pages-1366.png"
+  ],
+  "observations": [
+    "The original first page visibly cuts the start of the text, while the output includes the heading, body, small note and footer.",
+    "The sideways second page is upright in the output.",
+    "All sheets retain the coloured field, fine horizontal rules and UP/BASE arrow.",
+    "Caption, numerical small-print checks and final line are readable in the detailed crops.",
+    "Problem, result and readable equal-scale document detail are visible above the fold on both offline page layouts at both required sizes."
+  ],
+  "scope": "Visual publishing review of the cleaned PDF renders and the exact page screenshots. Offline GitHub frame is an approximation; not a claim of live publication."
+}

@@ -1,0 +1,19 @@
+SURFACE CARE / 110
+
+Record D08-05. Round 08. Sheet 110.
+
+A work surface should be cleared before it is cleaned. Move the loose items into a tray and retain their order. Use a dry cloth first so that coarse particles are removed rather than dragged across the surface during the next pass.
+
+The tray for item K110 showed a detached paper tab. The tab was kept with the tray rather than discarded. Its wording was copied into the record before a fresh tab was attached.
+
+Inspect the edge as well as the centre. A narrow strip beneath a raised lip can hold material that is missed by a quick wipe. Record persistent marks separately from removable dirt so that tomorrow's check starts from the right condition.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K110	46	al	47
+R110	50	2	52
+
+The first row records 46 ready pieces and 1 held pieces, giving 47 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record DO8-05 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

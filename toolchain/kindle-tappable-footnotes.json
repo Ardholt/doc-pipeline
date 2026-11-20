@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case": "kindle-tappable-footnotes",
+  "base_image": "debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc",
+  "image_tag": "dp-kindle:1",
+  "recipe": "harness/Dockerfile",
+  "case_recipe_copy": "kindle-tappable-footnotes/Dockerfile",
+  "extra_apt": [
+    "pandoc=2.17.1.1-2~deb12u1",
+    "epubcheck=4.2.6-2"
+  ],
+  "extra_pip": [
+    "playwright==1.51.0",
+    "lxml==5.3.1"
+  ],
+  "shared_direct_pins": "harness/Dockerfile",
+  "resolved_apt_inventory": "kindle-tappable-footnotes/output/packages.tsv",
+  "resolved_pip_inventory": "kindle-tappable-footnotes/output/pip-freeze.txt",
+  "actual_tools": "kindle-tappable-footnotes/output/report.json#/tools",
+  "fonts": [
+    {
+      "package": "fonts-dejavu-core=2.37-6",
+      "faces": [
+        "DejaVu Serif",
+        "DejaVu Sans",
+        "DejaVu Sans Mono"
+      ],
+      "licence": "Bitstream Vera licence; DejaVu changes public domain",
+      "embedded_in_epub": false
+    }
+  ],
+  "network": "Dependencies at build time only; document work uses --network none",
+  "setup_limits": {
+    "apt_retries": 2,
+    "pip_retries": 2,
+    "build_seconds": 1500,
+    "workload_seconds": 1080,
+    "ci_minutes": 45
+  },
+  "resolved_pip_versions": {
+    "greenlet": "3.5.6",
+    "lxml": "5.3.1",
+    "Markdown": "3.4.1",
+    "Pillow": "9.4.0",
+    "playwright": "1.51.0",
+    "pyee": "12.1.1",
+    "pypdf": "5.1.0",
+    "reportlab": "3.6.12",
+    "typing_extensions": "4.16.0"
+  },
+  "font_configuration": "kindle-tappable-footnotes/source/fonts.conf",
+  "case_image_config_digest": "sha256:cf8a2e42018035322e154cd16155f053f95b9e87fe4d847b59b795b3203bd075"
+}

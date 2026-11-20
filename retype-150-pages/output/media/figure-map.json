@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "hero": {
+    "left": {
+      "source": "input/scan.pdf",
+      "page": 1,
+      "render_dpi": 144,
+      "crop_px": [
+        750,
+        628,
+        940,
+        730
+      ]
+    },
+    "right": {
+      "source": "output/preview.pdf",
+      "page": 1,
+      "application": "LibreOffice headless PDF export, after DOCX metadata stripping",
+      "render_dpi": 144,
+      "crop_px": [
+        820,
+        495,
+        1074,
+        633
+      ]
+    },
+    "operation": "Crops resized preserving aspect ratio; labels added above. No replacement document text."
+  }
+}

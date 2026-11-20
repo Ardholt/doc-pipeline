@@ -1,0 +1,19 @@
+HOLDING AREA / 130
+
+Record DO9-10. Round 09. Sheet 130.
+
+The holding area separates unresolved items from ready stock. Each tray needs one clear reason for being held and a next action that can be completed. A short specific note is better than a broad word that leaves the next reader guessing.
+
+The tray for item K130 showed a displaced protective strip. The strip was returned to its marked position after the edge was checked. The note records both the observation and the action.
+
+Review the oldest tray first, but do not release it merely because it has waited. Check that the stated reason has been resolved and preserve the evidence of that check. Move the material and its note together when the status changes.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K130	27	1	28
+R130	31	2	33
+
+The first row records 27 ready pieces and 1 held pieces, giving 28 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D09-10 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

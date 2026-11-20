@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "claim": "Editable deck with reconciled charts",
+      "evidence": {
+        "path": "output/report.json",
+        "field": "/checks"
+      },
+      "calculation": "CSV decimal sums = chart caches = embedded workbook numeric cells; profit = revenue − cost."
+    },
+    {
+      "claim": "Source rows beside matching rendered profit chart",
+      "evidence": {
+        "path": "output/hero-map.json",
+        "field": "/"
+      }
+    },
+    {
+      "claim": "All reported counts and totals",
+      "evidence": {
+        "path": "output/report.json",
+        "field": "/counts"
+      }
+    },
+    {
+      "claim": "Compatibility evidence is LibreOffice rendering only",
+      "evidence": {
+        "path": "output/report.json",
+        "field": "/tools/LibreOffice"
+      }
+    },
+    {
+      "claim": "5 editable slides; 7 native charts",
+      "evidence": {
+        "path": "output/report.json",
+        "fields": [
+          "/counts/slides",
+          "/counts/editable_charts",
+          "/checks/0"
+        ]
+      },
+      "measurement": "python-pptx 1.0.2; Python 3.11.2"
+    },
+    {
+      "claim": "9 source rows; 3 departments; 3 periods",
+      "evidence": {
+        "path": "output/report.json",
+        "fields": [
+          "/counts/source_rows",
+          "/counts/departments",
+          "/counts/periods"
+        ]
+      },
+      "source": {
+        "path": "input/data.csv",
+        "lines": "1–10"
+      },
+      "measurement": "Python 3.11.2 csv reader and set counts"
+    },
+    {
+      "claim": "GBP 90,000 revenue; GBP 70,000 cost; GBP 20,000 profit",
+      "evidence": {
+        "path": "output/report.json",
+        "field": "/counts/totals"
+      },
+      "calculation": "Sum all source revenue = 90000.00; sum all source cost = 70000.00; 90000.00 − 70000.00 = 20000.00. Exact Decimal arithmetic; PPTX totals and PDF text checked."
+    },
+    {
+      "claim": "Hero source cells and plotted losses",
+      "evidence": {
+        "path": "output/hero-map.json",
+        "field": "/"
+      },
+      "source": {
+        "path": "input/data.csv",
+        "lines": [
+          4,
+          7,
+          10
+        ]
+      },
+      "calculation": "January: 6000.00 − 6000.00 = 0.00; February: 6500.00 − 7000.00 = −500.00; March: 7000.00 − 7500.00 = −500.00. Chart axes and labels are visible in output/slides/slide-04.png; department C crop."
+    },
+    {
+      "claim": "Consistent style, readable slides and first-screen proof",
+      "evidence": {
+        "path": "proof/visual-review.json",
+        "field": "/reviews"
+      },
+      "kind": "Visual inspection, separate from machine checks"
+    },
+    {
+      "claim": "Actual application and library version numbers on the page",
+      "evidence": {
+        "path": "output/report.json",
+        "field": "/tools"
+      }
+    },
+    {
+      "claim": "Reproduction and damaged-output rejection",
+      "evidence": {
+        "path": "output/regression.json",
+        "field": "/checks"
+      },
+      "additional_evidence": {
+        "path": "output/acceptance.json",
+        "field": "/checks"
+      }
+    },
+    {
+      "claim": "CI badge and Pages URL are the repository's own destinations",
+      "evidence": {
+        "path": "proof/publication.json",
+        "field": "/external_links"
+      },
+      "limit": "No live workflow or published-site success is claimed."
+    },
+    {
+      "claim": "Fixed price in a written scope, sent within hours",
+      "evidence": {
+        "path": "README.md",
+        "section": "Price paragraph"
+      },
+      "kind": "Service wording, not a measured delivery-time claim"
+    }
+  ]
+}

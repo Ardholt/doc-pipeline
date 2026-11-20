@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scope": "offline workload and checks; excludes image build and manual review",
+  "limits": {
+    "cpus": 2,
+    "memory_gib": 2,
+    "workload_timeout_seconds": 1080
+  },
+  "status": "passed",
+  "elapsed_seconds": 16.336
+}

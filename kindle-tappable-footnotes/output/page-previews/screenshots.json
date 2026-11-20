@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "renderer": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)",
+  "screenshots": [
+    {
+      "file": "github-390.png",
+      "css_width": 390,
+      "css_height": 844,
+      "device_scale_factor": 1
+    },
+    {
+      "file": "github-1366.png",
+      "css_width": 1366,
+      "css_height": 768,
+      "device_scale_factor": 1
+    },
+    {
+      "file": "pages-390.png",
+      "css_width": 390,
+      "css_height": 844,
+      "device_scale_factor": 1
+    },
+    {
+      "file": "pages-1366.png",
+      "css_width": 1366,
+      "css_height": 768,
+      "device_scale_factor": 1
+    }
+  ],
+  "surface": "offline local render in a local GitHub-style frame, not a live github.com capture",
+  "badge": "offline placeholder says CI status requires network; no passing CI claim"
+}

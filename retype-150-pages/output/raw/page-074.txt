@@ -1,0 +1,19 @@
+SMALL REPAIR / 074
+
+Record DQ5-14. Round 05. Sheet 074.
+
+A small repair begins with a decision about the boundary of the work. Identify the loose or damaged part and keep adjacent parts in their original order. Use a tray for removed fittings so that every piece can be accounted for at the end.
+
+The tray for item K074 showed a narrow gap beside the insert. The gap was checked at each end. The note records the location rather than assuming that the insert has changed size.
+
+After the repair, check the function that was affected and the parts disturbed during access. Record what was changed rather than writing only that the item is fixed. A future inspection should be able to identify the repaired area without taking the item apart.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K074	59	5	64
+RO74	63	6	69
+
+The first row records 59 ready pieces and 5 held pieces, giving 64 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record DO5-14 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

@@ -1,0 +1,19 @@
+REPEAT CHECK / 148
+
+Record D10-13. Round 10. Sheet 148.
+
+A repeat check should use the same method as the first check unless a change is recorded. Start with the same unit, position and grouping. This makes it possible to tell whether a different result comes from the material or from the method.
+
+The tray for item K148 showed a small difference in the tally. The affected group was counted again from the beginning. The first tally remains in the record beside the second result.
+
+Do not erase the first result after a second result is obtained. Keep both values and describe the reason for repeating the work. Agreement supports the record; disagreement points to a question that still needs attention.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K148	47	4	Bil
+R148	Sil	5	56
+
+The first row records 47 ready pieces and 4 held pieces, giving 51 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D10-13 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

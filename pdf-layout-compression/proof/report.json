@@ -1,0 +1,650 @@
+{
+  "schema_version": 1,
+  "case": "pdf-layout-compression",
+  "input_hashes": {
+    "input.pdf": "7cf0251339b7643a7fe8bd7b8dd62b2519bca69147b9d81b71b99cbfc941b6ed",
+    "repair.json": "ae1ced464d2a84c8f05cca53058157a50da3ca5ac0d0484a93fd939c0b36bc90"
+  },
+  "output_hashes": {
+    "fixed.pdf": "2e35e5ad1345e69430fa9ab9023809c4cf5a3e7e2ec3eb96fb27df244b215e1d"
+  },
+  "transformations": [
+    {
+      "page": 1,
+      "physical_baseline_degrees": 0,
+      "scale": 0.90476189,
+      "matrix": [
+        0.904761890400605,
+        0,
+        0,
+        0.904761890400605,
+        28.346456692913364,
+        40.08997841127018
+      ],
+      "method": "restore MediaBox; orient dominant text; fit full media into safe area"
+    },
+    {
+      "page": 2,
+      "physical_baseline_degrees": 0,
+      "scale": 0.90476189,
+      "matrix": [
+        0.904761890400605,
+        0,
+        0,
+        0.904761890400605,
+        28.346456692913364,
+        40.08997841127018
+      ],
+      "method": "restore MediaBox; orient dominant text; fit full media into safe area"
+    },
+    {
+      "page": 3,
+      "physical_baseline_degrees": 0,
+      "scale": 0.84153543,
+      "matrix": [
+        0.8415354330708663,
+        0,
+        0,
+        0.8415354330708663,
+        28.346456692913364,
+        42.25393700787396
+      ],
+      "method": "restore MediaBox; orient dominant text; fit full media into safe area"
+    }
+  ],
+  "counts": {
+    "input_bytes": 28396434,
+    "output_bytes": 124858,
+    "output_to_input_ratio": 0.00439696,
+    "reduction_percent": 99.56,
+    "pages": 3,
+    "words": 224,
+    "images": [
+      {
+        "page": 1,
+        "type": "image",
+        "width": 904,
+        "height": 646,
+        "x_ppi": 150,
+        "y_ppi": 171
+      },
+      {
+        "page": 2,
+        "type": "image",
+        "width": 904,
+        "height": 646,
+        "x_ppi": 150,
+        "y_ppi": 171
+      },
+      {
+        "page": 3,
+        "type": "image",
+        "width": 841,
+        "height": 601,
+        "x_ppi": 150,
+        "y_ppi": 171
+      }
+    ],
+    "source_output_map": [
+      {
+        "page": 1,
+        "words": [
+          "Keep",
+          "every",
+          "edge",
+          "readable",
+          "Sheet",
+          "A1",
+          "/",
+          "Inspection",
+          "notes",
+          "Check",
+          "every",
+          "edge.",
+          "Keep",
+          "the",
+          "outer",
+          "rule.",
+          "Item",
+          "A17:",
+          "retain",
+          "the",
+          "label,",
+          "arrow",
+          "and",
+          "measurement.",
+          "Read",
+          "the",
+          "small",
+          "note",
+          "below",
+          "the",
+          "image",
+          "at",
+          "normal",
+          "size.",
+          "Surface",
+          "study",
+          "A17:",
+          "layered",
+          "contours",
+          "in",
+          "blue",
+          "and",
+          "amber.",
+          "UP",
+          "BASE",
+          "Small-print",
+          "check:",
+          "0.75",
+          "mm",
+          "clearance;",
+          "keep",
+          "labels",
+          "A17,",
+          "B24",
+          "and",
+          "C31.",
+          "End",
+          "of",
+          "sheet",
+          "A1",
+          "/",
+          "All",
+          "four",
+          "corners",
+          "belong",
+          "to",
+          "this",
+          "page."
+        ]
+      },
+      {
+        "page": 2,
+        "words": [
+          "Turn",
+          "the",
+          "page",
+          "the",
+          "right",
+          "way",
+          "Sheet",
+          "B2",
+          "/",
+          "Orientation",
+          "notes",
+          "Read",
+          "the",
+          "heading",
+          "from",
+          "left",
+          "to",
+          "right.",
+          "Keep",
+          "the",
+          "diagram",
+          "arrow",
+          "pointing",
+          "towards",
+          "the",
+          "upper",
+          "edge.",
+          "Item",
+          "B24:",
+          "align",
+          "the",
+          "label",
+          "with",
+          "the",
+          "vertical",
+          "guide.",
+          "The",
+          "image",
+          "and",
+          "text",
+          "must",
+          "turn",
+          "together.",
+          "Surface",
+          "study",
+          "B24:",
+          "flowing",
+          "bands",
+          "across",
+          "a",
+          "curved",
+          "field.",
+          "UP",
+          "BASE",
+          "Small-print",
+          "check:",
+          "12.50",
+          "units;",
+          "upper",
+          "arrow",
+          "UP;",
+          "lower",
+          "marker",
+          "BASE.",
+          "End",
+          "of",
+          "sheet",
+          "B2",
+          "/",
+          "Orientation",
+          "checked",
+          "against",
+          "the",
+          "heading."
+        ]
+      },
+      {
+        "page": 3,
+        "words": [
+          "Keep",
+          "detail",
+          "in",
+          "a",
+          "smaller",
+          "file",
+          "Sheet",
+          "C3",
+          "/",
+          "Delivery",
+          "notes",
+          "Searchable",
+          "text",
+          "should",
+          "remain",
+          "text",
+          "after",
+          "compression.",
+          "Keep",
+          "the",
+          "coloured",
+          "image",
+          "and",
+          "the",
+          "fine",
+          "vector",
+          "diagram.",
+          "Item",
+          "C31:",
+          "compare",
+          "the",
+          "narrow",
+          "lines",
+          "and",
+          "the",
+          "shaded",
+          "areas.",
+          "Read",
+          "the",
+          "final",
+          "note",
+          "before",
+          "sharing",
+          "the",
+          "repaired",
+          "PDF.",
+          "Surface",
+          "study",
+          "C31:",
+          "close",
+          "contours",
+          "with",
+          "a",
+          "warm",
+          "central",
+          "ridge.",
+          "UP",
+          "BASE",
+          "Small-print",
+          "check:",
+          "revision",
+          "C;",
+          "8.25",
+          "units;",
+          "no",
+          "change",
+          "to",
+          "the",
+          "wording.",
+          "End",
+          "of",
+          "sheet",
+          "C3",
+          "/",
+          "The",
+          "final",
+          "line",
+          "must",
+          "remain",
+          "on",
+          "the",
+          "page."
+        ]
+      }
+    ]
+  },
+  "pages_before": [
+    {
+      "page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "crop_box_pt": [
+        110.0,
+        60.0,
+        565.0,
+        740.0
+      ],
+      "rotation": 0,
+      "words": 68,
+      "images": 1
+    },
+    {
+      "page": 2,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "crop_box_pt": [
+        0.0,
+        0.0,
+        595.2756,
+        841.8898
+      ],
+      "rotation": 90,
+      "words": 74,
+      "images": 1
+    },
+    {
+      "page": 3,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        640.0,
+        900.0
+      ],
+      "crop_box_pt": [
+        0.0,
+        0.0,
+        640.0,
+        900.0
+      ],
+      "rotation": 0,
+      "words": 82,
+      "images": 1
+    }
+  ],
+  "pages_after": [
+    {
+      "page": 1,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.28,
+        841.89
+      ],
+      "crop_box_pt": [
+        0.0,
+        0.0,
+        595.28,
+        841.89
+      ],
+      "rotation": 0,
+      "words": 68,
+      "images": 1
+    },
+    {
+      "page": 2,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.28,
+        841.89
+      ],
+      "crop_box_pt": [
+        0.0,
+        0.0,
+        595.28,
+        841.89
+      ],
+      "rotation": 0,
+      "words": 74,
+      "images": 1
+    },
+    {
+      "page": 3,
+      "media_box_pt": [
+        0.0,
+        0.0,
+        595.28,
+        841.89
+      ],
+      "crop_box_pt": [
+        0.0,
+        0.0,
+        595.28,
+        841.89
+      ],
+      "rotation": 0,
+      "words": 82,
+      "images": 1
+    }
+  ],
+  "checks": [
+    {
+      "name": "page_count",
+      "passed": true,
+      "observation": {
+        "before": 3,
+        "after": 3
+      }
+    },
+    {
+      "name": "page_1_text",
+      "passed": true,
+      "observation": {
+        "input_words": 68,
+        "output_words": 68,
+        "comparison": "exact words in page reading order; whitespace normalized"
+      }
+    },
+    {
+      "name": "page_1_images",
+      "passed": true,
+      "observation": {
+        "before": 1,
+        "after": 1
+      }
+    },
+    {
+      "name": "page_1_geometry",
+      "passed": true,
+      "observation": {
+        "media_box_pt": [
+          0.0,
+          0.0,
+          595.28,
+          841.89
+        ],
+        "rotation": 0
+      }
+    },
+    {
+      "name": "page_2_text",
+      "passed": true,
+      "observation": {
+        "input_words": 74,
+        "output_words": 74,
+        "comparison": "exact words in page reading order; whitespace normalized"
+      }
+    },
+    {
+      "name": "page_2_images",
+      "passed": true,
+      "observation": {
+        "before": 1,
+        "after": 1
+      }
+    },
+    {
+      "name": "page_2_geometry",
+      "passed": true,
+      "observation": {
+        "media_box_pt": [
+          0.0,
+          0.0,
+          595.28,
+          841.89
+        ],
+        "rotation": 0
+      }
+    },
+    {
+      "name": "page_3_text",
+      "passed": true,
+      "observation": {
+        "input_words": 82,
+        "output_words": 82,
+        "comparison": "exact words in page reading order; whitespace normalized"
+      }
+    },
+    {
+      "name": "page_3_images",
+      "passed": true,
+      "observation": {
+        "before": 1,
+        "after": 1
+      }
+    },
+    {
+      "name": "page_3_geometry",
+      "passed": true,
+      "observation": {
+        "media_box_pt": [
+          0.0,
+          0.0,
+          595.28,
+          841.89
+        ],
+        "rotation": 0
+      }
+    },
+    {
+      "name": "metadata",
+      "passed": true,
+      "observation": {
+        "info": false,
+        "xmp": false,
+        "attachments": 0
+      }
+    },
+    {
+      "name": "qpdf_structure",
+      "passed": true,
+      "observation": "qpdf --check exited 0"
+    },
+    {
+      "name": "text_within_safe_area",
+      "passed": true,
+      "observation": {
+        "words_measured": 224,
+        "margin_mm": 10,
+        "minimum_word_box_height_pt": 8.138
+      }
+    },
+    {
+      "name": "minimum_text_size",
+      "passed": true,
+      "observation": {
+        "minimum_word_box_height_pt": 8.138,
+        "minimum_allowed_pt": 7
+      }
+    },
+    {
+      "name": "image_resolution",
+      "passed": true,
+      "observation": [
+        {
+          "page": 1,
+          "type": "image",
+          "width": 904,
+          "height": 646,
+          "x_ppi": 150,
+          "y_ppi": 171
+        },
+        {
+          "page": 2,
+          "type": "image",
+          "width": 904,
+          "height": 646,
+          "x_ppi": 150,
+          "y_ppi": 171
+        },
+        {
+          "page": 3,
+          "type": "image",
+          "width": 841,
+          "height": 601,
+          "x_ppi": 150,
+          "y_ppi": 171
+        }
+      ]
+    },
+    {
+      "name": "embedded_fonts",
+      "passed": true,
+      "observation": [
+        "name                                 type              encoding         emb sub uni object ID",
+        "------------------------------------ ----------------- ---------------- --- --- --- ---------",
+        "ZTGBCN+DejaVuSans-Bold               TrueType          WinAnsi          yes yes no       7  0",
+        "AAWXEA+DejaVuSans                    TrueType          WinAnsi          yes yes no       9  0"
+      ]
+    },
+    {
+      "name": "visual_conservation",
+      "passed": true,
+      "observation": {
+        "mean_absolute_rgb_error_per_page": [
+          0.58619,
+          0.59038,
+          0.52883
+        ],
+        "maximum_allowed": 3,
+        "scale": "0–255; Poppler at 90 dpi against restored uncompressed source"
+      }
+    },
+    {
+      "name": "smaller_file",
+      "passed": true,
+      "observation": {
+        "input_bytes": 28396434,
+        "output_bytes": 124858
+      }
+    }
+  ],
+  "tools": {
+    "python": "3.11.2",
+    "pypdf": "5.1.0",
+    "pillow": "9.4.0",
+    "reportlab": "3.6.12",
+    "ghostscript": "10.00.0",
+    "qpdf": "qpdf version 11.3.0",
+    "poppler": "pdftoppm version 22.12.0",
+    "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)"
+  },
+  "uncertainties": [
+    "Dominant text baseline determines orientation; mixed-direction layouts require visual review.",
+    "Annotations, forms, actions, attachments, named destinations and layers are rejected before processing.",
+    "No Acrobat, Microsoft Office, email provider, PDF/A or accessibility certification was tested."
+  ],
+  "human_steps": []
+}

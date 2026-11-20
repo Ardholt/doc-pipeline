@@ -1,0 +1,19 @@
+DRY STORAGE / 097
+
+Record DQ7-07. Round 07. Sheet 097.
+
+Dry storage depends on routine observation as well as closed lids. Check the seal before moving a container and look for a change in the paper liner. A small curl at an edge may be the first visible sign that conditions have changed.
+
+The tray for item K097 showed a light scuff near the rim. The scuff was compared with the earlier condition note. It was kept in the record even though it did not prevent the next check.
+
+Separate observations from explanations. Record a damp patch as a damp patch; do not record a leak unless its path has been found. Move the affected material to the holding shelf and preserve the arrangement that will help the next inspection.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K097	61	3	64
+RO97	65	4	69
+
+The first row records 61 ready pieces and 3 held pieces, giving 64 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record DO07-07 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

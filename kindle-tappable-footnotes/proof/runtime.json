@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scope": "EPUB generation, validation, browser checks and proof image; excludes container setup, manuscript authoring, page screenshots and visual review",
+  "elapsed_seconds": 37.542,
+  "limits": {
+    "cpus": 2,
+    "memory": "2g",
+    "workload_timeout_seconds": 1080,
+    "network": "none"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "recipe": "../harness/Dockerfile",
+  "runner": "../harness/run-container.sh",
+  "image": "dp-school-forms:1",
+  "build_args": {
+    "EXTRA_APT": "libreoffice-writer=4:7.4.7-1+deb12u14 python3-uno=4:7.4.7-1+deb12u14",
+    "EXTRA_PIP": ""
+  },
+  "status": "Built successfully with rootless Docker; actual versions and resolved inventory in output/report.json and output/packages.tsv.",
+  "image_config_digest": "sha256:7701ae488aeb88fdcf79d5fb4001c7b742f0f9a3d594c560dc816ff5472d56ab"
+}

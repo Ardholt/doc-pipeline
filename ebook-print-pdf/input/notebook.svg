@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340">
+<rect x="120" y="12" width="400" height="310" rx="3" fill="white" stroke="#333" stroke-width="2"/>
+<path d="M160 68H475M160 91H390M160 250H475M160 275H430" fill="none" stroke="#777" stroke-width="2"/>
+<path d="M235 207Q253 112 335 132Q367 179 284 206Z M253 197L329 142 M278 174L284 147 M297 159L327 168" fill="none" stroke="#333" stroke-width="3"/>
+<text x="160" y="48" font-family="DejaVu Sans" font-size="16">PLACE</text>
+<text x="374" y="177" font-family="DejaVu Sans" font-size="16">DETAIL</text>
+<text x="160" y="309" font-family="DejaVu Sans" font-size="16">RETURN</text>
+</svg>

@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "claim": "I turned the manuscript into a print interior",
+      "evidence": [
+        {
+          "path": "input/manuscript.md",
+          "field": "entire file"
+        },
+        {
+          "path": "output/interior.pdf",
+          "field": "all pages"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/transformations"
+        }
+      ]
+    },
+    {
+      "claim": "The opening passage before and after formatting, with the finished page's folio",
+      "evidence": [
+        {
+          "path": "output/hero.png",
+          "field": "both detail panels and folio crop"
+        },
+        {
+          "path": "output/render-map.json",
+          "field": "/hero"
+        },
+        {
+          "path": "output/before.pdf",
+          "field": "page 1"
+        },
+        {
+          "path": "output/interior.pdf",
+          "field": "page 3"
+        }
+      ]
+    },
+    {
+      "claim": "26 pages",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/counts/pages"
+        }
+      ],
+      "measurement": "pypdf 5.1.0 page tree"
+    },
+    {
+      "claim": "152.4 × 228.6 mm trim, no bleed",
+      "evidence": [
+        {
+          "path": "input/print.json",
+          "field": "/trim_width_mm, /trim_height_mm, /bleed_mm"
+        },
+        {
+          "path": "output/geometry.json",
+          "field": "/pages"
+        }
+      ],
+      "calculation": "TrimBox dimensions in PDF points × 25.4 / 72; MediaBox equals TrimBox for zero bleed",
+      "measurement": "pypdf 5.1.0"
+    },
+    {
+      "claim": "18 mm safe margins; 11 pt is the size of the manuscript paragraph text",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/checks: safe_margins, body_type_size"
+        }
+      ],
+      "measurement": "Poppler 22.12.0 text bounding boxes and pypdf 5.1.0 font operators with the typesetter's content transform"
+    },
+    {
+      "claim": "6 chapter openings and 6 footnotes",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/counts/chapters, /counts/footnotes"
+        },
+        {
+          "path": "output/source-map.json",
+          "field": "/chapters, /footnotes"
+        }
+      ],
+      "measurement": "Pandoc 2.17.1.1 source tree and Poppler 22.12.0 PDF text"
+    },
+    {
+      "claim": "4 embedded font resources",
+      "evidence": [
+        {
+          "path": "output/geometry.json",
+          "field": "/fonts"
+        }
+      ],
+      "measurement": "pypdf 5.1.0 font descriptors; resources can share a font face"
+    },
+    {
+      "claim": "0 missing source blocks",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/counts/missing_blocks"
+        },
+        {
+          "path": "output/report.json",
+          "field": "/checks: source_text_and_order"
+        }
+      ],
+      "measurement": "Pandoc 2.17.1.1 and Poppler 22.12.0; single-column geometric line order, NFKC, whitespace normalization and separately checked notes"
+    },
+    {
+      "claim": "Chapter openings on right-hand pages; notes at the foot of the page; running heads and page numbers",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/checks: recto_chapter_openings, footnotes_at_page_bottom, page_numbers"
+        },
+        {
+          "path": "output/contact-sheet.png",
+          "field": "all pages"
+        },
+        {
+          "path": "proof/visual-review.json",
+          "field": "/interior"
+        }
+      ]
+    },
+    {
+      "claim": "Every page rendered and reviewed; illustration and caption retained",
+      "evidence": [
+        {
+          "path": "output/contact-sheet.png",
+          "field": "all frames in page order"
+        },
+        {
+          "path": "output/details/page-09.png",
+          "field": "whole page"
+        },
+        {
+          "path": "proof/visual-review.json",
+          "field": "/interior"
+        }
+      ]
+    },
+    {
+      "claim": "Phone and desktop page previews",
+      "evidence": [
+        {
+          "path": "output/page-previews/screenshots.json",
+          "field": "/screenshots, /surface"
+        }
+      ],
+      "measurement": "Chromium 156.0.8078.79; offline local frames, not live publication"
+    },
+    {
+      "claim": "Checker detects damaged PDF content and geometry and accepts supported replacement inputs",
+      "evidence": [
+        {
+          "path": "output/validation.json",
+          "field": "/checks"
+        },
+        {
+          "path": "proof/reproducibility.json",
+          "field": "entire file"
+        }
+      ]
+    },
+    {
+      "claim": "Printer upload, PDF/X certification, physical proof and cover not tested",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "field": "/uncertainties"
+        }
+      ]
+    },
+    {
+      "claim": "Fixed price in a written scope, sent within hours",
+      "evidence": [
+        {
+          "path": "proof/scope.json",
+          "field": "/offer, /reason"
+        }
+      ],
+      "scope": "Scope-based offer wording; no transaction or delivery-time measurement is claimed for this build."
+    }
+  ]
+}

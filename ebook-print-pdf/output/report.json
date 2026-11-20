@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "case": "ebook-print-pdf",
+  "input_hashes": {
+    "manuscript.md": "1fd2dbf4735f3d2b379e331630692aa4666f9357b39820ebeef9fc4921b2f5b7",
+    "notebook.svg": "c58080e429a8143ff8143839d70b27e9b52960555a0cce4ae1d48490384f278d",
+    "print.json": "aa5c6bf45c3c8fea4d6ba70a43cb1cb867b8162fd80d8a3335d35eaa7f1dbda1"
+  },
+  "output_hashes": {
+    "before-detail.png": "e01cfbe7652dcb9779f0a813556976d3f0f0c299af6ee11a2807437670348343",
+    "before.pdf": "5229f5f4f3c861877a092616e429cc94f4f86d09b9f7c691cdaa28304ad5a364",
+    "contact-sheet.png": "d99d20d9afd534157deddd789e07dbff16ef49874c18b1cd21ba039277682feb",
+    "extracted-text.txt": "dcaf833a11365b025267cd7626a75ec97ef2e9df1bfe9964422a213542d2b4eb",
+    "fonts-dejavu.txt": "9f8a3a9faa510ec132c70a3af30f42636145d4fbc0370dee6c44a53ed17cd2a2",
+    "geometry.json": "5b445249c84c53e23995ab454106ced37a1981b3d5df368591cfebf2e8496678",
+    "hero.png": "baa9b78f3f565c4281316b82b7411f82156ff6f83581db33be128d5c72ea4b0c",
+    "interior.pdf": "a5f818c115f985ccaa631cd3a958442967b517d2afc1f24a670e5289c38b29ee",
+    "layout.html": "bb8aa28ae627d20f074ebe406225529ca4b7d0aabb2d63a98f903ccad95d1c23",
+    "packages.tsv": "9fb278092edc970177ffb506cea24c1f8a1378ac8338df0d4c24303380fb0e0a",
+    "page-pair.png": "f1339a86234c94b9de25a7d7cccf372216e7f09387dfed200f9e2e4fae33c913",
+    "render-map.json": "0e69257e9b3624f145e6981f56e48ea61f13f8fb2839d2ebf0dd52c63c094271",
+    "source-map.json": "706c65fef541ec0ee12369d6a60ce5f1228a3ba1897915b4992275a7b2381d5f",
+    "validation.json": "ea39d347b6c5bed6d0b28004b709565fcef741dbef1c71f2ce4dd62a7f9c3fd6"
+  },
+  "transformations": [
+    {
+      "operation": "Pandoc Markdown parse",
+      "format": "markdown; raw HTML and unsupported blocks rejected"
+    },
+    {
+      "operation": "paged typesetting",
+      "settings": {
+        "schema_version": 1,
+        "title": "The Unhurried Notebook",
+        "trim_width_mm": 152.4,
+        "trim_height_mm": 228.6,
+        "bleed_mm": 0,
+        "margin_mm": 18,
+        "body_pt": 11,
+        "subtitle": "Notes on attention, ordinary places,\nand the practice of looking again"
+      },
+      "running_heads": "book title on verso; chapter title on recto; suppressed on front matter, blank and chapter-opening pages",
+      "chapter_openings": "recto",
+      "footnotes": "page-bottom floats"
+    },
+    {
+      "operation": "deterministic embedded-font timestamps",
+      "source_date_epoch": 0
+    },
+    {
+      "operation": "PDF cleaning",
+      "removed": [
+        "Info",
+        "XMP"
+      ],
+      "boxes": "MediaBox = trim + twice bleed; TrimBox inset by bleed",
+      "even_page_count": "append a blank final verso when necessary"
+    },
+    {
+      "operation": "render cleaned PDFs",
+      "renderer": "Poppler",
+      "all_pages_dpi": 96,
+      "detail_pages_dpi": 144
+    }
+  ],
+  "counts": {
+    "pages": 26,
+    "chapters": 6,
+    "source_blocks": 119,
+    "missing_blocks": 0,
+    "footnotes": 6,
+    "svg_illustrations": 1,
+    "embedded_fonts": 4,
+    "link_annotations": 18
+  },
+  "checks": [
+    {
+      "name": "even_page_count",
+      "passed": true,
+      "observation": {
+        "pages": 26,
+        "blank_pages": []
+      }
+    },
+    {
+      "name": "page_boxes",
+      "passed": true,
+      "observation": {
+        "expected_media_pt": [
+          0,
+          0,
+          432.00000000000006,
+          648.0
+        ],
+        "expected_trim_pt": [
+          0.0,
+          0.0,
+          432.00000000000006,
+          648.0
+        ],
+        "pages": 26
+      }
+    },
+    {
+      "name": "safe_margins",
+      "passed": true,
+      "observation": {
+        "margin_mm": 18,
+        "tolerance_pt": 0.8,
+        "violations": []
+      }
+    },
+    {
+      "name": "embedded_fonts",
+      "passed": true,
+      "observation": [
+        {
+          "name": "/RNPMTZ+Book,",
+          "embedded": true,
+          "type": "/Type0"
+        },
+        {
+          "name": "/XXVIDT+Label",
+          "embedded": true,
+          "type": "/Type0"
+        },
+        {
+          "name": "/NXTEPY+Book,-Oblique",
+          "embedded": true,
+          "type": "/Type0"
+        },
+        {
+          "name": "/QIHVOV+DejaVu-Sans",
+          "embedded": true,
+          "type": "/Type0"
+        }
+      ]
+    },
+    {
+      "name": "metadata_removed",
+      "passed": true,
+      "observation": "PDF Info and XMP absent"
+    },
+    {
+      "name": "no_attachments_or_active_content",
+      "passed": true,
+      "observation": "Only link annotations permitted; no attachments or open action"
+    },
+    {
+      "name": "source_text_and_order",
+      "passed": true,
+      "observation": {
+        "mapped_blocks": 119,
+        "missing_or_out_of_order": [],
+        "normalization": "Single-column geometric line order; NFKC; whitespace and soft hyphens removed; note-call digits matched only at source note positions"
+      }
+    },
+    {
+      "name": "footnotes_retained",
+      "passed": true,
+      "observation": [
+        {
+          "number": 1,
+          "text": "A second look need not correct the first. It can add a different distance, a later light, or a detail that was previously hidden.",
+          "found": true,
+          "page": 5
+        },
+        {
+          "number": 2,
+          "text": "An inference is a conclusion drawn from what is visible. Marking it as an inference keeps the observation available for another explanation.",
+          "found": true,
+          "page": 10
+        },
+        {
+          "number": 3,
+          "text": "Memory can preserve an impression while changing its wording. Distinguish a note made on the spot from one written afterwards when that difference matters.",
+          "found": true,
+          "page": 13
+        },
+        {
+          "number": 4,
+          "text": "Keep a correction legible beside the original wording. Removing the earlier sentence can hide the reason for the later one.",
+          "found": true,
+          "page": 17
+        },
+        {
+          "number": 5,
+          "text": "A connecting note is a new piece of writing. Keep it distinct from the observations it brings together, so a later reader can trace the connection.",
+          "found": true,
+          "page": 21
+        },
+        {
+          "number": 6,
+          "text": "An open question is not an obligation. Keep it only while it continues to make another look possible.",
+          "found": true,
+          "page": 25
+        }
+      ]
+    },
+    {
+      "name": "recto_chapter_openings",
+      "passed": true,
+      "observation": [
+        {
+          "title": "A first look",
+          "page": 3
+        },
+        {
+          "title": "The work of naming",
+          "page": 7
+        },
+        {
+          "title": "A walk with a small radius",
+          "page": 11
+        },
+        {
+          "title": "Returning to the same place",
+          "page": 15
+        },
+        {
+          "title": "Making a page that can be found",
+          "page": 19
+        },
+        {
+          "title": "Leaving room for the next look",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "name": "footnotes_at_page_bottom",
+      "passed": true,
+      "observation": [
+        {
+          "number": 1,
+          "note_page": 5,
+          "bottom_marker_found": true
+        },
+        {
+          "number": 2,
+          "note_page": 10,
+          "bottom_marker_found": true
+        },
+        {
+          "number": 3,
+          "note_page": 13,
+          "bottom_marker_found": true
+        },
+        {
+          "number": 4,
+          "note_page": 17,
+          "bottom_marker_found": true
+        },
+        {
+          "number": 5,
+          "note_page": 21,
+          "bottom_marker_found": true
+        },
+        {
+          "number": 6,
+          "note_page": 25,
+          "bottom_marker_found": true
+        }
+      ]
+    },
+    {
+      "name": "contents_links",
+      "passed": true,
+      "observation": {
+        "link_annotations": 18,
+        "chapters": 6,
+        "manuscript_links": 0
+      }
+    },
+    {
+      "name": "navigation_targets",
+      "passed": true,
+      "observation": {
+        "invalid_links": [],
+        "missing_targets": [],
+        "missing_uris": []
+      }
+    },
+    {
+      "name": "page_numbers",
+      "passed": true,
+      "observation": [
+        {
+          "page": 3,
+          "found": true
+        },
+        {
+          "page": 4,
+          "found": true
+        },
+        {
+          "page": 5,
+          "found": true
+        },
+        {
+          "page": 6,
+          "found": true
+        },
+        {
+          "page": 7,
+          "found": true
+        },
+        {
+          "page": 8,
+          "found": true
+        },
+        {
+          "page": 9,
+          "found": true
+        },
+        {
+          "page": 10,
+          "found": true
+        },
+        {
+          "page": 11,
+          "found": true
+        },
+        {
+          "page": 12,
+          "found": true
+        },
+        {
+          "page": 13,
+          "found": true
+        },
+        {
+          "page": 14,
+          "found": true
+        },
+        {
+          "page": 15,
+          "found": true
+        },
+        {
+          "page": 16,
+          "found": true
+        },
+        {
+          "page": 17,
+          "found": true
+        },
+        {
+          "page": 18,
+          "found": true
+        },
+        {
+          "page": 19,
+          "found": true
+        },
+        {
+          "page": 20,
+          "found": true
+        },
+        {
+          "page": 21,
+          "found": true
+        },
+        {
+          "page": 22,
+          "found": true
+        },
+        {
+          "page": 23,
+          "found": true
+        },
+        {
+          "page": 24,
+          "found": true
+        },
+        {
+          "page": 25,
+          "found": true
+        },
+        {
+          "page": 26,
+          "found": true
+        }
+      ]
+    },
+    {
+      "name": "vector_illustrations",
+      "passed": true,
+      "observation": {
+        "svg_sources": [
+          "notebook.svg"
+        ],
+        "raster_images": [],
+        "resolution": "SVG illustrations remain vector; no raster DPI applies"
+      }
+    },
+    {
+      "name": "text_line_collisions",
+      "passed": true,
+      "observation": []
+    },
+    {
+      "name": "body_type_size",
+      "passed": true,
+      "observation": {
+        "requested_pt": 11,
+        "size_with_most_paragraph_text_pt": 11.0,
+        "share_of_paragraph_text": 0.996,
+        "observed_sizes_pt": [
+          7.7,
+          8.0,
+          8.5,
+          8.58,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          14.0,
+          18.0,
+          24.0,
+          29.0
+        ]
+      }
+    },
+    {
+      "name": "footnote_call_type_size",
+      "passed": true,
+      "observation": {
+        "requested_call_pt": 7.699999999999999,
+        "observed_sizes_pt": [
+          7.7,
+          8.0,
+          8.5,
+          8.58,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          14.0,
+          18.0,
+          24.0,
+          29.0
+        ]
+      }
+    },
+    {
+      "name": "qpdf_structure",
+      "passed": true,
+      "observation": "qpdf --check exit 0"
+    }
+  ],
+  "tools": {
+    "Python": "3.11.2",
+    "Pandoc": "pandoc 2.17.1.1",
+    "WeasyPrint": "57.2",
+    "pypdf": "5.1.0",
+    "ReportLab": "3.6.12",
+    "Pillow": "9.4.0",
+    "Poppler": "pdftoppm version 22.12.0",
+    "qpdf": "qpdf version 11.3.0",
+    "Chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)"
+  },
+  "uncertainties": [
+    "No printer upload, PDF/X certification, physical proof or cover was tested.",
+    "No Microsoft Word, LibreOffice, Kindle device or Kindle Previewer was run.",
+    "Visual review applies to the shipped manuscript; replacement manuscripts require fresh page review."
+  ],
+  "human_steps": [
+    "Original manuscript and SVG authored for this delivery.",
+    "See proof/visual-review.json for the recorded inspection of rendered pages."
+  ]
+}

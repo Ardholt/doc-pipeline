@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "case": "data-to-powerpoint",
+  "input_hashes": {
+    "data.csv": "2b48feecd497ad932a8e1a2bd0aac267d5ec825739d09201558f3ea79e977c80",
+    "deck.json": "54e20b05a8b5348424c9e2343c0a402bbef79a827b7ecfa7422aeffed8b4756d"
+  },
+  "output_hashes": {
+    "chart-detail.png": "844688b6a3a77e66309b88492e67d73c378d40e2ce3f3f2cd5ba49cb7cdc703e",
+    "contact-sheet.png": "5a6039dd6c7526181b538217b63b62c54010ed3432b4b888689eb6d8404027e8",
+    "deck.pdf": "be8e097767a60eec8ed814ab76f15e44122e18b60170c37123fd5dd50ad252a5",
+    "deck.pptx": "524bfe9bae7877dfdacea41d1d94dcb40267f8ab1e6b1ccd25f1be0d1b1106f2",
+    "font-inventory.json": "d454a7d2ecadf214ba343c810757b2da0ca1c03a82cfa39bc107ff99a5a69182",
+    "font-licences/DejaVu.txt": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+    "hero-map.json": "7488a1a2a334d4a76a311302d49c03b235a3c8020f351cbf24b35716306fd607",
+    "hero.png": "c70f6b49b49f914f83b69d6981bf4b6c90cc3c710730e8d9b2ca224538da2805",
+    "packages.tsv": "191046ee30e194e5bca7e8ac9bdb09f23fae02e75193ab6ea5555635c64d5fcb",
+    "pdf-fonts.txt": "eac64cfad231fc1955f970ac7da27a8313f814c87d4b8e816ee4aca1ebc0a16f",
+    "slides/slide-01.png": "3411bb1add708387e6b9992913fe68c36995e16bf36c11d656dcba21f3a9f700",
+    "slides/slide-02.png": "563b9a34ae065f964a956315c05e9b0d132fde72b564d79e5c3c236f4c1aa53c",
+    "slides/slide-03.png": "2fd037f6b5c542a9e8c5eaf72c327d9abb9ad64f73b9cd12df15694e3fcffa6d",
+    "slides/slide-04.png": "0629cbc75d2074d52e5b3db5c44d51636578b5132ff68e95fb65d1f980daa5a8",
+    "slides/slide-05.png": "8f873a6bea940868466c5badc8d35dd09b9ff65a859ea477cef3aa934dbe4dc1",
+    "source-map.json": "d6917fd388465474718173f6fc339480b876a9cf5198e393c66c0528f18b95d8"
+  },
+  "transformations": [
+    {
+      "operation": "Validate complete department/period grid and decimal money"
+    },
+    {
+      "operation": "Aggregate revenue and cost; subtract exact decimals for profit"
+    },
+    {
+      "operation": "Create native chart shapes; store exact decimal lexical values in embedded workbook numeric cells; paginate departments and periods"
+    },
+    {
+      "operation": "Remove PPTX/workbook properties before LibreOffice PDF conversion; remove PDF metadata before raster rendering"
+    }
+  ],
+  "counts": {
+    "source_rows": 9,
+    "departments": 3,
+    "periods": 3,
+    "slides": 5,
+    "editable_charts": 7,
+    "totals": {
+      "revenue": "90000.00",
+      "cost": "70000.00",
+      "profit": "20000.00"
+    }
+  },
+  "checks": [
+    {
+      "name": "Chart caches and embedded workbooks reconcile",
+      "passed": true,
+      "observation": "18 plotted values matched exact decimal input aggregates across 7 native charts."
+    },
+    {
+      "name": "Department order, colours, axes and source mapping",
+      "passed": true,
+      "observation": "Order and colours match deck.json; axes include zero and all values; source line maps match chart parts."
+    },
+    {
+      "name": "Editable text and rendered totals",
+      "passed": true,
+      "observation": "5 native slides and PDF pages; title and revenue/cost/profit totals present; no raster slide pictures."
+    },
+    {
+      "name": "Package metadata and hashes",
+      "passed": true,
+      "observation": "No PPTX/workbook properties, comments, external relationships, PDF metadata/annotations or PNG metadata; input/output hashes match."
+    }
+  ],
+  "tools": {
+    "Python": "3.11.2",
+    "python-pptx": "1.0.2",
+    "pypdf": "5.1.0",
+    "LibreOffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "Poppler": "pdftoppm version 22.12.0",
+    "Chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)"
+  },
+  "uncertainties": [
+    "Microsoft PowerPoint and Excel were not run.",
+    "Native PPTX numeric cells use floating-point storage; checks reconcile their decimal representation to exact source amounts.",
+    "Offline page previews use the shared GitHub frame approximation, not captures of published pages."
+  ],
+  "human_steps": [
+    "Authored anonymous source figures.",
+    "Reviewed all rendered slides and case-page screenshots before delivery; review record is in proof/visual-review.json."
+  ]
+}

@@ -1,0 +1,19 @@
+LABEL READING / 051
+
+Record D04-06. Round 04. Sheet 051.
+
+Read a label from left to right before copying its code. Similar characters are a reason to slow down, especially where a faint stroke might be part of a letter. Compare the code with the item record only after making an initial reading.
+
+The tray for item K051 showed a faint code on the upper face. The code was read twice under steady light. Both readings were retained because the final character needs another inspection.
+
+Keep the old label when a replacement is fitted. Write down the reason for replacement and check that the new label identifies the same item. Clear lettering is helpful, but an attractive label attached to the wrong container creates a larger problem.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+KQ51	57	2	59
+ROQ51	61	3	64
+
+The first row records 57 ready pieces and 2 held pieces, giving 59 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D04-06 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

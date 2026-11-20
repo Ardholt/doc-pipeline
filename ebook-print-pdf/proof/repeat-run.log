@@ -1,0 +1,5 @@
+PASS: fault injection and alternate input checks
+PASS: existing PDF independently checked against manuscript, geometry, fonts, notes, links and hashes
+PASS: case-page screenshots at 390 and 1366 CSS pixels
+PASS: interior 26 pages; 6 chapters; source text, boxes, fonts and notes checked
+PASS: run completed; elapsed 28 seconds (including setup)

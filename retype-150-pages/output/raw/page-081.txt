@@ -1,0 +1,19 @@
+LABEL READING / 081
+
+Record D06-06. Round 06. Sheet 081.
+
+Read a label from left to right before copying its code. Similar characters are a reason to slow down, especially where a faint stroke might be part of a letter. Compare the code with the item record only after making an initial reading.
+
+The tray for item KQ81 showed an uneven stack of thin pieces. The stack was divided into smaller groups on the mat. Each group was counted before the pieces were returned to the container.
+
+Keep the old label when a replacement is fitted. Write down the reason for replacement and check that the new label identifies the same item. Clear lettering is helpful, but an attractive label attached to the wrong container creates a larger problem.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K081	55	2	By
+R081	59	3	62
+
+The first row records 55 ready pieces and 2 held pieces, giving 57 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D06-06 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "trim_box",
+      "passed": true,
+      "observation": {
+        "detected_by": [
+          "page_boxes"
+        ],
+        "hash_check_used": false
+      }
+    },
+    {
+      "name": "removed_page",
+      "passed": true,
+      "observation": {
+        "detected_by": [
+          "even_page_count",
+          "source_text_and_order",
+          "recto_chapter_openings",
+          "page_numbers"
+        ],
+        "hash_check_used": false
+      }
+    },
+    {
+      "name": "erased_text",
+      "passed": true,
+      "observation": {
+        "detected_by": [
+          "source_text_and_order"
+        ],
+        "hash_check_used": false
+      }
+    },
+    {
+      "name": "removed_link",
+      "passed": true,
+      "observation": {
+        "detected_by": [
+          "contents_links"
+        ],
+        "hash_check_used": false
+      }
+    },
+    {
+      "name": "damaged_link",
+      "passed": true,
+      "observation": {
+        "detected_by": [
+          "navigation_targets"
+        ],
+        "hash_check_used": false
+      }
+    },
+    {
+      "name": "narrow_bleed",
+      "passed": true,
+      "observation": {
+        "settings": {
+          "trim_width_mm": 120,
+          "trim_height_mm": 180,
+          "bleed_mm": 3,
+          "margin_mm": 25
+        },
+        "failures": [],
+        "pages": 4
+      }
+    },
+    {
+      "name": "wide_trim",
+      "passed": true,
+      "observation": {
+        "settings": {
+          "trim_width_mm": 220,
+          "trim_height_mm": 300,
+          "bleed_mm": 0,
+          "margin_mm": 15
+        },
+        "failures": [],
+        "pages": 4
+      }
+    },
+    {
+      "name": "negative_width",
+      "passed": true,
+      "observation": "print.json: trim_width_mm must be a number in 120\u2013220"
+    },
+    {
+      "name": "wrong_type",
+      "passed": true,
+      "observation": "print.json: bleed_mm must be a number in 0\u20133"
+    },
+    {
+      "name": "body_too_large",
+      "passed": true,
+      "observation": "print.json: body_pt must be a number in 9\u201316"
+    },
+    {
+      "name": "missing_title",
+      "passed": true,
+      "observation": "print.json: title must be nonempty text"
+    },
+    {
+      "name": "missing_print_json",
+      "passed": true,
+      "observation": "missing required input: print.json"
+    }
+  ]
+}

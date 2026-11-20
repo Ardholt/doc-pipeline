@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "name": "replacement_scan",
+      "passed": true,
+      "observation": "Two-page image-only PDF, directory names containing spaces, no reference accuracy assertion, no review file."
+    },
+    {
+      "name": "review_integration",
+      "passed": true,
+      "observation": "One literal correction, including a line break, reaches DOCX/PDF while retained raw text is unchanged."
+    },
+    {
+      "name": "missing_review_match",
+      "passed": true,
+      "observation": "Nonzero exit with a specific zero-match diagnostic."
+    },
+    {
+      "name": "missing_scan",
+      "passed": true,
+      "observation": "Nonzero exit with required scan filename."
+    },
+    {
+      "name": "invalid_scan",
+      "passed": true,
+      "observation": "Malformed PDF gives nonzero exit; no success message."
+    }
+  ]
+}

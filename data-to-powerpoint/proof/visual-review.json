@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scope": "Delivered presentation and final offline case-page captures; source values compared with department C plot.",
+  "reviews": [
+    {
+      "file": "output/slides/slide-01.png",
+      "sha256": "3411bb1add708387e6b9992913fe68c36995e16bf36c11d656dcba21f3a9f700",
+      "observation": "Reviewed in the contact sheet and at slide scale: takeaway, labels, totals, legend where used and source footer are visible; no clipped shapes or unreadable text in the delivered slide."
+    },
+    {
+      "file": "output/slides/slide-02.png",
+      "sha256": "563b9a34ae065f964a956315c05e9b0d132fde72b564d79e5c3c236f4c1aa53c",
+      "observation": "Reviewed in the contact sheet and at slide scale: takeaway, labels, totals, legend where used and source footer are visible; no clipped shapes or unreadable text in the delivered slide."
+    },
+    {
+      "file": "output/slides/slide-03.png",
+      "sha256": "2fd037f6b5c542a9e8c5eaf72c327d9abb9ad64f73b9cd12df15694e3fcffa6d",
+      "observation": "Reviewed in the contact sheet and at slide scale: takeaway, labels, totals, legend where used and source footer are visible; no clipped shapes or unreadable text in the delivered slide."
+    },
+    {
+      "file": "output/slides/slide-04.png",
+      "sha256": "0629cbc75d2074d52e5b3db5c44d51636578b5132ff68e95fb65d1f980daa5a8",
+      "observation": "Reviewed in the contact sheet and at slide scale: takeaway, labels, totals, legend where used and source footer are visible; no clipped shapes or unreadable text in the delivered slide."
+    },
+    {
+      "file": "output/slides/slide-05.png",
+      "sha256": "8f873a6bea940868466c5badc8d35dd09b9ff65a859ea477cef3aa934dbe4dc1",
+      "observation": "Reviewed in the contact sheet and at slide scale: takeaway, labels, totals, legend where used and source footer are visible; no clipped shapes or unreadable text in the delivered slide."
+    },
+    {
+      "file": "output/page-previews/github-1366.png",
+      "sha256": "d138c48d3325880ca312044942860c582072089b0dec3cca918e7ffdc5080a73",
+      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+    },
+    {
+      "file": "output/page-previews/github-390.png",
+      "sha256": "ab261ed58adc2586647100141ec61d17b056ed86adcbba551ec859b0b56424a4",
+      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+    },
+    {
+      "file": "output/page-previews/pages-1366.png",
+      "sha256": "b4661e29549d2519fc338fa6e110555e1469cde86447e80fd199c31fcb662558",
+      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+    },
+    {
+      "file": "output/page-previews/pages-390.png",
+      "sha256": "1c41cd3b4713b5aec27a361f83070b47762a557cd87262c7f78047a407bd7ba4",
+      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+    }
+  ],
+  "data_observation": "Department C profit is zero in January and negative 500 in February and March. The labels sit below the negative bars, and independent profit axes are disclosed on the slide.",
+  "identity_review": "Documents and source use anonymous department codes. No contact details, logos, customer quotes or business identity appear in the presentation or images. Required third-party font licence notices remain verbatim in their separate notice file.",
+  "compatibility": "LibreOffice rendering reviewed. Microsoft PowerPoint and Excel not run."
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "PASS for local paths and JSON claim pointers",
+  "checked_links": [
+    {
+      "source": "README.md",
+      "target": "media/hero.png",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "media/hero.png",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "media/hero.png",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "input/page-01.png",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/preview.pdf",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "source/pen-strokes.svg",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "source/authorship.md",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/report.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "https://github.com/Ardholt/doc-pipeline/raw/refs/heads/main/handwritten-notes/output/notes.docx",
+      "status": "local raw-download target exists; URL not fetched in the offline run"
+    },
+    {
+      "source": "README.md",
+      "target": "output/notes.txt",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/preview.pdf",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/preview.png",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/mapping.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/uncertainties.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "input/transcript.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "input/pages.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "output/runtime.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "proof/claims.json",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "source/usage.md",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "proof/visual-review.md",
+      "status": "exists"
+    },
+    {
+      "source": "README.md",
+      "target": "../LICENSE",
+      "status": "exists"
+    },
+    {
+      "source": "proof/visual-review.md",
+      "target": "../output/preview.png",
+      "status": "exists"
+    },
+    {
+      "source": "proof/visual-review.md",
+      "target": "../media/hero.png",
+      "status": "exists"
+    }
+  ],
+  "external_not_fetched": [
+    "../README.md (root index)",
+    "https://ardholt.com/p/",
+    "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml",
+    "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg",
+    "https://github.com/Ardholt/doc-pipeline/blob/main/handwritten-notes/output/page-previews/github-1366.png",
+    "https://github.com/Ardholt/doc-pipeline/blob/main/handwritten-notes/output/page-previews/github-390.png",
+    "https://github.com/Ardholt/doc-pipeline/blob/main/handwritten-notes/output/page-previews/pages-1366.png",
+    "https://github.com/Ardholt/doc-pipeline/blob/main/handwritten-notes/output/page-previews/pages-390.png",
+    "https://github.com/Ardholt/doc-pipeline/blob/main/handwritten-notes/output/page-previews/screenshots.json"
+  ],
+  "boundary": "Offline link-target validation; does not assert hosted workflow/site/download reachability. Jekyll relative-links rewrites Markdown document paths when the site is built."
+}

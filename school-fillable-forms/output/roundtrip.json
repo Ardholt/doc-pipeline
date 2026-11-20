@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "forms": [
+    {
+      "form": "trip-permission",
+      "entry": {
+        "method": "LibreOffice UNO cursor inside ContentControl / Checked; storeAsURL; close",
+        "before": [
+          {
+            "field_id": "activity",
+            "adjacent_label_read": "Activity reference *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "arrangements",
+            "adjacent_label_read": "Travel arrangements *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "permission",
+            "adjacent_label_read": "Permission for the stated activity *",
+            "type": "checkbox",
+            "value": false
+          }
+        ],
+        "entered": [
+          {
+            "field_id": "activity",
+            "adjacent_label_read": "Activity reference *",
+            "type": "text",
+            "value": "TRIP-04 | Museum visit"
+          },
+          {
+            "field_id": "arrangements",
+            "adjacent_label_read": "Travel arrangements *",
+            "type": "text",
+            "value": "Use the school coach.\nReturn with the group after the visit."
+          },
+          {
+            "field_id": "permission",
+            "adjacent_label_read": "Permission for the stated activity *",
+            "type": "checkbox",
+            "value": true
+          }
+        ]
+      },
+      "reopen_after_metadata_removal": {
+        "blank": [
+          {
+            "field_id": "activity",
+            "adjacent_label_read": "Activity reference *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "arrangements",
+            "adjacent_label_read": "Travel arrangements *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "permission",
+            "adjacent_label_read": "Permission for the stated activity *",
+            "type": "checkbox",
+            "value": false
+          }
+        ],
+        "filled": [
+          {
+            "field_id": "activity",
+            "adjacent_label_read": "Activity reference *",
+            "type": "text",
+            "value": "TRIP-04 | Museum visit"
+          },
+          {
+            "field_id": "arrangements",
+            "adjacent_label_read": "Travel arrangements *",
+            "type": "text",
+            "value": "Use the school coach.\nReturn with the group after the visit."
+          },
+          {
+            "field_id": "permission",
+            "adjacent_label_read": "Permission for the stated activity *",
+            "type": "checkbox",
+            "value": true
+          }
+        ],
+        "method": "Reopen sanitized DOCX in LibreOffice UNO; inspect controls; export PDF"
+      },
+      "ooxml_before": {
+        "controls": [
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "Select here to type",
+            "checked": null
+          },
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "Select here to type",
+            "checked": null
+          },
+          {
+            "type": "checkbox",
+            "label": null,
+            "id": null,
+            "text": "☐",
+            "checked": false
+          }
+        ],
+        "xml_sdt_nodes": 4,
+        "container_wrappers": 1,
+        "text": "SCHOOL OFFICE  /  TRIP-PERMISSIONSchool trip permissionSelect each shaded field to enter text. Select the box to change its state. Keep a saved copy of the completed form. Required fields are marked with an asterisk.Activity reference *Select here to typeTravel arrangements *Select here to typePermission for the stated activity *☐Save the completed DOCX. Use the PDF for viewing or printing.",
+        "rows": [
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "620",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          }
+        ],
+        "parts": [
+          "[Content_Types].xml",
+          "_rels/.rels",
+          "word/_rels/document.xml.rels",
+          "word/document.xml",
+          "word/fontTable.xml",
+          "word/settings.xml",
+          "word/styles.xml"
+        ]
+      },
+      "ooxml_after": {
+        "controls": [
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "TRIP-04 | Museum visit",
+            "checked": null
+          },
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "Use the school coach.\nReturn with the group after the visit.",
+            "checked": null
+          },
+          {
+            "type": "checkbox",
+            "label": null,
+            "id": null,
+            "text": "☒",
+            "checked": true
+          }
+        ],
+        "xml_sdt_nodes": 4,
+        "container_wrappers": 1,
+        "text": "SCHOOL OFFICE  /  TRIP-PERMISSIONSchool trip permissionSelect each shaded field to enter text. Select the box to change its state. Keep a saved copy of the completed form. Required fields are marked with an asterisk.Activity reference *TRIP-04 | Museum visitTravel arrangements *Use the school coach.\nReturn with the group after the visit.Permission for the stated activity *☒Save the completed DOCX. Use the PDF for viewing or printing.",
+        "rows": [
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "620",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          }
+        ],
+        "parts": [
+          "[Content_Types].xml",
+          "_rels/.rels",
+          "word/_rels/document.xml.rels",
+          "word/document.xml",
+          "word/fontTable.xml",
+          "word/settings.xml",
+          "word/styles.xml"
+        ]
+      }
+    },
+    {
+      "form": "absence-request",
+      "entry": {
+        "method": "LibreOffice UNO cursor inside ContentControl / Checked; storeAsURL; close",
+        "before": [
+          {
+            "field_id": "period",
+            "adjacent_label_read": "Requested period *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "reason",
+            "adjacent_label_read": "Reason and return arrangements *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "acknowledged",
+            "adjacent_label_read": "I understand approval is required *",
+            "type": "checkbox",
+            "value": false
+          },
+          {
+            "field_id": "work",
+            "adjacent_label_read": "Learning materials requested",
+            "type": "checkbox",
+            "value": false
+          }
+        ],
+        "entered": [
+          {
+            "field_id": "period",
+            "adjacent_label_read": "Requested period *",
+            "type": "text",
+            "value": "One morning session"
+          },
+          {
+            "field_id": "reason",
+            "adjacent_label_read": "Reason and return arrangements *",
+            "type": "text",
+            "value": "Attend an appointment.\nReturn for the afternoon session."
+          },
+          {
+            "field_id": "acknowledged",
+            "adjacent_label_read": "I understand approval is required *",
+            "type": "checkbox",
+            "value": true
+          },
+          {
+            "field_id": "work",
+            "adjacent_label_read": "Learning materials requested",
+            "type": "checkbox",
+            "value": false
+          }
+        ]
+      },
+      "reopen_after_metadata_removal": {
+        "blank": [
+          {
+            "field_id": "period",
+            "adjacent_label_read": "Requested period *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "reason",
+            "adjacent_label_read": "Reason and return arrangements *",
+            "type": "text",
+            "value": "Select here to type"
+          },
+          {
+            "field_id": "acknowledged",
+            "adjacent_label_read": "I understand approval is required *",
+            "type": "checkbox",
+            "value": false
+          },
+          {
+            "field_id": "work",
+            "adjacent_label_read": "Learning materials requested",
+            "type": "checkbox",
+            "value": false
+          }
+        ],
+        "filled": [
+          {
+            "field_id": "period",
+            "adjacent_label_read": "Requested period *",
+            "type": "text",
+            "value": "One morning session"
+          },
+          {
+            "field_id": "reason",
+            "adjacent_label_read": "Reason and return arrangements *",
+            "type": "text",
+            "value": "Attend an appointment.\nReturn for the afternoon session."
+          },
+          {
+            "field_id": "acknowledged",
+            "adjacent_label_read": "I understand approval is required *",
+            "type": "checkbox",
+            "value": true
+          },
+          {
+            "field_id": "work",
+            "adjacent_label_read": "Learning materials requested",
+            "type": "checkbox",
+            "value": false
+          }
+        ],
+        "method": "Reopen sanitized DOCX in LibreOffice UNO; inspect controls; export PDF"
+      },
+      "ooxml_before": {
+        "controls": [
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "Select here to type",
+            "checked": null
+          },
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "Select here to type",
+            "checked": null
+          },
+          {
+            "type": "checkbox",
+            "label": null,
+            "id": null,
+            "text": "☐",
+            "checked": false
+          },
+          {
+            "type": "checkbox",
+            "label": null,
+            "id": null,
+            "text": "☐",
+            "checked": false
+          }
+        ],
+        "xml_sdt_nodes": 6,
+        "container_wrappers": 2,
+        "text": "SCHOOL OFFICE  /  ABSENCE-REQUESTSchool absence requestSelect each shaded field to enter text. Select the box to change its state. This form records a request; it does not confirm approval. Required fields are marked with an asterisk.Requested period *Select here to typeReason and return arrangements *Select here to typeI understand approval is required *☐Learning materials requested☐Save the completed DOCX. Use the PDF for viewing or printing.",
+        "rows": [
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "620",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "620",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          }
+        ],
+        "parts": [
+          "[Content_Types].xml",
+          "_rels/.rels",
+          "word/_rels/document.xml.rels",
+          "word/document.xml",
+          "word/fontTable.xml",
+          "word/settings.xml",
+          "word/styles.xml"
+        ]
+      },
+      "ooxml_after": {
+        "controls": [
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "One morning session",
+            "checked": null
+          },
+          {
+            "type": "text",
+            "label": null,
+            "id": null,
+            "text": "Attend an appointment.\nReturn for the afternoon session.",
+            "checked": null
+          },
+          {
+            "type": "checkbox",
+            "label": null,
+            "id": null,
+            "text": "☒",
+            "checked": true
+          },
+          {
+            "type": "checkbox",
+            "label": null,
+            "id": null,
+            "text": "☐",
+            "checked": false
+          }
+        ],
+        "xml_sdt_nodes": 6,
+        "container_wrappers": 2,
+        "text": "SCHOOL OFFICE  /  ABSENCE-REQUESTSchool absence requestSelect each shaded field to enter text. Select the box to change its state. This form records a request; it does not confirm approval. Required fields are marked with an asterisk.Requested period *One morning sessionReason and return arrangements *Attend an appointment.\nReturn for the afternoon session.I understand approval is required *☒Learning materials requested☐Save the completed DOCX. Use the PDF for viewing or printing.",
+        "rows": [
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1400",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "620",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          },
+          {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "620",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hRule": "exact"
+          }
+        ],
+        "parts": [
+          "[Content_Types].xml",
+          "_rels/.rels",
+          "word/_rels/document.xml.rels",
+          "word/document.xml",
+          "word/fontTable.xml",
+          "word/settings.xml",
+          "word/styles.xml"
+        ]
+      }
+    }
+  ]
+}

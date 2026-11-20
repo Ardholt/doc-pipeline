@@ -1,0 +1,13 @@
+{
+  "trip-permission": {
+    "activity": "TRIP-04 | Museum visit",
+    "arrangements": "Use the school coach.\nReturn with the group after the visit.",
+    "permission": true
+  },
+  "absence-request": {
+    "period": "One morning session",
+    "reason": "Attend an appointment.\nReturn for the afternoon session.",
+    "acknowledged": true,
+    "work": false
+  }
+}

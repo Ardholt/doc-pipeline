@@ -1,0 +1,19 @@
+SURFACE CARE / 095
+
+Record DO7-05. Round 07. Sheet 095.
+
+A work surface should be cleared before it is cleaned. Move the loose items into a tray and retain their order. Use a dry cloth first so that coarse particles are removed rather than dragged across the surface during the next pass.
+
+The tray for item K095 showed a light scuff near the rim. The scuff was compared with the earlier condition note. It was kept in the record even though it did not prevent the next check.
+
+Inspect the edge as well as the centre. A narrow strip beneath a raised lip can hold material that is missed by a quick wipe. Record persistent marks separately from removable dirt so that tomorrow's check starts from the right condition.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K095	47	al	48
+RO95	Syl	2	53
+
+The first row records 47 ready pieces and 1 held pieces, giving 48 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D07-05 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

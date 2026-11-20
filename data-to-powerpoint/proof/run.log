@@ -1,0 +1,37 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.20kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc
+#4 resolve docker.io/library/debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc 0.0s done
+#4 DONE 0.0s
+
+#5 [2/2] RUN printf 'Acquire::Retries "2"; Acquire::http::Timeout "30"; Acquire::https::Timeout "30"; Acquire::Check-Valid-Until "false";\n' > /etc/apt/apt.conf.d/80bounded  && timeout 180 apt-get update  && timeout 900 apt-get install -y --no-install-recommends     ca-certificates=20230311+deb12u1     python3=3.11.2-1+b1 python3-venv=3.11.2-1+b1     python3-pil=9.4.0-1.1+deb12u1 python3-reportlab=3.6.12-1+deb12u1     python3-markdown=3.4.1-2+deb12u1     ghostscript=10.0.0~dfsg-11+deb12u9 qpdf=11.3.0-1+deb12u1     poppler-utils=22.12.0-2+deb12u3 chromium=156.0.8078.79-1~deb12u1     fonts-dejavu-core=2.37-6 fonts-liberation=1:1.07.4-11 libreoffice-impress=4:7.4.7-1+deb12u14  && python3 -m venv --system-site-packages /opt/venv  && timeout 180 /opt/venv/bin/pip install --no-cache-dir --retries 2 --timeout 30 pypdf==5.1.0 python-pptx==1.0.2 XlsxWriter==3.3.1 lxml==6.1.3 typing-extensions==4.16.0  && dpkg-query -W -f='${Package}\t${Version}\n' > /opt/packages.tsv  && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 exporting to image
+#6 exporting layers done
+#6 exporting manifest sha256:b1242b0dd2eb1f878c5e09e6eba0590cc9d22cc6825e6438396cebce473ba880 done
+#6 exporting config sha256:1fc5b4c7ec28a1f67815ce04cff277ef55204c934ab2f7f3a605a030f7b02401 done
+#6 exporting attestation manifest sha256:6f4503c541492b497c24d17fb00d50389a7b285e3a79777a1f354c04a6a92afa 0.1s done
+#6 exporting manifest list sha256:71b7212e4f45bc555200ffacc991c668a262537d4c2befbf98f20cc5b3dfa918 0.0s done
+#6 naming to docker.io/library/dp-deck:1 done
+#6 unpacking to docker.io/library/dp-deck:1 0.0s done
+#6 DONE 0.2s
+PASS: Chart caches and embedded workbooks reconcile
+PASS: Department order, colours, axes and source mapping
+PASS: Editable text and rendered totals
+PASS: Package metadata and hashes
+PASS: deliberate damage and invalid-input checks
+PASS: case-page screenshots at 390 and 1366 CSS pixels
+PASS: document workload completed in 12.241 seconds
+PASS: run completed; elapsed 15 seconds (including setup)

@@ -1,0 +1,73 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  case:
+    name: ${{ matrix.case }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        case:
+          - school-fillable-forms
+          - ebook-print-pdf
+          - kindle-tappable-footnotes
+          - retype-150-pages
+          - handwritten-notes
+          - data-to-powerpoint
+          - pdf-layout-compression
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      # Builds the pinned image (needs the network only for the declared packages),
+      # regenerates the outputs from input/ offline and runs the case's checks.
+      - name: Build, regenerate and check
+        run: cd "${{ matrix.case }}" && ./run.sh
+
+      - name: Inspect the existing output without rebuilding
+        run: cd "${{ matrix.case }}" && ./run.sh --check
+
+      - name: Replacement-input and repeatability checks
+        if: matrix.case == 'retype-150-pages'
+        run: cd retype-150-pages && ./tests/adversarial.sh
+
+      - name: Replacement-input and repeatability checks
+        if: matrix.case == 'data-to-powerpoint'
+        run: cd data-to-powerpoint && ./tests/acceptance.sh
+
+      - name: Damaged-output and invalid-input checks
+        if: matrix.case == 'pdf-layout-compression'
+        run: |
+          docker run --rm --cpus 2 --memory 2g --network none \
+            --user "$(id -u):$(id -g)" \
+            --mount "type=bind,src=$PWD/pdf-layout-compression,dst=/case,readonly" \
+            --mount "type=bind,src=$PWD/pdf-layout-compression/input,dst=/input,readonly" \
+            --mount "type=bind,src=$PWD/pdf-layout-compression/output,dst=/output" \
+            dp-base:1 python /case/tests/adversarial.py /input /output
+
+      - name: Render the case page offline
+        if: matrix.case == 'pdf-layout-compression'
+        run: |
+          docker run --rm --cpus 2 --memory 2g --network none \
+            --user "$(id -u):$(id -g)" --env HOME=/tmp \
+            --mount "type=bind,src=$PWD/harness,dst=/harness,readonly" \
+            --mount "type=bind,src=$PWD/pdf-layout-compression,dst=/case,readonly" \
+            --mount "type=bind,src=$PWD/pdf-layout-compression/output,dst=/output" \
+            dp-base:1 python /harness/screenshot.py /case /output/page-previews
+
+      - name: Keep the reports and renders
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ${{ matrix.case }}
+          path: ${{ matrix.case }}/output/
+          if-no-files-found: error

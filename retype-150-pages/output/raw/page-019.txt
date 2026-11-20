@@ -1,0 +1,19 @@
+COUNTING METHOD / 019
+
+Record D02-04. Round 02. Sheet 019.
+
+A count begins with a defined unit. Loose pieces, paired pieces and sealed packs must not share a column unless the conversion is written down. Read the unit aloud at the start of the count and repeat it when another person takes over.
+
+The tray for item K019 showed a loose inner divider. The divider was lifted out and placed beside the tray. The contents stayed in their original groups while the support was checked.
+
+Make a short tally after each group rather than carrying a long number in memory. When two counts differ, repeat the smaller group that contains the difference. Do not average the totals: the required result is a count, not an estimate.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K019	45	5	50
+R019	49	6	55
+
+The first row records 45 ready pieces and 5 held pieces, giving 50 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D02-04 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

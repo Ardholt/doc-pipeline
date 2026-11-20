@@ -1,0 +1,19 @@
+PACKING ORDER / 041
+
+Record DO3-11. Round 03. Sheet 041.
+
+Packing starts with the item that needs the most support. Arrange the remaining pieces so that none can move across a working edge. Check the container by lifting it gently before closing it; a shifting weight is a reason to open it again.
+
+The tray for item K041 showed a folded corner on the liner. The corner was opened without pulling the rest of the liner free. No loose pieces were found beneath the fold.
+
+Leave the contents list on top of the inner wrapping. The next reader should not have to empty the container to discover what belongs inside. Keep a separate count for loose fittings and use the same names on the list and the record.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K041	40	2	42
+RO41	44	3	47
+
+The first row records 40 ready pieces and 2 held pieces, giving 42 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D03-11 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "method": "Parse Markdown link targets and check local files; inspect final offline rendered surfaces. No live URL response is inferred from an offline render.",
+  "links": [
+    {
+      "target": "media/hero.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "media/hero.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/browser-audit.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/epubcheck.log",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/source-map.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/negative-tests.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/book.epub",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "input/manuscript.md",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "input/book.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/report.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "output/runtime.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "media/reader-passage.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "media/reader-note-390-100.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "media/reader-note-390-150.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "media/reader-note-1366-100.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "media/reader-return-390-100.png",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "source/INPUT.md",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg",
+      "status": "external; not fetched in the offline run",
+      "reason": "The offline build does not fetch URLs."
+    },
+    {
+      "target": "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml",
+      "status": "external; not fetched in the offline run",
+      "reason": "The offline build does not fetch URLs."
+    },
+    {
+      "target": "proof/claims.json",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    },
+    {
+      "target": "../README.md",
+      "status": "root index dependency",
+      "reason": "The root case index is checked at repository level."
+    },
+    {
+      "target": "LICENSE",
+      "status": "PASS",
+      "github_resolution": "relative to case folder",
+      "pages_resolution": "relative to case URL; no underscored or excluded path"
+    }
+  ]
+}

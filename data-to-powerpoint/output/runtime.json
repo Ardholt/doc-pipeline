@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scope": "Document generation, rendering and checks; excludes image build and manual review. Shell stdout includes setup.",
+  "elapsed_seconds": 10.527,
+  "limits": {
+    "cpus": 2,
+    "memory": "2g",
+    "workload_seconds": 1080,
+    "build_seconds": 1500
+  },
+  "status": "PASS"
+}

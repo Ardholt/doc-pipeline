@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "case directory",
+  "claims": [
+    {
+      "claim": "2 forms and 7 leaf fields",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "pointer": "/counts"
+        },
+        {
+          "path": "output/roundtrip.json",
+          "pointer": "/forms"
+        }
+      ],
+      "calculation": "Sum of inspected leaf controls across the forms; XML container wrappers recorded separately"
+    },
+    {
+      "claim": "Fields survive a LibreOffice save, close and reopen",
+      "evidence": [
+        {
+          "path": "output/roundtrip.json",
+          "pointer": "/forms"
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/tools/LibreOffice"
+        }
+      ]
+    },
+    {
+      "claim": "Fixed-height rows and label positions within half a point",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "pointer": "/transformations/0"
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/measurements"
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/layout_tolerance_pt"
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/tools/Poppler"
+        }
+      ],
+      "calculation": "Maximum absolute x/y difference of matching PDF label word boxes; threshold 0.5 pt"
+    },
+    {
+      "claim": "Preview uses actual PDF rasterizations; see crop mapping for selected fields",
+      "evidence": [
+        {
+          "path": "output/preview-map.json",
+          "pointer": ""
+        },
+        {
+          "path": "output/hero.png",
+          "frame": "text and checkbox crops from first form blank and filled PDF rasterizations"
+        }
+      ]
+    },
+    {
+      "claim": "Microsoft Word was not available or tested; LibreOffice was run",
+      "evidence": [
+        {
+          "path": "output/report.json",
+          "pointer": "/uncertainties/0"
+        },
+        {
+          "path": "output/report.json",
+          "pointer": "/tools/LibreOffice"
+        }
+      ]
+    },
+    {
+      "claim": "Invalid inputs and damaged saved values, links and pages are rejected",
+      "evidence": [
+        {
+          "path": "output/selftest.json",
+          "pointer": "/checks"
+        },
+        {
+          "path": "output/rendered-negative.json",
+          "pointer": "/checks"
+        }
+      ]
+    },
+    {
+      "claim": "Document workload runs offline, with separate read-only input and writable output",
+      "evidence": [
+        {
+          "path": "../harness/run-container.sh",
+          "lines": "Docker run network and bind-mount arguments"
+        },
+        {
+          "path": "run.sh",
+          "lines": "shared runner invocation"
+        }
+      ]
+    },
+    {
+      "claim": "Fields are editable and are not locked; pipeline enforces documented input limits",
+      "evidence": [
+        {
+          "path": "source/forms.py",
+          "symbols": [
+            "validate",
+            "make_blank"
+          ]
+        },
+        {
+          "path": "INPUT.md",
+          "section": "Supported boundaries"
+        }
+      ]
+    },
+    {
+      "claim": "Page screenshots are offline renders at phone and desktop sizes",
+      "evidence": [
+        {
+          "path": "output/page-previews/screenshots.json",
+          "pointer": "/screenshots"
+        },
+        {
+          "path": "output/page-previews/screenshots.json",
+          "pointer": "/surface"
+        }
+      ]
+    }
+  ]
+}

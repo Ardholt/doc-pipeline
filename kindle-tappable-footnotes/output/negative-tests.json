@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "tests": [
+    {
+      "damage": "broken forward",
+      "rejected": true,
+      "diagnostic": "missing destination notes.xhtml#absent"
+    },
+    {
+      "damage": "wrong return",
+      "rejected": true,
+      "diagnostic": "return destination mismatch"
+    },
+    {
+      "damage": "lost body text",
+      "rejected": true,
+      "diagnostic": "manuscript text differs"
+    },
+    {
+      "damage": "lost note text",
+      "rejected": true,
+      "diagnostic": "note text differs"
+    }
+  ],
+  "input_contracts": [
+    {
+      "case": "replacement title, Unicode, list and shared note in paths with spaces",
+      "passed": true
+    },
+    {
+      "case": "undefined note",
+      "passed": true,
+      "diagnostic": "footnote definitions and references must match"
+    },
+    {
+      "case": "unsupported raw content",
+      "passed": true,
+      "diagnostic": "unsupported manuscript element: RawBlock; use text, headings, lists, quotes and footnotes"
+    },
+    {
+      "case": "empty manuscript",
+      "passed": true,
+      "diagnostic": "manuscript.md must not be empty"
+    },
+    {
+      "case": "invalid schema version type",
+      "passed": true,
+      "diagnostic": "book.json schema_version must be the integer 1"
+    },
+    {
+      "case": "missing manuscript",
+      "passed": true,
+      "diagnostic": "missing required input: manuscript.md"
+    }
+  ]
+}

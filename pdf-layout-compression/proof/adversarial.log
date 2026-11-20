@@ -1,0 +1,12 @@
+ impossible to decode XFormObject /R11
+PASS: rejected missing page
+PASS: rejected changed text
+PASS: rejected cropped page
+PASS: rejected missing image
+PASS: rejected encrypted input
+PASS: rejected malformed input
+PASS: rejected missing input
+PASS: rejected annotation before processing
+PASS: rejected out-of-range margin
+PASS: rejected wrong value type
+PASS: mutation tests and independent authored reference

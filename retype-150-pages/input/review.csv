@@ -1,0 +1,13 @@
+page,find,replace,reason
+1,DQ1-01,D01-01,Opening record code read from scan page 1
+1,KOO1,K001,First table item code read from scan page 1
+1,ROO1,R001,Second table item code read from scan page 1
+1,2.	27,2	27,Held count has no full stop in scan page 1
+1,DO1-01,D01-01,Closing record code read from scan page 1
+31,DOQ3-01,D03-01,Opening record code read from scan page 31
+31,KO31,K031,First table item code read from scan page 31
+31,RO31,R031,Second table item code read from scan page 31
+31,23	72	25,23	2	25,Held count read as 2 from scan page 31
+121,REGETRT IGHECK 7/ e121,RECEIPT CHECK / 121,Heading read from scan page 121
+121,DO9-01,D09-01,Opening record code read from scan page 121
+121,74	3	Ui,74	3	77,Second row total read as 77 from scan page 121

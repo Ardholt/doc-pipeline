@@ -1,0 +1,161 @@
+{
+  "repo": "Ardholt/doc-pipeline",
+  "casebook": "Document pipelines",
+  "line": "Seven document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.",
+  "about": "Seven document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.",
+  "website": "https://ardholt.com/p/",
+  "topics": [
+    "docx",
+    "pdf",
+    "epub",
+    "pptx",
+    "ocr",
+    "document-automation"
+  ],
+  "pages_root": "https://ardholt.github.io/doc-pipeline/",
+  "licence": "MIT",
+  "cases": [
+    {
+      "slug": "pdf-layout-compression",
+      "folder": "pdf-layout-compression",
+      "title": "My PDF has cut-off pages and is too large to send",
+      "problem": "My PDF has cut-off pages and is too large to send",
+      "result": "I restored the cut-off text and reduced this PDF from 28.40 MB to 0.125 MB, retaining all 3 pages and 224 words.",
+      "tags": [
+        "pdf",
+        "layout",
+        "compression"
+      ],
+      "kinds": [
+        "pdf",
+        "layout",
+        "compression"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/pdf-layout-compression/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/pdf-layout-compression/",
+      "demo_url": null
+    },
+    {
+      "slug": "ebook-print-pdf",
+      "folder": "ebook-print-pdf",
+      "title": "My eBook needs a properly laid-out print PDF",
+      "problem": "My eBook needs a properly laid-out print PDF",
+      "result": "I laid out a six-chapter manuscript as a checked 26-page print interior, with editable source and before/after proof.",
+      "tags": [
+        "pdf",
+        "ebook",
+        "print layout"
+      ],
+      "kinds": [
+        "pdf",
+        "ebook",
+        "print layout"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/ebook-print-pdf/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/ebook-print-pdf/",
+      "demo_url": null
+    },
+    {
+      "slug": "kindle-tappable-footnotes",
+      "folder": "kindle-tappable-footnotes",
+      "title": "Kindle notes won’t open",
+      "problem": "My Kindle book needs footnotes readers can tap and return from",
+      "result": "I built a reflowable EPUB 3 with 22 references to 18 notes, no EPUBCheck errors or warnings, and 88 passing browser tap-and-return journeys; tested in a browser, not on a Kindle or the Kindle Previewer.",
+      "tags": [
+        "epub",
+        "ebook",
+        "footnotes"
+      ],
+      "kinds": [
+        "epub",
+        "ebook",
+        "footnotes"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/kindle-tappable-footnotes/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/kindle-tappable-footnotes/",
+      "demo_url": null
+    },
+    {
+      "slug": "retype-150-pages",
+      "folder": "retype-150-pages",
+      "title": "I need 150 scanned pages made editable",
+      "problem": "I need 150 scanned pages made editable",
+      "result": "I made a generated 150-page typed scan editable and searchable, with every page mapped: 99.813% of characters match the source text, but 203 of its 750 record and item codes in the delivered file are still wrong.",
+      "tags": [
+        "documents",
+        "ocr",
+        "docx",
+        "pdf"
+      ],
+      "kinds": [
+        "documents",
+        "ocr",
+        "docx",
+        "pdf"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/retype-150-pages/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/retype-150-pages/",
+      "demo_url": null
+    },
+    {
+      "slug": "handwritten-notes",
+      "folder": "handwritten-notes",
+      "title": "Handwritten notes, typed without guesswork",
+      "problem": "I need handwritten notes typed clearly without guessing unclear words",
+      "result": "I turned a transcript I prepared from the page into an editable document, a PDF and a page/block map, with the unclear word left marked as [unclear], not guessed; the tool performs no handwriting recognition.",
+      "tags": [
+        "transcription",
+        "handwriting",
+        "docx"
+      ],
+      "kinds": [
+        "transcription",
+        "handwriting",
+        "docx"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/handwritten-notes/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/handwritten-notes/",
+      "demo_url": null
+    },
+    {
+      "slug": "data-to-powerpoint",
+      "folder": "data-to-powerpoint",
+      "title": "My figures need a presentation",
+      "problem": "I need a business presentation built from my figures",
+      "result": "I built an editable PPTX with native charts, a PDF deck and checked source-to-chart reconciliation.",
+      "tags": [
+        "presentations",
+        "pptx",
+        "charts"
+      ],
+      "kinds": [
+        "presentations",
+        "pptx",
+        "charts"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/data-to-powerpoint/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/data-to-powerpoint/",
+      "demo_url": null
+    },
+    {
+      "slug": "school-fillable-forms",
+      "folder": "school-fillable-forms",
+      "title": "School forms that stay in place",
+      "problem": "I need school forms people can fill in without moving the layout",
+      "result": "I built trip-permission and absence-request DOCX forms, entered multiline text and checkbox states in LibreOffice, and verified the saved and reopened files.",
+      "tags": [
+        "docx",
+        "forms",
+        "school"
+      ],
+      "kinds": [
+        "docx",
+        "forms",
+        "school"
+      ],
+      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/school-fillable-forms/README.md",
+      "pages_url": "https://ardholt.github.io/doc-pipeline/school-fillable-forms/",
+      "demo_url": null
+    }
+  ]
+}

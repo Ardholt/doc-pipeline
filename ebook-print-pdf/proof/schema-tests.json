@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "boolean_schema",
+      "passed": true,
+      "diagnostic": "print.json: schema_version must be 1"
+    },
+    {
+      "name": "non_object",
+      "passed": true,
+      "diagnostic": "print.json: expected a JSON object"
+    }
+  ]
+}

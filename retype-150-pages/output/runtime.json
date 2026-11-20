@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scope": "Container workload including OCR, conversion, metrics, renders and checks; excludes image setup, source authoring and visual inspection.",
+  "elapsed_seconds": 238.355,
+  "limits": {
+    "cpus": 2,
+    "memory": "2g",
+    "workload_seconds": 1080,
+    "network": "none"
+  },
+  "status": "passed"
+}

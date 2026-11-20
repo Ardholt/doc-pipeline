@@ -1,0 +1,19 @@
+SMALL REPAIR / 044
+
+Record D0Q3-14. Round 03. Sheet 044.
+
+A small repair begins with a decision about the boundary of the work. Identify the loose or damaged part and keep adjacent parts in their original order. Use a tray for removed fittings so that every piece can be accounted for at the end.
+
+The tray for item K044 showed a folded corner on the liner. The corner was opened without pulling the rest of the liner free. No loose pieces were found beneath the fold.
+
+After the repair, check the function that was affected and the parts disturbed during access. Record what was changed rather than writing only that the item is fixed. A future inspection should be able to identify the repaired area without taking the item apart.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+Ko44	61	5	66
+RO44	65	6	71
+
+The first row records 61 ready pieces and 5 held pieces, giving 66 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D03-14 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

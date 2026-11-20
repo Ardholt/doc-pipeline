@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "recipe": "tests/prepare-boundary.py followed by run.sh with separate absolute input/output paths containing spaces",
+  "observations": {
+    "replacement_input_formats": [
+      "JPEG",
+      "PNG"
+    ],
+    "transcript_order": "reverse of source manifest; the command followed manifest order",
+    "reused_block_ids_across_pages": "accepted; IDs are scoped to each page",
+    "uncertainties": "empty arrays accepted",
+    "counts": {
+      "source_pages": 2,
+      "blocks": 3,
+      "unclear_tokens": 0,
+      "pdf_pages": 2
+    },
+    "rejection_checks": {
+      "name": "rejection_checks",
+      "passed": true,
+      "observation": "7 invalid-input/damaged-output cases rejected."
+    },
+    "missing_input": {
+      "exit_code": 2,
+      "diagnostic": "ERROR: input directory does not exist"
+    }
+  },
+  "input_hashes": {
+    "heading.png": "036ffac261536c04b5a864ea60de7ba892ff37d3e1d111be07050a326fc65e7f",
+    "pages.json": "78578456c77fa1740c920414f2aad3347a9da156cd754ac45b3593ef8ec8d41a",
+    "stock.jpg": "635c2e7b1527931862c28abb263ba31ef31bf64f81eeff7da0e49d2ff9c50159",
+    "transcript.json": "e30259aa80ffe788ebf14875099f99bab52035066fead01efabfcd2905630fe1"
+  },
+  "input_hashes_note": "Hashes of the replacement inputs that tests/prepare-boundary.py generates for this test (a two-page JPEG and PNG set). They are not the files in input/ and are not stored in the repository.",
+  "tools": {
+    "python": "3.11.2",
+    "python-docx": "0.8.11",
+    "pypdf": "5.1.0",
+    "Pillow": "9.4.0",
+    "libreoffice": "LibreOffice 7.4.7.2 40(Build:2)",
+    "pdftoppm": "pdftoppm version 22.12.0",
+    "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 12 (bookworm)",
+    "pdffonts": "pdffonts version 22.12.0"
+  }
+}

@@ -1,0 +1,19 @@
+MEASURING EDGE / 009
+
+Record DO01-09. Round 01. Sheet 009.
+
+A length reading begins at the marked zero rather than at the end of the rule. Hold the rule flat and keep the item square to the scale. Read from directly above the mark so that the edge does not hide the nearest division.
+
+The tray for item K009 showed a pale diagonal mark. The mark remained visible after a dry wipe. Its position was recorded so that a later check can tell whether it has spread.
+
+Record the unit beside the value every time. A bare number can travel into a later table and lose its meaning. If the mark lies between divisions, describe that position; extra decimal places do not make the reading more certain.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K009	28	5	33
+ROO9	32	6	38
+
+The first row records 28 ready pieces and 5 held pieces, giving 33 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D01-09 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

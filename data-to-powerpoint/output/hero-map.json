@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source": "input/data.csv",
+  "source_lines": [
+    4,
+    7,
+    10
+  ],
+  "render": "output/slides/slide-04.png",
+  "crop_inches": [
+    8.950000000000001,
+    2.35,
+    12.950000000000001,
+    6.9
+  ],
+  "display": "Source cells reformatted with thousands separators; output is a crop of the LibreOffice-rendered chart. Month numbers on chart retain the source year in the footer."
+}

@@ -1,0 +1,19 @@
+CLOSING ROUND / 150
+
+Record D10-15. Round 10. Sheet 150.
+
+The closing round leaves the area understandable for the next opening. Return ready items to their marked positions and gather unresolved work into the holding area. Check that every tray has a status note before switching off the task lighting.
+
+The tray for item K150 showed a small difference in the tally. The affected group was counted again from the beginning. The first tally remains in the record beside the second result.
+
+Finish by reading the outstanding list against the physical trays. A written action without a tray may be complete; a tray without an action may be forgotten. Resolve the difference while the work is still fresh, and leave a brief reason for any remaining hold.
+
+COUNT RECORD
+
+Item	Ready	Held	Total
+K150	61	al	62
+R150	65	2	67
+
+The first row records 61 ready pieces and 1 held pieces, giving 62 in all. The second row is a separate group, not an addition to the first. Keep the two item codes distinct when copying these values into a later record.
+
+Closing note: retain record D10-15 with the tray until the next round. Check the status before moving the contents. A corrected entry must preserve the earlier reading and state why it changed; a blank space must never be treated as a zero.

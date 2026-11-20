@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "fonts": [
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+      "sha256": "0d977336a6d5fba34eab8e3199eb218327161b5143749f802982c2bc34df0c96",
+      "notice": "font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+      "sha256": "abdc775b21b1bc470d50c97e790d276f2054b7504e56e5bd3e64f48d68582322",
+      "notice": "font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
+      "sha256": "2964f6dac8e6e9d71613928340f17bf868e9ea51692cca333c79e74962f02233",
+      "notice": "font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+      "sha256": "0f5db4f1749979d961019838b160bec74abdf7f9eca69553fe1aa856bbff49a4",
+      "notice": "font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+      "sha256": "e2fd85eba2de65ac270d1cdb1685e252eb827f600850cf62af2d20c41b22e945",
+      "notice": "font-licences/DejaVu.txt"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+      "sha256": "13e61509f5c81d7c3132810f4f903e3523df89c802bf6e0674621e8f659cdfe1",
+      "notice": "font-licences/DejaVu.txt"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Sensitive-pattern scan plus static OOXML/PDF active-content and PNG metadata audit; current case tree, including decompressed DOCX XML and extracted PDF text. Code publishing read is recorded separately.",
+  "limits": [
+    "Not a general antivirus engine or guarantee against unknown malware.",
+    "Upstream font copyright records are retained verbatim and excluded from contact-pattern matching; signature definitions in this audit script are reviewed separately.",
+    "Evidence inventories exclude their own audit/review files to avoid recursive hashes.",
+    "Live URLs are not fetched in the offline run."
+  ],
+  "excluded_self_evidence": [
+    "output/publication-audit.json",
+    "proof/publication-audit.json",
+    "proof/publication-review.json"
+  ],
+  "findings": [],
+  "files": [
+    {
+      "path": "INPUT.md",
+      "sha256": "69eb9d4cd7761488bdc335d6bd13c62fb92928b063c3a66013b8e2542599cf94",
+      "bytes": 3393
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c0debea6e3254ecdcbafaa45e77895d2b0a9739e79f05a49774ffb8435771d94",
+      "bytes": 1070
+    },
+    {
+      "path": "README.md",
+      "sha256": "2d7bd329c75bd415b6ed2e6981903614944ae4f1d72395d19f7eb9200c551070",
+      "bytes": 4632
+    },
+    {
+      "path": "container-recipe.json",
+      "sha256": "f92d466479be7936d3117ee5dea708e3e5277245037ee950100511197af57b26",
+      "bytes": 512
+    },
+    {
+      "path": "input/forms.json",
+      "sha256": "28d21b8422dcc0f77fde4bf20a69e923468eae36acb9b7a7f9f1d8d744dbcc33",
+      "bytes": 1443
+    },
+    {
+      "path": "input/values.json",
+      "sha256": "3d5568e67be35c02ccb3c10434d68083334c3e94b193ef4d158f50d9ce6979d0",
+      "bytes": 365
+    },
+    {
+      "path": "media/README.md",
+      "sha256": "ab4a77eab780e64fdb614e08578d69b30be078791966e16b54ad8ae5b2d5c6be",
+      "bytes": 629
+    },
+    {
+      "path": "media/hero.png",
+      "sha256": "3df8a066742122b153a3bdc56ae879853af5d631e66eca682aed6e1e169795af",
+      "bytes": 16435
+    },
+    {
+      "path": "output/absence-request-blank.docx",
+      "sha256": "a68616fe01754cbb6010becb903669ad4662ef7249a5da5cd4d9c6ad75f1d8e7",
+      "bytes": 4141
+    },
+    {
+      "path": "output/absence-request-blank.pdf",
+      "sha256": "6965f15d4d686ef342e9b6c37a277ed84928d2b48a350728e355ae6fd569335e",
+      "bytes": 25904
+    },
+    {
+      "path": "output/absence-request-blank.png",
+      "sha256": "a0a9a1676260cfa757519c3ccb2de8637068236e0073f6bf733fc4bc3a9ee209",
+      "bytes": 56799
+    },
+    {
+      "path": "output/absence-request-filled.docx",
+      "sha256": "c08df6ab7201d12e8f60cf93a8959978d1f437ce869c6431b321b7ebb307c0e7",
+      "bytes": 4192
+    },
+    {
+      "path": "output/absence-request-filled.pdf",
+      "sha256": "2aba5ceda441e97fcd8564ea4f0c23a8b1a4cc7058671a2eecc095826a0fdabf",
+      "bytes": 25735
+    },
+    {
+      "path": "output/absence-request-filled.png",
+      "sha256": "a50cd2d4a47c6129e9959c728972753957195034a1ea709d34a454d9054f6c7d",
+      "bytes": 60733
+    },
+    {
+      "path": "output/claims.json",
+      "sha256": "5a0135846d5cc60e93f90c86c157a5c07d56a8eba6a7cfc2b70c969c5c537a15",
+      "bytes": 3534
+    },
+    {
+      "path": "output/font-licenses/fonts-dejavu-core.txt",
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "bytes": 3859
+    },
+    {
+      "path": "output/font-licenses/fonts-liberation.txt",
+      "sha256": "bcb5f95766d5dc969748869eef4559dd991fd31f7e0d30c29e140276cc3c24ee",
+      "bytes": 4473
+    },
+    {
+      "path": "output/hero.png",
+      "sha256": "3df8a066742122b153a3bdc56ae879853af5d631e66eca682aed6e1e169795af",
+      "bytes": 16435
+    },
+    {
+      "path": "output/packages.tsv",
+      "sha256": "918bacd325a607691dc17fcad69fa9d2c75b762b27babfb6eb779fcb978ff754",
+      "bytes": 10441
+    },
+    {
+      "path": "output/page-previews/github-1366.png",
+      "sha256": "59fb82c033ed41ce7e2b8749e54bf8f7f428bc0c60525ef9c2af6126cd209f31",
+      "bytes": 97351
+    },
+    {
+      "path": "output/page-previews/github-390.png",
+      "sha256": "de2a06bc28ebd6972e7aff777ff0e8b7c007213720e55a55f4bf9d161756ae40",
+      "bytes": 67567
+    },
+    {
+      "path": "output/page-previews/pages-1366.png",
+      "sha256": "d03a598076391319ead799b148fc083c4e34af86d6aa39979b493dd9e2f314e4",
+      "bytes": 94393
+    },
+    {
+      "path": "output/page-previews/pages-390.png",
+      "sha256": "b249b059ac766f9ee0f75d89ecd85aa7f55c5c91ffd46b65bdc2382e49b60f49",
+      "bytes": 81089
+    },
+    {
+      "path": "output/page-previews/screenshots.json",
+      "sha256": "4fcb554cf93f82a98f12b0f1ecbc43868d7e4f2d790ada5cd1cd949d43f6d5a4",
+      "bytes": 816
+    },
+    {
+      "path": "output/preview-map.json",
+      "sha256": "43b7040925aa8d15c6829d9426129b634ac43188c22f8696c08055ed4af13564",
+      "bytes": 1340
+    },
+    {
+      "path": "output/rendered-negative.json",
+      "sha256": "cb530fc71e48879fa49c506fd68e02588fe2758d79d6104f4f1949e10a3987b6",
+      "bytes": 617
+    },
+    {
+      "path": "output/report.json",
+      "sha256": "72ef93a29ef7683101334fcf8e31d418dcfa3c31eba77ba36a3a9031c0b30699",
+      "bytes": 5376
+    },
+    {
+      "path": "output/roundtrip.json",
+      "sha256": "9ce11b7f7875281ec9ad16e954c5494f46eeee2d39c6066224c3196773418774",
+      "bytes": 15273
+    },
+    {
+      "path": "output/runtime.json",
+      "sha256": "10099c37fcb4623db0c847d0d05e2b0c9a19102901452c450350ecd72f139b40",
+      "bytes": 251
+    },
+    {
+      "path": "output/selftest.json",
+      "sha256": "a82bb510e0b2b7f8df70859d3734fb3f50bd3c10d5dcfba6ead6f564d3d5c1e1",
+      "bytes": 1708
+    },
+    {
+      "path": "output/trip-permission-blank.docx",
+      "sha256": "9177bff981005542125698db7fe64ac31a6b5e3db99a190592c24c1ead46639f",
+      "bytes": 4065
+    },
+    {
+      "path": "output/trip-permission-blank.pdf",
+      "sha256": "84be2d5504e8cdc8c1df1dbd27456b9471b278491805808152faec39ce3ba7f7",
+      "bytes": 25896
+    },
+    {
+      "path": "output/trip-permission-blank.png",
+      "sha256": "c3cf29bf35d39d633bbd53700eae5cf903ec304b0614bb66b1d980f10cf5c7d8",
+      "bytes": 49894
+    },
+    {
+      "path": "output/trip-permission-filled.docx",
+      "sha256": "26da3043323f2b65821856f857e884db33dd8b05d3afe2a6bc6c35926233aace",
+      "bytes": 4115
+    },
+    {
+      "path": "output/trip-permission-filled.pdf",
+      "sha256": "173cba064535fcb479452937af0ebae3711768e3e72fbe2a93ba3c4b3f1e4f54",
+      "bytes": 26378
+    },
+    {
+      "path": "output/trip-permission-filled.png",
+      "sha256": "35f3e00ea3587448ae1ad9b269e0d39f14be3bd4d7caf2b2c96825cf054b2bba",
+      "bytes": 54916
+    },
+    {
+      "path": "proof/argument-validation.json",
+      "sha256": "8f94dc7019aabae4dcbafe795e7a987cc588691407d0fffa7467c3b247be7156",
+      "bytes": 1750
+    },
+    {
+      "path": "proof/claims.json",
+      "sha256": "5a0135846d5cc60e93f90c86c157a5c07d56a8eba6a7cfc2b70c969c5c537a15",
+      "bytes": 3534
+    },
+    {
+      "path": "proof/repeatability.json",
+      "sha256": "8c29350ab80a99530304a9fd45d8dc3804e0eed321a887fa783957ccf55ed85f",
+      "bytes": 803
+    },
+    {
+      "path": "proof/report.json",
+      "sha256": "72ef93a29ef7683101334fcf8e31d418dcfa3c31eba77ba36a3a9031c0b30699",
+      "bytes": 5376
+    },
+    {
+      "path": "proof/run.txt",
+      "sha256": "f55ad0b69a09ba0413db5075f8cff2ffb33a57e71bb51af623a5c214344b610e",
+      "bytes": 418
+    },
+    {
+      "path": "proof/runtime.json",
+      "sha256": "10099c37fcb4623db0c847d0d05e2b0c9a19102901452c450350ecd72f139b40",
+      "bytes": 251
+    },
+    {
+      "path": "proof/selftest.json",
+      "sha256": "a82bb510e0b2b7f8df70859d3734fb3f50bd3c10d5dcfba6ead6f564d3d5c1e1",
+      "bytes": 1708
+    },
+    {
+      "path": "run.sh",
+      "sha256": "f83627e8a8103247721e1649faddcfa22fc5d7c669dab045675e745a381b47f0",
+      "bytes": 278
+    },
+    {
+      "path": "source/forms.py",
+      "sha256": "de87cf7c7d781b9ef8098c7958efa70565df8f183c7559b8d6a1877bd56dd3ff",
+      "bytes": 11868
+    },
+    {
+      "path": "source/office.py",
+      "sha256": "2e513cf27317124a7241c15f1c6e5e3fe5a66806c19bdd6db7d85448ec5c5d0c",
+      "bytes": 6412
+    },
+    {
+      "path": "source/pipeline.py",
+      "sha256": "7d28ff7b4b413e9b52bcbe579b2a7d14dbfba18786384d0f61e6020eafed9663",
+      "bytes": 13684
+    },
+    {
+      "path": "tests/check.py",
+      "sha256": "3be866a34192d3339d41b628f92aec3f1a6b1a841934a23eac68210cd166f686",
+      "bytes": 7040
+    },
+    {
+      "path": "tests/compare_runs.py",
+      "sha256": "be680031561521d2ee27265659eefaea1e5d50e27df014c35a3f04f52a6e00df",
+      "bytes": 1692
+    },
+    {
+      "path": "tests/fixtures/replacement/forms.json",
+      "sha256": "9fd9b87d0a97dbf703466e3a7804253d6626e825abab024d804af02aecadbdf7",
+      "bytes": 439
+    },
+    {
+      "path": "tests/fixtures/replacement/values.json",
+      "sha256": "60344e230f1d0f96181e05b8857b82eb82b3de72fe9cb29ea9f62363ff8614e5",
+      "bytes": 93
+    },
+    {
+      "path": "tests/publication_audit.py",
+      "sha256": "1fd555a7bb8b7b774bce179e2e26262d54379762332392f64247efed54c15a73",
+      "bytes": 5082
+    },
+    {
+      "path": "tests/rendered_negative.py",
+      "sha256": "59b467e3683e8f04069acc0eef56083c5273e7c9906b27fd4522dbaac3fa2a68",
+      "bytes": 3115
+    },
+    {
+      "path": "tests/selftest.py",
+      "sha256": "f69a1fbbd37876dab745d3bd3c98f374a085396db08d7a22f8d43bbb86c59c36",
+      "bytes": 4169
+    }
+  ],
+  "docx_packages": [
+    {
+      "path": "output/absence-request-blank.docx",
+      "parts": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "word/_rels/document.xml.rels",
+        "word/document.xml",
+        "word/fontTable.xml",
+        "word/settings.xml",
+        "word/styles.xml"
+      ]
+    },
+    {
+      "path": "output/absence-request-filled.docx",
+      "parts": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "word/_rels/document.xml.rels",
+        "word/document.xml",
+        "word/fontTable.xml",
+        "word/settings.xml",
+        "word/styles.xml"
+      ]
+    },
+    {
+      "path": "output/trip-permission-blank.docx",
+      "parts": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "word/_rels/document.xml.rels",
+        "word/document.xml",
+        "word/fontTable.xml",
+        "word/settings.xml",
+        "word/styles.xml"
+      ]
+    },
+    {
+      "path": "output/trip-permission-filled.docx",
+      "parts": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "word/_rels/document.xml.rels",
+        "word/document.xml",
+        "word/fontTable.xml",
+        "word/settings.xml",
+        "word/styles.xml"
+      ]
+    }
+  ],
+  "pngs": [
+    {
+      "path": "media/hero.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/absence-request-blank.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/absence-request-filled.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/hero.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/page-previews/github-1366.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/page-previews/github-390.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/page-previews/pages-1366.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/page-previews/pages-390.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/trip-permission-blank.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    {
+      "path": "output/trip-permission-filled.png",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    }
+  ]
+}

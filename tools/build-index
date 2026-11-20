@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+"""build-index: print the case index for the repo README from cases.json.
+
+    tools/build-index cases.json            # prints the Markdown list
+    tools/build-index cases.json --write README.md
+        # replaces the text between <!-- cases:start --> and <!-- cases:end --> in README.md
+
+A list, not a table: it reads at 390 px. The title link is relative so it works on github.com and on Pages;
+"on the web" links the published Pages case.
+"""
+import json, re, sys
+
+def index(data):
+    out = []
+    for i, c in enumerate(data["cases"], 1):
+        kinds = " · ".join(c.get("kinds", [])[:3])   # written in cases.json as they should show
+        out.append(f"{i}. **[{c['problem']}]({c['folder']}/README.md)**  ")
+        line = c["result"]
+        line += f" · [on the web]({c['pages_url']})"
+        if c.get("demo_url"):
+            line += f" · [open it live]({c['demo_url']})"
+        out.append(f"   {line}  ")
+        if kinds:
+            out.append(f"   <sub>{kinds}</sub>")
+        out.append("")
+    return "\n".join(out).rstrip() + "\n"
+
+def main(argv):
+    if len(argv) < 2 or argv[1] in ("-h", "--help"):
+        print(__doc__); return 2
+    data = json.load(open(argv[1], encoding="utf-8"))
+    md = index(data)
+    if len(argv) == 4 and argv[2] == "--write":
+        path = argv[3]; text = open(path, encoding="utf-8").read()
+        new, n = re.subn(r"(<!-- cases:start -->\n).*?(<!-- cases:end -->)",
+                         lambda m: m.group(1) + md + m.group(2), text, flags=re.S)
+        if n != 1:
+            print(f"build-index: markers not found in {path}", file=sys.stderr); return 1
+        open(path, "w", encoding="utf-8").write(new); print(f"build-index: wrote {len(data['cases'])} cases into {path}")
+    else:
+        sys.stdout.write(md)
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

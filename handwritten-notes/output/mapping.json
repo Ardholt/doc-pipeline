@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {
+      "page_id": "sheet-a",
+      "source_file": "page-01.png",
+      "blocks": [
+        {
+          "block_id": "title",
+          "kind": "heading",
+          "text": "Shelf check",
+          "docx_paragraph_index": 0
+        },
+        {
+          "block_id": "stock",
+          "kind": "paragraph",
+          "text": "Keep 12 boxes.",
+          "docx_paragraph_index": 1
+        },
+        {
+          "block_id": "move",
+          "kind": "bullet",
+          "text": "Move [unclear] shelf.",
+          "docx_paragraph_index": 2
+        }
+      ]
+    }
+  ],
+  "crossed_out_policy": "Omit struck-out words; record each omission in a reviewed decision record before the transcript is formatted."
+}

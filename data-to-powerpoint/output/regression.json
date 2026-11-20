@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "test": "changed chart value",
+      "passed": true,
+      "diagnostic": "chart cache mismatch on slide 2: overview None"
+    },
+    {
+      "test": "changed embedded workbook value",
+      "passed": true,
+      "diagnostic": "embedded workbook mismatch on slide 2"
+    },
+    {
+      "test": "changed visible total",
+      "passed": true,
+      "diagnostic": "visible title-slide total mismatch"
+    },
+    {
+      "test": "duplicate row",
+      "passed": true,
+      "diagnostic": "data.csv line 11: duplicate period/department"
+    },
+    {
+      "test": "missing money",
+      "passed": true,
+      "diagnostic": "data.csv line 2: revenue must be nonnegative decimal money with up to two decimal places"
+    },
+    {
+      "test": "negative revenue",
+      "passed": true,
+      "diagnostic": "data.csv line 2: revenue must be nonnegative decimal money with up to two decimal places"
+    },
+    {
+      "test": "excess precision",
+      "passed": true,
+      "diagnostic": "data.csv line 2: revenue must be nonnegative decimal money with up to two decimal places"
+    },
+    {
+      "test": "missing department-period",
+      "passed": true,
+      "diagnostic": "data.csv: each period must contain every department; missing rows are not treated as zero"
+    },
+    {
+      "test": "invalid month",
+      "passed": true,
+      "diagnostic": "data.csv line 2: period must be YYYY-MM"
+    },
+    {
+      "test": "incomplete department order",
+      "passed": true,
+      "diagnostic": "deck.json: department_order must cover every department exactly once"
+    },
+    {
+      "test": "decimal cents and negative profit",
+      "passed": true,
+      "diagnostic": "Exact decimal subtraction preserves cents and sign."
+    }
+  ]
+}

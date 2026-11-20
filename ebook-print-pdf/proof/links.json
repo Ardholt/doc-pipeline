@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "local": [
+    {
+      "target": "../LICENSE",
+      "exists": true
+    },
+    {
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "target": "input/print.json",
+      "exists": true
+    },
+    {
+      "target": "output/before.pdf",
+      "exists": true
+    },
+    {
+      "target": "output/contact-sheet.png",
+      "exists": true
+    },
+    {
+      "target": "output/details/page-03.png",
+      "exists": true
+    },
+    {
+      "target": "output/details/page-09.png",
+      "exists": true
+    },
+    {
+      "target": "output/details/page-26.png",
+      "exists": true
+    },
+    {
+      "target": "output/geometry.json",
+      "exists": true
+    },
+    {
+      "target": "output/hero.png",
+      "exists": true
+    },
+    {
+      "target": "output/interior.pdf",
+      "exists": true
+    },
+    {
+      "target": "output/page-pair.png",
+      "exists": true
+    },
+    {
+      "target": "output/render-map.json",
+      "exists": true
+    },
+    {
+      "target": "output/report.json",
+      "exists": true
+    },
+    {
+      "target": "output/runtime.json",
+      "exists": true
+    },
+    {
+      "target": "output/source-map.json",
+      "exists": true
+    },
+    {
+      "target": "proof/claims.json",
+      "exists": true
+    },
+    {
+      "target": "proof/validation.json",
+      "exists": true
+    },
+    {
+      "target": "proof/visual-review.json",
+      "exists": true
+    },
+    {
+      "target": "source/README.md",
+      "exists": true
+    }
+  ],
+  "external": [
+    {
+      "url": "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml",
+      "status": "external; not fetched in the offline run"
+    },
+    {
+      "url": "https://github.com/Ardholt/doc-pipeline/actions/workflows/checks.yml/badge.svg",
+      "status": "external; not fetched in the offline run"
+    },
+    {
+      "url": "https://github.com/Ardholt/doc-pipeline/blob/main/ebook-print-pdf/output/page-previews/screenshots.json",
+      "status": "external; not fetched in the offline run"
+    },
+    {
+      "url": "https://github.com/Ardholt/doc-pipeline/blob/main/ebook-print-pdf/tests/check.py",
+      "status": "external; not fetched in the offline run"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Ardholt/doc-pipeline/main/ebook-print-pdf/input/manuscript.md",
+      "status": "external; not fetched in the offline run"
+    }
+  ],
+  "surface": "Relative links have the same case-folder base on GitHub and Pages; the root LICENSE sits one level up. External workflow badge and workflow URL are not fetched in the offline run."
+}

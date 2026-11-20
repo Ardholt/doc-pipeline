@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "definition": "A reference code is wrong when its source page, as extracted, does not contain it as a whole word.",
+  "reference": "source/reference.json",
+  "delivered": "output/retyped.docx",
+  "raw_extraction": "output/pages.json raw_text",
+  "delivered_docx": {
+    "codes": 750,
+    "wrong": 203,
+    "pages_with_a_wrong_code": 115,
+    "by_kind": {
+      "record codes (D##-##)": {
+        "codes": 300,
+        "wrong": 111
+      },
+      "first item codes (K###)": {
+        "codes": 300,
+        "wrong": 24
+      },
+      "second item codes (R###)": {
+        "codes": 150,
+        "wrong": 68
+      }
+    }
+  },
+  "raw_extraction_counts": {
+    "codes": 750,
+    "wrong": 211,
+    "pages_with_a_wrong_code": 118,
+    "by_kind": {
+      "record codes (D##-##)": {
+        "codes": 300,
+        "wrong": 115
+      },
+      "first item codes (K###)": {
+        "codes": 300,
+        "wrong": 26
+      },
+      "second item codes (R###)": {
+        "codes": 150,
+        "wrong": 70
+      }
+    }
+  },
+  "searchable_pdf": {
+    "text": "output/preview.pdf",
+    "definition": "A distinct code is not found when its exact text, as a whole word, appears nowhere in the PDF text.",
+    "distinct_codes": 450,
+    "not_found_by_exact_search": 83,
+    "by_kind": {
+      "record codes (D##-##)": {
+        "distinct_codes": 150,
+        "not_found": 15
+      },
+      "first item codes (K###)": {
+        "distinct_codes": 150,
+        "not_found": 0
+      },
+      "second item codes (R###)": {
+        "distinct_codes": 150,
+        "not_found": 68
+      }
+    }
+  }
+}

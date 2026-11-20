@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "renderer": "pdftoppm",
+  "dpi": 120,
+  "hero": {
+    "source": "input/input.pdf page 1 rendered with CropBox; output/fixed.pdf page 1",
+    "crop_pixels_at_120_dpi": [
+      70,
+      255,
+      365,
+      330
+    ],
+    "before_rescale": 0.904761889474679,
+    "same_reading_scale": true
+  },
+  "comparison_note": "Whole-page comparisons fit each page in its panel; hero alone uses equal reading scale."
+}
