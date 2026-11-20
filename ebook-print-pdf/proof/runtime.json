@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "scope": "Document conversion, independent checks, PDF renders and offline page screenshots; excludes image build and authoring/review",
-  "elapsed_seconds": 32.46,
+  "elapsed_seconds": 32.85,
   "limits": {
     "cpus": 2,
     "memory_gb": 2,

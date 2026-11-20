@@ -24,7 +24,7 @@
     "proof_crop": {
       "path": "media/hero.png",
       "source_map": "output/preview-map.json",
-      "observation": "Actual text and checkbox crops remain legible at phone width; captions identify the blank and filled states. Full-page output links preserve context."
+      "observation": "The first-screen image is the whole filled trip-permission page down to its last line. At 1366 px the labels, typed text and checked box are legible; at 390 px the page is shown about 350 px wide and its small text is hard to read. The linked page PNG opens at full size."
     },
     "page_screenshots": [
       {

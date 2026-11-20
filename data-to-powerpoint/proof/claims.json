@@ -10,7 +10,7 @@
       "calculation": "CSV decimal sums = chart caches = embedded workbook numeric cells; profit = revenue − cost."
     },
     {
-      "claim": "Source rows beside matching rendered profit chart",
+      "claim": "First-screen image is the rendered slide that shows department C's loss; its source rows and chart crop are recorded",
       "evidence": {
         "path": "output/hero-map.json",
         "field": "/"
@@ -67,7 +67,7 @@
       "calculation": "Sum all source revenue = 90000.00; sum all source cost = 70000.00; 90000.00 − 70000.00 = 20000.00. Exact Decimal arithmetic; PPTX totals and PDF text checked."
     },
     {
-      "claim": "Hero source cells and plotted losses",
+      "claim": "Hero slide: source cells and plotted losses",
       "evidence": {
         "path": "output/hero-map.json",
         "field": "/"
@@ -80,7 +80,7 @@
           10
         ]
       },
-      "calculation": "January: 6000.00 − 6000.00 = 0.00; February: 6500.00 − 7000.00 = −500.00; March: 7000.00 − 7500.00 = −500.00. Chart axes and labels are visible in output/slides/slide-04.png; department C crop."
+      "calculation": "January: 6000.00 − 6000.00 = 0.00; February: 6500.00 − 7000.00 = −500.00; March: 7000.00 − 7500.00 = −500.00. Chart axes and labels are visible in output/slides/slide-04.png; department C chart."
     },
     {
       "claim": "Consistent style, readable slides and first-screen proof",

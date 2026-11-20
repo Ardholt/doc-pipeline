@@ -2,7 +2,9 @@
 
 **I built EPUB notes that open and return in Chromium.**
 
-[![A passage with a tappable note marker, followed by its opened note and separate return links.](media/hero.png)](media/hero.png)
+[![Two screenshots of the browser reader at 390 px wide: a passage with tappable note markers 1 to 6, and Note 1 opened with its three return links.](media/hero.png)](media/hero.png)
+
+*Two screenshots of the browser reader at phone width, 100% text: the passage with its note markers, and Note 1 after tapping marker 1.*
 
 Tested in a browser, not on a Kindle or the Kindle Previewer; neither was available to me. This proof is from a custom browser reader, not Kindle popup behaviour or KDP acceptance.
 

@@ -4,7 +4,9 @@
 
 The input is two form definitions I wrote for this case. I filled, saved and reopened the DOCX forms in LibreOffice only; Word was not available.
 
-<p><a href="media/hero.png"><img src="media/hero.png" width="370" alt="Trip permission form: blank text field and unchecked permission box, then the typed travel arrangements and selected box after a LibreOffice save and reopen."></a></p>
+<p><a href="output/trip-permission-filled.png"><img src="media/hero.png" width="640" alt="The filled trip permission form: Activity reference TRIP-04 | Museum visit; Travel arrangements, two typed lines; the permission box ticked; each field shaded."></a></p>
+
+*The trip permission form after I filled it in LibreOffice, saved it and reopened it: the whole page down to its last line, rendered from the PDF. The [blank form](output/trip-permission-blank.png) is the same page before entry.*
 
 ## What was wrong
 
@@ -28,7 +30,7 @@ Answers and selected boxes need to survive saving and reopening.
 - Trip permission: [blank DOCX](output/trip-permission-blank.docx) · [filled DOCX](output/trip-permission-filled.docx) · [filled PDF](output/trip-permission-filled.pdf).
 - Absence request: [blank DOCX](output/absence-request-blank.docx) · [filled DOCX](output/absence-request-filled.docx) · [filled PDF](output/absence-request-filled.pdf).
 
-**See the output:** [trip permission page](output/trip-permission-filled.png) · [absence request page](output/absence-request-filled.png) · [full-size proof crop](media/hero.png), taken from the [blank](output/trip-permission-blank.pdf) and [filled](output/trip-permission-filled.pdf) PDFs rendered by LibreOffice and Poppler.
+**See the output:** [trip permission page](output/trip-permission-filled.png) · [absence request page](output/absence-request-filled.png) · [blank trip permission page](output/trip-permission-blank.png) · [the image at the top](media/hero.png), the filled [PDF](output/trip-permission-filled.pdf) page rendered by Poppler and cut below its last line.
 
 **Compatibility:** Word was not available. I exercised fields and round-tripped the DOCX files in LibreOffice. The forms are editable and are not locked; the pipeline rejects answers beyond the documented limits. The PDFs are for viewing and printing.
 

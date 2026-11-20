@@ -21,7 +21,6 @@ jobs:
           - school-fillable-forms
           - ebook-print-pdf
           - kindle-tappable-footnotes
-          - retype-150-pages
           - handwritten-notes
           - data-to-powerpoint
           - pdf-layout-compression
@@ -35,10 +34,6 @@ jobs:
 
       - name: Inspect the existing output without rebuilding
         run: cd "${{ matrix.case }}" && ./run.sh --check
-
-      - name: Replacement-input and repeatability checks
-        if: matrix.case == 'retype-150-pages'
-        run: cd retype-150-pages && ./tests/adversarial.sh
 
       - name: Replacement-input and repeatability checks
         if: matrix.case == 'data-to-powerpoint'

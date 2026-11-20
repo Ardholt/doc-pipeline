@@ -19,23 +19,19 @@
       ]
     },
     {
-      "claim": "The opening passage before and after formatting, with the finished page's folio",
+      "claim": "A finished interior page, page 9 (running head, heading, text, captioned illustration and folio), shown unedited as the first-screen image",
       "evidence": [
         {
           "path": "output/hero.png",
-          "field": "both detail panels and folio crop"
+          "field": "complete image: one rendered page"
         },
         {
           "path": "output/render-map.json",
           "field": "/hero"
         },
         {
-          "path": "output/before.pdf",
-          "field": "page 1"
-        },
-        {
           "path": "output/interior.pdf",
-          "field": "page 3"
+          "field": "page 9"
         }
       ]
     },

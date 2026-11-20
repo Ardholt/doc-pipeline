@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3582,
-      "sha256": "c1e0d5baf21ab638f497522276ef2fc8f73f16865de373bc3aaa82d538daa013"
+      "bytes": 3863,
+      "sha256": "25afbb61ebd69afc82f63390a8f7250885688df4c0bb174962af83207f4800e4"
     },
     {
       "path": "input/data.csv",
@@ -30,8 +30,8 @@
     },
     {
       "path": "media/hero.png",
-      "bytes": 107840,
-      "sha256": "c70f6b49b49f914f83b69d6981bf4b6c90cc3c710730e8d9b2ca224538da2805"
+      "bytes": 201922,
+      "sha256": "385adfc8cc296384cb200c0539aa6d35b00b657a3b9a90517e49cb75327b4092"
     },
     {
       "path": "output/acceptance.json",
@@ -85,13 +85,13 @@
     },
     {
       "path": "output/hero-map.json",
-      "bytes": 414,
-      "sha256": "7488a1a2a334d4a76a311302d49c03b235a3c8020f351cbf24b35716306fd607"
+      "bytes": 463,
+      "sha256": "75e4dff4adb2a80836e1c034704baacb390e63eaea12af06c33223651abadaee"
     },
     {
       "path": "output/hero.png",
-      "bytes": 107840,
-      "sha256": "c70f6b49b49f914f83b69d6981bf4b6c90cc3c710730e8d9b2ca224538da2805"
+      "bytes": 201922,
+      "sha256": "385adfc8cc296384cb200c0539aa6d35b00b657a3b9a90517e49cb75327b4092"
     },
     {
       "path": "output/image-identity.txt",
@@ -105,28 +105,28 @@
     },
     {
       "path": "output/page-previews/github-1366.png",
-      "bytes": 98540,
-      "sha256": "d138c48d3325880ca312044942860c582072089b0dec3cca918e7ffdc5080a73"
+      "bytes": 111439,
+      "sha256": "be669f1c451e8280e202a7d004fbfa4d5b906529b49351c8c907af8e56fe3921"
     },
     {
       "path": "output/page-previews/github-390.png",
-      "bytes": 52093,
-      "sha256": "ab261ed58adc2586647100141ec61d17b056ed86adcbba551ec859b0b56424a4"
+      "bytes": 54000,
+      "sha256": "eba960799133bdc5a5c6b38a232c73782ca8750a1ffa700b2324e2f1d1059e6d"
     },
     {
       "path": "output/page-previews/pages-1366.png",
-      "bytes": 92352,
-      "sha256": "b4661e29549d2519fc338fa6e110555e1469cde86447e80fd199c31fcb662558"
+      "bytes": 113151,
+      "sha256": "7991221d4a625f6054cd4d3eb3e1a05fd0200ad456854d0dc8e26cdcee648547"
     },
     {
       "path": "output/page-previews/pages-390.png",
-      "bytes": 62108,
-      "sha256": "1c41cd3b4713b5aec27a361f83070b47762a557cd87262c7f78047a407bd7ba4"
+      "bytes": 68872,
+      "sha256": "501e5be50a058ed3694338647f855e4bbcad90d742c0b9e62091e80ead6f645c"
     },
     {
       "path": "output/page-previews/screenshots.json",
       "bytes": 1977,
-      "sha256": "591dbe326c09ad4f6d2e5809a2451d34d8c91fd704bad891765225b32d5a7af5"
+      "sha256": "a22217c302a14513787d2935ca69090fd75d75d7a64b1f6e19ccac1ea068a75b"
     },
     {
       "path": "output/pdf-fonts.txt",
@@ -141,7 +141,7 @@
     {
       "path": "output/report.json",
       "bytes": 4169,
-      "sha256": "03f3607d4d66116f2108f94a53b32a6a8d2e5358f7938922068131e826288f0c"
+      "sha256": "3aa7bd08a83de52a27bcaa5d06ac8ea3856fe224898ef8a5dca2c4850afdb839"
     },
     {
       "path": "output/run.log",
@@ -151,7 +151,7 @@
     {
       "path": "output/runtime.json",
       "bytes": 311,
-      "sha256": "f6e0a3bb0612161f9164505b1f99cc82cb75da04093e7c615fa38ce5390012e0"
+      "sha256": "44bd0cbf5eef2658289abd71580441e61c8af6357af402933893179e7e4e776f"
     },
     {
       "path": "output/slides/slide-01.png",
@@ -210,8 +210,8 @@
     },
     {
       "path": "proof/claims.json",
-      "bytes": 3667,
-      "sha256": "ed74187b416aa02307335c947d34e9ddd5bdebab3e784b2cfbcaf4443e610974"
+      "bytes": 3742,
+      "sha256": "6231fcaf85dedafc062779ccf0fb35eaf74abd66c02ad1557f16fd068e664d23"
     },
     {
       "path": "proof/image-identity.txt",
@@ -220,28 +220,28 @@
     },
     {
       "path": "proof/page-previews/github-1366.png",
-      "bytes": 98540,
-      "sha256": "d138c48d3325880ca312044942860c582072089b0dec3cca918e7ffdc5080a73"
+      "bytes": 111439,
+      "sha256": "be669f1c451e8280e202a7d004fbfa4d5b906529b49351c8c907af8e56fe3921"
     },
     {
       "path": "proof/page-previews/github-390.png",
-      "bytes": 52093,
-      "sha256": "ab261ed58adc2586647100141ec61d17b056ed86adcbba551ec859b0b56424a4"
+      "bytes": 54000,
+      "sha256": "eba960799133bdc5a5c6b38a232c73782ca8750a1ffa700b2324e2f1d1059e6d"
     },
     {
       "path": "proof/page-previews/pages-1366.png",
-      "bytes": 92352,
-      "sha256": "b4661e29549d2519fc338fa6e110555e1469cde86447e80fd199c31fcb662558"
+      "bytes": 113151,
+      "sha256": "7991221d4a625f6054cd4d3eb3e1a05fd0200ad456854d0dc8e26cdcee648547"
     },
     {
       "path": "proof/page-previews/pages-390.png",
-      "bytes": 62108,
-      "sha256": "1c41cd3b4713b5aec27a361f83070b47762a557cd87262c7f78047a407bd7ba4"
+      "bytes": 68872,
+      "sha256": "501e5be50a058ed3694338647f855e4bbcad90d742c0b9e62091e80ead6f645c"
     },
     {
       "path": "proof/page-previews/screenshots.json",
       "bytes": 1977,
-      "sha256": "591dbe326c09ad4f6d2e5809a2451d34d8c91fd704bad891765225b32d5a7af5"
+      "sha256": "a22217c302a14513787d2935ca69090fd75d75d7a64b1f6e19ccac1ea068a75b"
     },
     {
       "path": "proof/regression.json",
@@ -251,7 +251,7 @@
     {
       "path": "proof/report.json",
       "bytes": 4169,
-      "sha256": "03f3607d4d66116f2108f94a53b32a6a8d2e5358f7938922068131e826288f0c"
+      "sha256": "3aa7bd08a83de52a27bcaa5d06ac8ea3856fe224898ef8a5dca2c4850afdb839"
     },
     {
       "path": "proof/run.log",
@@ -261,12 +261,12 @@
     {
       "path": "proof/runtime.json",
       "bytes": 311,
-      "sha256": "f6e0a3bb0612161f9164505b1f99cc82cb75da04093e7c615fa38ce5390012e0"
+      "sha256": "44bd0cbf5eef2658289abd71580441e61c8af6357af402933893179e7e4e776f"
     },
     {
       "path": "proof/visual-review.json",
-      "bytes": 4003,
-      "sha256": "16fb46704e0e6af910e93267e52f95bceb7931e609049eaafc8491e50cf47407"
+      "bytes": 4335,
+      "sha256": "ca3fe1f8a1e718a173a2457fa428181cb7e80df1fccdcb3fc0e196761506da7d"
     },
     {
       "path": "run.sh",
@@ -295,8 +295,8 @@
     },
     {
       "path": "source/pipeline.py",
-      "bytes": 19759,
-      "sha256": "94c60c3db651ff7c5d4e0a9399cfec2b12937f348557b2edc49ead9ea1365e74"
+      "bytes": 19106,
+      "sha256": "78fa3ee838e5e151906279c6b873bad4092330038d989d2cf3e6da5b4adbde05"
     },
     {
       "path": "tests/acceptance.py",
@@ -337,6 +337,7 @@
     "output/hero-map.json",
     "output/report.json",
     "output/runtime.json",
+    "output/slides/slide-04.png",
     "output/source-map.json",
     "source/USAGE.md",
     "tests/check.py",

@@ -1,70 +1,12 @@
 {
   "schema_version": 1,
-  "composition": "Unscaled crops of text and checkbox fields; captions outside document pixels",
-  "crops": [
-    {
-      "state": "blank",
-      "kind": "text",
-      "source": "trip-permission-blank.png",
-      "source_pdf": "trip-permission-blank.pdf",
-      "crop_pixels": [
-        77,
-        381,
-        388,
-        429
-      ],
-      "destination_pixels": [
-        5,
-        59
-      ]
-    },
-    {
-      "state": "blank",
-      "kind": "checkbox",
-      "source": "trip-permission-blank.png",
-      "source_pdf": "trip-permission-blank.pdf",
-      "crop_pixels": [
-        77,
-        514,
-        111,
-        551
-      ],
-      "destination_pixels": [
-        318,
-        59
-      ]
-    },
-    {
-      "state": "filled",
-      "kind": "text",
-      "source": "trip-permission-filled.png",
-      "source_pdf": "trip-permission-filled.pdf",
-      "crop_pixels": [
-        77,
-        381,
-        388,
-        429
-      ],
-      "destination_pixels": [
-        5,
-        139
-      ]
-    },
-    {
-      "state": "filled",
-      "kind": "checkbox",
-      "source": "trip-permission-filled.png",
-      "source_pdf": "trip-permission-filled.pdf",
-      "crop_pixels": [
-        77,
-        514,
-        111,
-        551
-      ],
-      "destination_pixels": [
-        318,
-        139
-      ]
-    }
-  ]
+  "source": "trip-permission-filled.png",
+  "source_pdf": "trip-permission-filled.pdf",
+  "crop_pixels": [
+    0,
+    0,
+    849,
+    650
+  ],
+  "crop": "full page width, from the top edge to 60 px below the last content; the empty lower part of the sheet is left out"
 }

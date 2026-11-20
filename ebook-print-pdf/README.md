@@ -4,7 +4,9 @@
 
 The input is a six-chapter manuscript I wrote for this case. I laid it out with Pandoc and WeasyPrint and checked the PDF with Poppler and pypdf; printer upload and a physical proof were not tried.
 
-<a href="output/page-pair.png"><img src="output/hero.png" width="600" alt="The opening manuscript beside its typeset chapter, with the printed folio cropped from the same page."></a>
+<a href="output/details/page-09.png"><img src="output/hero.png" width="520" alt="Page 9 of the finished print interior: running head, section heading, justified text, a captioned illustration and the page number."></a>
+
+*Page 9 of the finished interior PDF, rendered unedited. The [contact sheet](output/contact-sheet.png) shows all 26 pages.*
 
 ## What was wrong
 
@@ -34,7 +36,7 @@ The [PDF report](output/report.json), measured with the tool versions recorded t
 - [4 embedded font resources](output/geometry.json), inspected with pypdf 5.1.0.
 - [0 missing source blocks](output/report.json), compared using Pandoc 2.17.1.1 and Poppler 22.12.0 with the documented text normalization.
 
-[Opening page](output/details/page-03.png) · [Illustration and caption](output/details/page-09.png) · [Closing page](output/details/page-26.png). The first-screen figure uses detail crops from the [raw Markdown printed in monospace](output/before.pdf) and the [finished PDF](output/interior.pdf); the [crop map](output/render-map.json) identifies their rendered sources.
+[Opening page](output/details/page-03.png) · [Illustration and caption](output/details/page-09.png) · [Closing page](output/details/page-26.png). The first-screen image is page 9 of the [finished PDF](output/interior.pdf) as rendered by Poppler; the [render map](output/render-map.json) names its source file. For the raw Markdown, [the first page of the before file beside the finished chapter opening](output/page-pair.png) shows what the manuscript looked like as a print (9 pt monospace, symbols visible).
 
 This is an interior, with no cover. Printer upload, PDF/X certification and a physical proof have not been tested.
 

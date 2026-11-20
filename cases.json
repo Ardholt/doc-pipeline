@@ -1,15 +1,14 @@
 {
   "repo": "Ardholt/doc-pipeline",
   "casebook": "Document pipelines",
-  "line": "Seven document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.",
-  "about": "Seven document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.",
+  "line": "Six document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.",
+  "about": "Six document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.",
   "website": "https://ardholt.com/p/",
   "topics": [
     "docx",
     "pdf",
     "epub",
     "pptx",
-    "ocr",
     "document-automation"
   ],
   "pages_root": "https://ardholt.github.io/doc-pipeline/",
@@ -73,28 +72,6 @@
       ],
       "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/kindle-tappable-footnotes/README.md",
       "pages_url": "https://ardholt.github.io/doc-pipeline/kindle-tappable-footnotes/",
-      "demo_url": null
-    },
-    {
-      "slug": "retype-150-pages",
-      "folder": "retype-150-pages",
-      "title": "I need 150 scanned pages made editable",
-      "problem": "I need 150 scanned pages made editable",
-      "result": "I made a generated 150-page typed scan editable and searchable, with every page mapped: 99.813% of characters match the source text, but 203 of its 750 record and item codes in the delivered file are still wrong.",
-      "tags": [
-        "documents",
-        "ocr",
-        "docx",
-        "pdf"
-      ],
-      "kinds": [
-        "documents",
-        "ocr",
-        "docx",
-        "pdf"
-      ],
-      "readme_url": "https://github.com/Ardholt/doc-pipeline/blob/main/retype-150-pages/README.md",
-      "pages_url": "https://ardholt.github.io/doc-pipeline/retype-150-pages/",
       "demo_url": null
     },
     {

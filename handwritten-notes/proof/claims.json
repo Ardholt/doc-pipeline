@@ -66,23 +66,19 @@
       ]
     },
     {
-      "claim": "The hero shows the source and actual rendered result.",
+      "claim": "The first-screen image is the actual rendered result: a crop of the rendered PDF page.",
       "evidence": [
         {
-          "path": "input/page-01.png",
-          "frame": "crop x40 y278 x680 y390"
-        },
-        {
           "path": "output/preview.png",
-          "frame": "bullet line containing [unclear], crop located with pdftotext bounding boxes"
+          "frame": "whole rendered page; the hero is its inked area plus an even margin"
         },
         {
           "path": "output/hero.png",
-          "frame": "upper source crop; lower rendered PDF crop"
+          "frame": "complete image: crop of the rendered PDF page"
         },
         {
           "path": "source/pipeline.py",
-          "field": "Source and PDF crop generation"
+          "field": "Crop generation"
         }
       ]
     },

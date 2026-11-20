@@ -93,12 +93,12 @@
       ]
     },
     {
-      "claim": "Hero and reader images show delivered EPUB content; numbers in the figures identify notes and return passages",
+      "claim": "Hero and reader images are browser-reader screenshots of delivered EPUB content; numbers in the figures identify notes and return passages",
       "kind": "render",
       "evidence": [
         {
           "path": "output/hero.png",
-          "frame": "complete image: passage and first note crops"
+          "frame": "complete image: reader screenshots of the passage and of the first note"
         },
         {
           "path": "output/browser-audit.json",

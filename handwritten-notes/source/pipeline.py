@@ -82,30 +82,14 @@ def build(src,out):
     # Render the cleaned PDF, never the discarded pre-cleaning file.
     call(['pdftoppm','-scale-to','1500','-png','-singlefile',str(out/'preview.pdf'),str(out/'preview')])
     im=Image.open(out/'preview.png').convert('RGB');im.save(out/'preview.png')
-    # A direct crop of source pen strokes and a direct crop of the rendered PDF.
-    # The first source page is a full-source view for arbitrary replacement inputs.
-    source=Image.open(src/pages['pages'][0]['file']).convert('RGB')
-    if source.size==(1000,420) and pages['pages'][0]['file']=='page-01.png':
-        source=source.crop((40,278,680,390))
-    else:source.thumbnail((660,180))
-    bbox=call(['pdftotext','-f','1','-l','1','-bbox',str(out/'preview.pdf'),'-']).stdout
-    tree=ET.fromstring(bbox);ns={'x':'http://www.w3.org/1999/xhtml'};page=tree.find('.//x:page',ns);words=tree.findall('.//x:word',ns)
-    # Find a literal uncertainty token in the actual rendered output, if present.
-    anchor=next((w for w in words if '[unclear]' in (w.text or '')),words[-1])
-    y0=float(anchor.get('yMin'));y1=float(anchor.get('yMax'))
-    line=[w for w in words if abs(float(w.get('yMin'))-y0)<2]
-    sx=im.width/float(page.get('width'));sy=im.height/float(page.get('height'))
-    x0=min(float(w.get('xMin')) for w in line);x1=max(float(w.get('xMax')) for w in line)
-    typed=im.crop((max(0,int((x0-8)*sx)),int((y0-7)*sy),int((x1+12)*sx),int((y1+7)*sy)))
-    canvas=Image.new('RGB',(700,310),'#f5f3ee');draw=ImageDraw.Draw(canvas)
-    font=ImageFont.truetype(str(Path(__file__).parent/'fonts/Inter-Regular.ttf'),22)
-    draw.text((20,10),'Original pen strokes',font=font,fill='#344054')
-    source.thumbnail((660,116));canvas.paste(source,(20,44))
-    draw.line((20,172,680,172),fill='#c0c0c0',width=1)
-    draw.text((20,183),'Typed notes · rendered PDF',font=font,fill='#344054')
-    typed.thumbnail((650,80));
-    if typed.width<600:typed=typed.resize((int(typed.width*min(600/typed.width,80/typed.height)),int(typed.height*min(600/typed.width,80/typed.height))))
-    canvas.paste(typed,(20,218));canvas.save(out/'hero.png')
+    # First-screen image: the rendered PDF page itself, cropped to the content with an even margin; nothing is redrawn.
+    from PIL import ImageChops
+    ink=ImageChops.invert(im.convert('L')).point(lambda v:255 if v>24 else 0).getbbox() or (0,0,im.width,im.height)
+    left,top,right,bottom=ink;pad=48
+    box=(max(0,left-pad),max(0,top-pad),min(im.width,max(right+pad,left-pad+760)),min(im.height,bottom+pad))
+    typed=im.crop(box)
+    if typed.width<760:typed=typed.resize((760,round(typed.height*760/typed.width)))
+    hero=Image.new('RGB',(typed.width+2,typed.height+2),'#c8ccd2');hero.paste(typed,(1,1));hero.save(out/'hero.png')
     shutil.copyfile('/opt/packages.tsv',out/'packages.tsv')
     (out/'pdf-fonts.txt').write_text(call(['pdffonts',str(out/'preview.pdf')]).stdout)
     tools={'python':sys.version.split()[0],'python-docx':__import__('docx').__version__,'pypdf':__import__('pypdf').__version__,'Pillow':__import__('PIL').__version__,'libreoffice':version(['libreoffice','--version']),'pdftoppm':call(['pdftoppm','-v']).stderr.splitlines()[0],'chromium':version(['chromium','--version']),'pdffonts':call(['pdffonts','-v']).stderr.splitlines()[0],'pdftotext':call(['pdftotext','-v']).stderr.splitlines()[0],'lxml':__import__('lxml').__version__,'fontconfig':call(['fc-cache','--version']).stderr.strip()}
@@ -121,6 +105,7 @@ def build(src,out):
         original_hashes={p.relative_to(original_root).as_posix():digest(p) for p in sorted(original_root.rglob('*')) if p.is_file()}
         page_hero=out/'hero.png' if input_hashes==original_hashes else Path('/case/media/hero.png')
         shutil.copyfile(page_hero,stage/'media/hero.png')
+        (stage/'input').mkdir();shutil.copyfile('/case/input/page-01.png',stage/'input/page-01.png')
         call(['python','/harness/screenshot.py',str(stage),str(out/'page-previews')])
     report['output_hashes']={p.relative_to(out).as_posix():digest(p) for p in sorted(out.rglob('*')) if p.is_file() and p.name not in ('report.json','runtime.json')}
     write(out,'report.json',report)

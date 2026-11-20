@@ -1,6 +1,6 @@
 # Document pipelines
 
-**Seven document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.**
+**Six document problems, each run end to end on the input in its folder, with the input and every output included, measured and runnable with one command.**
 
 ## The cases
 
@@ -17,19 +17,15 @@
    I built a reflowable EPUB 3 with 22 references to 18 notes, no EPUBCheck errors or warnings, and 88 passing browser tap-and-return journeys; tested in a browser, not on a Kindle or the Kindle Previewer. · [on the web](https://ardholt.github.io/doc-pipeline/kindle-tappable-footnotes/)  
    <sub>epub · ebook · footnotes</sub>
 
-4. **[I need 150 scanned pages made editable](retype-150-pages/README.md)**  
-   I made a generated 150-page typed scan editable and searchable, with every page mapped: 99.813% of characters match the source text, but 203 of its 750 record and item codes in the delivered file are still wrong. · [on the web](https://ardholt.github.io/doc-pipeline/retype-150-pages/)  
-   <sub>documents · ocr · docx</sub>
-
-5. **[I need handwritten notes typed clearly without guessing unclear words](handwritten-notes/README.md)**  
+4. **[I need handwritten notes typed clearly without guessing unclear words](handwritten-notes/README.md)**  
    I turned a transcript I prepared from the page into an editable document, a PDF and a page/block map, with the unclear word left marked as [unclear], not guessed; the tool performs no handwriting recognition. · [on the web](https://ardholt.github.io/doc-pipeline/handwritten-notes/)  
    <sub>transcription · handwriting · docx</sub>
 
-6. **[I need a business presentation built from my figures](data-to-powerpoint/README.md)**  
+5. **[I need a business presentation built from my figures](data-to-powerpoint/README.md)**  
    I built an editable PPTX with native charts, a PDF deck and checked source-to-chart reconciliation. · [on the web](https://ardholt.github.io/doc-pipeline/data-to-powerpoint/)  
    <sub>presentations · pptx · charts</sub>
 
-7. **[I need school forms people can fill in without moving the layout](school-fillable-forms/README.md)**  
+6. **[I need school forms people can fill in without moving the layout](school-fillable-forms/README.md)**  
    I built trip-permission and absence-request DOCX forms, entered multiline text and checkbox states in LibreOffice, and verified the saved and reopened files. · [on the web](https://ardholt.github.io/doc-pipeline/school-fillable-forms/)  
    <sub>docx · forms · school</sub>
 <!-- cases:end -->

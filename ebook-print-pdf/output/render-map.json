@@ -15,9 +15,9 @@
     26
   ],
   "hero": {
-    "before": "before-detail.png",
-    "after": "details/page-03.png",
-    "kind": "close crops plus folio crop; full pages in page-pair.png"
+    "page": 9,
+    "source": "details/page-09.png",
+    "kind": "one finished interior page, unedited; the raw-Markdown first page and the first chapter opening side by side are in page-pair.png"
   },
   "contact_sheet": "all interior pages in file order"
 }

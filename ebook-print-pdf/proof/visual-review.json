@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "PASS",
   "interior_pdf_sha256": "a5f818c115f985ccaa631cd3a958442967b517d2afc1f24a670e5289c38b29ee",
-  "readme_sha256": "a47cd4e1c2c7d583f58443d08fe65af196223f25fbd45ca3955b1cc237b599a6",
+  "readme_sha256": "8bc120f664b0993a2a32a97406b8f5dfbefa4d29ee5d5ac737546f6818962eac",
   "interior": {
     "all_pages": [
       1,
@@ -75,9 +75,9 @@
       "Pages layout from the shared harness"
     ],
     "observations": [
-      "Problem title, first-person result and both proof panels are visible without scrolling in all four screenshots.",
-      "The source heading, opening sentence and finished folio remain legible at phone width.",
-      "The figure consists of actual PDF-render crops; the linked full-page pair gives context."
+      "Title, first-person result and the top of the first-screen image, page 9 of the finished interior, are visible in all four screenshots; in the GitHub-style 390 px render the image starts below the bottom of the screenshot.",
+      "At 390 px the page image is about 350 px wide: the running head, heading and body text are small but legible; at 1366 px the text is larger.",
+      "The image is one unedited rendered page of the finished PDF; the linked page pair shows the first page of the before file next to the finished chapter opening."
     ],
     "limitation": "Local offline previews retain GitHub chrome; not captures of published URLs. The badge is explicitly unavailable offline."
   },
@@ -88,7 +88,7 @@
     },
     {
       "path": "output/hero.png",
-      "sha256": "baa9b78f3f565c4281316b82b7411f82156ff6f83581db33be128d5c72ea4b0c"
+      "sha256": "c487b0f16af1559849cde305bb4a4b14ec43b85aa8182203a65cd44bb19b2291"
     },
     {
       "path": "output/page-pair.png",
@@ -140,19 +140,19 @@
     },
     {
       "path": "output/page-previews/github-1366.png",
-      "sha256": "2a2efe332a3ad0c02fda6d5e8851591b84b6339ac882822de14d4f7d6534e1cf"
+      "sha256": "1dfab86a4a667b00317f91c84d6cf9a196849376bd8ba53654f2e970a1701ec3"
     },
     {
       "path": "output/page-previews/github-390.png",
-      "sha256": "c52ea4a8ae511d24de21fde55a841bea71ac9fddd1fd8b943f0cdf8c867599f8"
+      "sha256": "36fc30a1998e2a7adb522d3284c17c822979b8bd24462441f976936d9ce34652"
     },
     {
       "path": "output/page-previews/pages-1366.png",
-      "sha256": "78c394587b025558aa20412fd3525c47d6049931cc74efbcb670d25ddba2f593"
+      "sha256": "5ecbeec9acec28df906aa717ab72789953decf3f1e4d0e7cb11aab9b9df23d99"
     },
     {
       "path": "output/page-previews/pages-390.png",
-      "sha256": "73e24065050d3065d75f4439547629a9c3f834f55dc6082b790b6185a92b5acc"
+      "sha256": "6b63e4bc6c01093d66f99b93462ea595ddd98cb36d4fee811f0356fec2301f52"
     }
   ],
   "publication_read": [

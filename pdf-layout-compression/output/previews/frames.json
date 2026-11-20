@@ -5,13 +5,14 @@
   "hero": {
     "source": "input/input.pdf page 1 rendered with CropBox; output/fixed.pdf page 1",
     "crop_pixels_at_120_dpi": [
-      70,
-      255,
-      365,
-      330
+      40,
+      90,
+      960,
+      490
     ],
     "before_rescale": 0.904761889474679,
-    "same_reading_scale": true
+    "same_reading_scale": true,
+    "layout": "top of page 1: before panel above after panel, same rectangle, same scale"
   },
-  "comparison_note": "Whole-page comparisons fit each page in its panel; hero alone uses equal reading scale."
+  "comparison_note": "Whole-page comparisons fit each page in its panel; the hero shows the top of page 1 at equal reading scale."
 }

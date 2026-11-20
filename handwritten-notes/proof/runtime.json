@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "scope": "Offline assembly, conversion, checks and page screenshots; excludes image/transcript preparation, manual review and Docker setup.",
-  "elapsed_seconds": 18.785,
+  "elapsed_seconds": 17.855,
   "limits": {
     "cpus": 2,
     "memory_gb": 2,

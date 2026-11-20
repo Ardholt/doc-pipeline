@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "2d7bd329c75bd415b6ed2e6981903614944ae4f1d72395d19f7eb9200c551070",
-      "bytes": 4632
+      "sha256": "f60dda80f66a61fc54792e1c5f98a3304879a934f4297c509c87ff5fe570c00f",
+      "bytes": 4909
     },
     {
       "path": "container-recipe.json",
@@ -47,18 +47,18 @@
     },
     {
       "path": "media/README.md",
-      "sha256": "ab4a77eab780e64fdb614e08578d69b30be078791966e16b54ad8ae5b2d5c6be",
-      "bytes": 629
+      "sha256": "e4fa1b2259f174556cc1f76dd9522d1678d03de3b01108805bd9b39c3bfb82a2",
+      "bytes": 489
     },
     {
       "path": "media/hero.png",
-      "sha256": "3df8a066742122b153a3bdc56ae879853af5d631e66eca682aed6e1e169795af",
-      "bytes": 16435
+      "sha256": "dd6a19238bf1d6d92bf4c321c2a85121f3a8bfa6d26acc915e41f9a9b45aff53",
+      "bytes": 51488
     },
     {
       "path": "output/absence-request-blank.docx",
-      "sha256": "7373a370f0c03659807bf85b7796d4c09c8ec165ae1364db715c22ce98a754c2",
-      "bytes": 4141
+      "sha256": "3eca2f2eb80a57d957bc20769891702c1ec35564e38298da00c85a94299ff445",
+      "bytes": 4142
     },
     {
       "path": "output/absence-request-blank.pdf",
@@ -72,8 +72,8 @@
     },
     {
       "path": "output/absence-request-filled.docx",
-      "sha256": "0e5425380d89ac54db5e9a444f9d47627932c5927e6906bd250d29977e800e38",
-      "bytes": 4194
+      "sha256": "1271ae7b0bda910b67156e9f3781b41793e47a1f6bd8df6eb25a696ad731bf5f",
+      "bytes": 4193
     },
     {
       "path": "output/absence-request-filled.pdf",
@@ -87,8 +87,8 @@
     },
     {
       "path": "output/claims.json",
-      "sha256": "5a0135846d5cc60e93f90c86c157a5c07d56a8eba6a7cfc2b70c969c5c537a15",
-      "bytes": 3534
+      "sha256": "60498cd8c7932d922029b3afb56d980b303feb809b357f5919e891c55d422cd0",
+      "bytes": 3572
     },
     {
       "path": "output/font-licenses/fonts-dejavu-core.txt",
@@ -102,8 +102,8 @@
     },
     {
       "path": "output/hero.png",
-      "sha256": "3df8a066742122b153a3bdc56ae879853af5d631e66eca682aed6e1e169795af",
-      "bytes": 16435
+      "sha256": "dd6a19238bf1d6d92bf4c321c2a85121f3a8bfa6d26acc915e41f9a9b45aff53",
+      "bytes": 51488
     },
     {
       "path": "output/packages.tsv",
@@ -112,33 +112,33 @@
     },
     {
       "path": "output/page-previews/github-1366.png",
-      "sha256": "59fb82c033ed41ce7e2b8749e54bf8f7f428bc0c60525ef9c2af6126cd209f31",
-      "bytes": 97351
+      "sha256": "4c6d805e24495bec58d5416ffc98ca1f88f6290afb5a2f36985c4cca1f013853",
+      "bytes": 96031
     },
     {
       "path": "output/page-previews/github-390.png",
-      "sha256": "de2a06bc28ebd6972e7aff777ff0e8b7c007213720e55a55f4bf9d161756ae40",
-      "bytes": 67567
+      "sha256": "b086dbe445b81bf3e893d41c337992df3ca8b9b11cfe383265423a65fae3b9a2",
+      "bytes": 63949
     },
     {
       "path": "output/page-previews/pages-1366.png",
-      "sha256": "d03a598076391319ead799b148fc083c4e34af86d6aa39979b493dd9e2f314e4",
-      "bytes": 94393
+      "sha256": "dd6ada01f4413987441abdc373b1c54f44a723748e61323923a5f1c55e911d1a",
+      "bytes": 94226
     },
     {
       "path": "output/page-previews/pages-390.png",
-      "sha256": "b249b059ac766f9ee0f75d89ecd85aa7f55c5c91ffd46b65bdc2382e49b60f49",
-      "bytes": 81089
+      "sha256": "17c3ebe3a1fc4e64a5b2d50d6ed3901ea592d3682c9ff84a94fccb6fafb93a5a",
+      "bytes": 83624
     },
     {
       "path": "output/page-previews/screenshots.json",
-      "sha256": "d3d66d242ddef76a44032159d687495588e920f474d25b2ff5fcd07c0f335033",
+      "sha256": "c5c39430c7d34a8691e73c3878dc9e321c93d4a69a06c7e64ccad1ada77c226a",
       "bytes": 1977
     },
     {
       "path": "output/preview-map.json",
-      "sha256": "43b7040925aa8d15c6829d9426129b634ac43188c22f8696c08055ed4af13564",
-      "bytes": 1340
+      "sha256": "a2d78105ac2254413b35e985f38299f6856664ad374603bbbd685ec1cf844313",
+      "bytes": 296
     },
     {
       "path": "output/rendered-negative.json",
@@ -147,7 +147,7 @@
     },
     {
       "path": "output/report.json",
-      "sha256": "a58d2fbbed6fc7333cbc44ce2a58732c76c7430e7973a85070aa6593062b88b7",
+      "sha256": "6d211dda0af9aac6b7662b7e83fc8e813e4971195fa3b96f83afec8babb0fc41",
       "bytes": 5376
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "path": "output/runtime.json",
-      "sha256": "21a3eaeac28be6c7f3c0bf9e8d18973b03ec65af50a2e09c6e8d65c214029d3d",
+      "sha256": "de0a09393f6de191f1d3a12916fb79978aecf301d21f77cec32aca2f75d04fb7",
       "bytes": 251
     },
     {
@@ -167,8 +167,8 @@
     },
     {
       "path": "output/trip-permission-blank.docx",
-      "sha256": "a107dcb1d29c0a21e0c5cb457dd3c46f49c7fe0880b8f5e8342c561f0aa6b97e",
-      "bytes": 4067
+      "sha256": "bd00c115d6e051358a66fde8b70e67a6d4394a892caf12efe950aabbc7e5c220",
+      "bytes": 4066
     },
     {
       "path": "output/trip-permission-blank.pdf",
@@ -182,7 +182,7 @@
     },
     {
       "path": "output/trip-permission-filled.docx",
-      "sha256": "9ff1208b1ec9574186e295b073d10e76e624e96f066545211a4aafd560005313",
+      "sha256": "aa212b31bd33003afdeb05169ac7afba1d7718f92f48a923fccc8c0ff3230438",
       "bytes": 4115
     },
     {
@@ -202,8 +202,8 @@
     },
     {
       "path": "proof/claims.json",
-      "sha256": "5a0135846d5cc60e93f90c86c157a5c07d56a8eba6a7cfc2b70c969c5c537a15",
-      "bytes": 3534
+      "sha256": "60498cd8c7932d922029b3afb56d980b303feb809b357f5919e891c55d422cd0",
+      "bytes": 3572
     },
     {
       "path": "proof/repeatability.json",
@@ -212,7 +212,7 @@
     },
     {
       "path": "proof/report.json",
-      "sha256": "a58d2fbbed6fc7333cbc44ce2a58732c76c7430e7973a85070aa6593062b88b7",
+      "sha256": "6d211dda0af9aac6b7662b7e83fc8e813e4971195fa3b96f83afec8babb0fc41",
       "bytes": 5376
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "path": "proof/runtime.json",
-      "sha256": "21a3eaeac28be6c7f3c0bf9e8d18973b03ec65af50a2e09c6e8d65c214029d3d",
+      "sha256": "de0a09393f6de191f1d3a12916fb79978aecf301d21f77cec32aca2f75d04fb7",
       "bytes": 251
     },
     {
@@ -247,8 +247,8 @@
     },
     {
       "path": "source/pipeline.py",
-      "sha256": "7d28ff7b4b413e9b52bcbe579b2a7d14dbfba18786384d0f61e6020eafed9663",
-      "bytes": 13684
+      "sha256": "5dd10f4dfcc5c0e842ae3414d4c9ce0a38faa60d9fd4b4d1fa5d7bbbc9a7e6df",
+      "bytes": 11849
     },
     {
       "path": "tests/check.py",
@@ -382,7 +382,6 @@
       "path": "output/page-previews/github-390.png",
       "chunks": [
         "IHDR",
-        "IDAT",
         "IDAT",
         "IEND"
       ]

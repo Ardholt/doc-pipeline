@@ -32,15 +32,19 @@ def render_evidence(inp,out,norm):
     y=(841.88976-float(p.mediabox.height)*scale)/2+(float(p.mediabox.top)-float(p.cropbox.top))*scale
     visible=visible.resize((round(visible.width*scale),round(visible.height*scale)),Image.Resampling.LANCZOS)
     frame.paste(visible,(round(x*120/72),round(y*120/72)))
-    box=(70,255,365,330)
-    hero=Image.new('RGB',(614,119),'#e9edf0'); d=ImageDraw.Draw(hero)
-    f=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
-    d.text((8,7),'BEFORE / cut off',font=f,fill='#243b49'); d.text((316,7),'AFTER / restored',font=f,fill='#243b49')
-    hero.paste(frame.crop(box),(8,36)); hero.paste(after.crop(box),(316,36)); hero.save(previews/'hero.png')
+    box=(40,90,960,490)
+    # First-screen image: the top of page 1 before and after, cut from the same rectangle of the page at the same scale.
+    f=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',26)
+    pw,ph=box[2]-box[0],box[3]-box[1]
+    hero=Image.new('RGB',(pw+40,2*(ph+52)+20),'#e9edf0'); d=ImageDraw.Draw(hero)
+    for n,(label,src) in enumerate((('BEFORE: the page as it opens; heading and line starts are cut off',frame),('AFTER: the repaired page',after))):
+        y0=n*(ph+52+20)
+        d.text((20,y0+12),label,font=f,fill='#243b49'); hero.paste(src.crop(box),(20,y0+52))
+    hero.save(previews/'hero.png')
     # Full-resolution detail crops retain caption, fine linework and small-print text.
     for i,p in enumerate(sorted(previews.glob('after-*.png'))):
         im=Image.open(p); im.crop((100,420,900,820)).save(previews/f'image-detail-{i+1}.png'); im.crop((65,880,min(im.width,920),im.height-70)).save(previews/f'detail-{i+1}.png')
     save(previews/'frames.json',{'schema_version':1,'renderer':'pdftoppm','dpi':120,
         'hero':{'source':'input/input.pdf page 1 rendered with CropBox; output/fixed.pdf page 1',
-                'crop_pixels_at_120_dpi':list(box),'before_rescale':scale,'same_reading_scale':True},
-        'comparison_note':'Whole-page comparisons fit each page in its panel; hero alone uses equal reading scale.'})
+                'crop_pixels_at_120_dpi':list(box),'before_rescale':scale,'same_reading_scale':True,'layout':'top of page 1: before panel above after panel, same rectangle, same scale'},
+        'comparison_note':'Whole-page comparisons fit each page in its panel; the hero shows the top of page 1 at equal reading scale.'})

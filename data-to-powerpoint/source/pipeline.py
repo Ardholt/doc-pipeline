@@ -180,28 +180,14 @@ def build(cfg, rows, periods, out):
 def make_hero(out, hero, cfg, rows):
     if hero is None:
         return
-    # A literal crop from the rendered slide sits beside reformatted CSV cells.
+    # First-screen image: the whole LibreOffice-rendered slide that shows the loss, scaled to 1280 px wide; nothing is redrawn.
     im=Image.open(out/'slides'/f'slide-{hero["slide"]:02}.png').convert('RGB')
     scale=im.width/13.333333
     crop=im.crop(tuple(round(v*scale) for v in hero['crop_inches']))
     crop.save(out/'chart-detail.png')
-    H=640; W=1120; left=560
-    canvas=Image.new('RGB',(W,H),'#F7F9FA'); draw=ImageDraw.Draw(canvas)
-    regular='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'; bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-    def label(x,y,t,size=40,b=False,fill='#172B3A'):
-        draw.text((x,y),t,font=ImageFont.truetype(bold if b else regular,size),fill=fill)
-    label(24,20,'CSV · '+hero['department'],44,True)
-    label(24,95,cfg['currency']+' · rev / cost',40)
+    im.resize((1280,round(im.height*1280/im.width)),Image.Resampling.LANCZOS).save(out/'hero.png')
     shown=hero['rows'][:3]
-    for i,row in enumerate(shown):
-        y=185+i*135
-        label(24,y,row['period'],42,True)
-        label(24,y+48,f'{money(row["revenue"])} / {money(row["cost"])}',42)
-    draw.line((left,20,left,H-20),fill='#CAD2D9',width=2)
-    target=crop.resize((560,round(crop.height*560/crop.width)),Image.Resampling.LANCZOS)
-    canvas.paste(target,(left,0))
-    canvas.save(out/'hero.png')
-    write_json(out/'hero-map.json',{'schema_version':1,'source':'input/data.csv','source_lines':[r['line'] for r in shown],'render':f'output/slides/slide-{hero["slide"]:02}.png','crop_inches':hero['crop_inches'],'display':'Source cells reformatted with thousands separators; output is a crop of the LibreOffice-rendered chart. Month numbers on chart retain the source year in the footer.'})
+    write_json(out/'hero-map.json',{'schema_version':1,'source':'input/data.csv','source_lines':[r['line'] for r in shown],'render':f'output/slides/slide-{hero["slide"]:02}.png','department':hero['department'],'crop_inches':hero['crop_inches'],'display':'hero.png is the whole rendered slide, scaled to 1280 px wide. chart-detail.png is the crop of the department chart named here. Month numbers on the charts retain the source year in the footer.'})
 
 def main():
     started=time.monotonic(); inp,out=map(Path,sys.argv[1:3]); out.mkdir(exist_ok=True,parents=True)

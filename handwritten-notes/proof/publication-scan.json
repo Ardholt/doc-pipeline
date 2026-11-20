@@ -23,8 +23,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 3673,
-      "sha256": "fb42dbab11af66eee307aafe822bc1d7741d5181a261a50841920d7bc82848a6"
+      "bytes": 3999,
+      "sha256": "c1ce3ebb5207ba1573c539938c5b48cb4a4f89baa955b59fd61160cabb83dea2"
     },
     {
       "file": "input/page-01.png",
@@ -43,13 +43,13 @@
     },
     {
       "file": "media/hero.png",
-      "bytes": 34773,
-      "sha256": "24608349ea687ca6f8d3a457019629dc6788ea4322dc2c7158b7846d231b5fbd"
+      "bytes": 14578,
+      "sha256": "cc84ed86fe9f5f745594cfce0c377c5aa89628245c21bacf5c77fb334051a808"
     },
     {
       "file": "output/hero.png",
-      "bytes": 34773,
-      "sha256": "24608349ea687ca6f8d3a457019629dc6788ea4322dc2c7158b7846d231b5fbd"
+      "bytes": 14578,
+      "sha256": "cc84ed86fe9f5f745594cfce0c377c5aa89628245c21bacf5c77fb334051a808"
     },
     {
       "file": "output/mapping.json",
@@ -73,28 +73,28 @@
     },
     {
       "file": "output/page-previews/github-1366.png",
-      "bytes": 107162,
-      "sha256": "a6d718ea09a2248067291352f4f9f8b0fe4279f0bd25ef32f93ba52bc2946d62"
+      "bytes": 86369,
+      "sha256": "8b64081875e3077efcc619ac47ff57089659cdf41716a975811ed34bfbf86432"
     },
     {
       "file": "output/page-previews/github-390.png",
-      "bytes": 62968,
-      "sha256": "694516c727237472e34d775c5bce5fe046d41c05531627e29aae44fd5f715fa0"
+      "bytes": 62993,
+      "sha256": "fc1b0562a91c7f61103351bf3722515ada24ed4458ff333cd432a6c68ec99355"
     },
     {
       "file": "output/page-previews/pages-1366.png",
-      "bytes": 104629,
-      "sha256": "848ec5f6c376718750e03116caa31555d118cc3f4174124cc11f12733f3ef758"
+      "bytes": 105752,
+      "sha256": "03be82d36d6edb9d0e0533782182f82e813c101f2ab3a35e2bb72233bddacd3a"
     },
     {
       "file": "output/page-previews/pages-390.png",
-      "bytes": 86631,
-      "sha256": "4d2dbfe506268496a9eda8317a6feb3fbf4b60a45d9f9305d0cc9a2d135a339a"
+      "bytes": 86394,
+      "sha256": "2a2aacf64f4643bce689a26fd612e35696ec2d2726c04b5efd887cafd550dfd4"
     },
     {
       "file": "output/page-previews/screenshots.json",
       "bytes": 1977,
-      "sha256": "dcf065a0817203be0d387d04e0da1c783b20bceb4e7e5a9f543da88a5f135032"
+      "sha256": "b4f3ead5454314712e344a51cb1409235d64df383cbb49a0df5d18cd021b77e4"
     },
     {
       "file": "output/pdf-fonts.txt",
@@ -114,12 +114,12 @@
     {
       "file": "output/report.json",
       "bytes": 4032,
-      "sha256": "97c4b19345c275b497e869d8034a42d5feedac5dfc0816aa2654c1e12b05d6f9"
+      "sha256": "1e382071fbe17efc78ec47f35b7e4b7e7b3ee463ce886674c86f95d5353dde0e"
     },
     {
       "file": "output/runtime.json",
       "bytes": 329,
-      "sha256": "ff27e7b7d0c56922b2d17983cff15070d0019952556561f33ce510c27e4c9732"
+      "sha256": "0c1047894b79a260826554c2b8634f71e34ce3c8ae1815517d5b4338273ca4e8"
     },
     {
       "file": "output/uncertainties.json",
@@ -133,8 +133,8 @@
     },
     {
       "file": "proof/claims.json",
-      "bytes": 5993,
-      "sha256": "b14ab227cc8c19fd8eccd22cb1d24dbba320e82b2a167a839cfbcec5e65385cb"
+      "bytes": 5900,
+      "sha256": "760231a13715e061f570c2505da8db32a6795f178b24cb7af8fe681c005b9da0"
     },
     {
       "file": "proof/links.json",
@@ -144,7 +144,7 @@
     {
       "file": "proof/report.json",
       "bytes": 4032,
-      "sha256": "97c4b19345c275b497e869d8034a42d5feedac5dfc0816aa2654c1e12b05d6f9"
+      "sha256": "1e382071fbe17efc78ec47f35b7e4b7e7b3ee463ce886674c86f95d5353dde0e"
     },
     {
       "file": "proof/reproducibility.json",
@@ -159,7 +159,7 @@
     {
       "file": "proof/runtime.json",
       "bytes": 329,
-      "sha256": "ff27e7b7d0c56922b2d17983cff15070d0019952556561f33ce510c27e4c9732"
+      "sha256": "0c1047894b79a260826554c2b8634f71e34ce3c8ae1815517d5b4338273ca4e8"
     },
     {
       "file": "proof/source-raster-check.json",
@@ -168,8 +168,8 @@
     },
     {
       "file": "proof/visual-review.md",
-      "bytes": 2134,
-      "sha256": "b0d5daeccd5e6d3ee97c6e482be1cbe7a52317812342dd690974b257cf1804f6"
+      "bytes": 2302,
+      "sha256": "db7e00c39f15fe92e05a4ef1a4f7941775272033163d39e9fab7bfa92caff4d4"
     },
     {
       "file": "run.sh",
@@ -208,8 +208,8 @@
     },
     {
       "file": "source/pipeline.py",
-      "bytes": 11373,
-      "sha256": "dca3e6033eee31d7b06f9bc7deb92798f40577cacdd514f29e2c510269a5cb43"
+      "bytes": 10279,
+      "sha256": "b726f9374e99df4100af61e342f03d1845f0800a017f506dc05b71c99af2ce7b"
     },
     {
       "file": "source/publish-check.py",

@@ -1,8 +1,0 @@
-PASS: hashes
-PASS: page_text_structure
-PASS: independent_reference
-PASS: pdf_text_bounds
-PASS: render_and_metadata
-PASS: review_semantics
-PASS: mutation_detection
-PASS: check completed; elapsed 7 seconds (including setup)

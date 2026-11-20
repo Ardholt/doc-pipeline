@@ -29,23 +29,23 @@
     },
     {
       "file": "output/page-previews/github-1366.png",
-      "sha256": "d138c48d3325880ca312044942860c582072089b0dec3cca918e7ffdc5080a73",
-      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+      "sha256": "be669f1c451e8280e202a7d004fbfa4d5b906529b49351c8c907af8e56fe3921",
+      "observation": "Title, first-person result and the top of the rendered slide 4 (C has negative monthly profit) are visible; at 390 px the slide is shown about 350 px wide, so its axis labels are small. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
     },
     {
       "file": "output/page-previews/github-390.png",
-      "sha256": "ab261ed58adc2586647100141ec61d17b056ed86adcbba551ec859b0b56424a4",
-      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+      "sha256": "eba960799133bdc5a5c6b38a232c73782ca8750a1ffa700b2324e2f1d1059e6d",
+      "observation": "Title, first-person result and the top of the rendered slide 4 (C has negative monthly profit) are visible; at 390 px the slide is shown about 350 px wide, so its axis labels are small. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
     },
     {
       "file": "output/page-previews/pages-1366.png",
-      "sha256": "b4661e29549d2519fc338fa6e110555e1469cde86447e80fd199c31fcb662558",
-      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+      "sha256": "7991221d4a625f6054cd4d3eb3e1a05fd0200ad456854d0dc8e26cdcee648547",
+      "observation": "Title, first-person result and the top of the rendered slide 4 (C has negative monthly profit) are visible; at 390 px the slide is shown about 350 px wide, so its axis labels are small. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
     },
     {
       "file": "output/page-previews/pages-390.png",
-      "sha256": "1c41cd3b4713b5aec27a361f83070b47762a557cd87262c7f78047a407bd7ba4",
-      "observation": "Problem, first-person result, source rows and matching rendered chart are visible on the first screen. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
+      "sha256": "501e5be50a058ed3694338647f855e4bbcad90d742c0b9e62091e80ead6f645c",
+      "observation": "Title, first-person result and the top of the rendered slide 4 (C has negative monthly profit) are visible; at 390 px the slide is shown about 350 px wide, so its axis labels are small. GitHub previews retain the shared file-view chrome; these are offline approximations, not live captures."
     }
   ],
   "data_observation": "Department C profit is zero in January and negative 500 in February and March. The labels sit below the negative bars, and independent profit axes are disclosed on the slide.",

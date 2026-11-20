@@ -16,7 +16,7 @@
     "The sideways second page is upright in the output.",
     "All sheets retain the coloured field, fine horizontal rules and UP/BASE arrow.",
     "Caption, numerical small-print checks and final line are readable in the detailed crops.",
-    "Problem, result and readable equal-scale document detail are visible above the fold on both offline page layouts at both required sizes."
+    "Title, result and the before panel of the first-screen picture (top of page 1, same rectangle and scale as the after panel) are visible in the screenshots; the after panel starts at the bottom edge of the 390 px renders and in the 1366 px Pages render. In the GitHub-style 390 px render the picture starts below the bottom of the screenshot."
   ],
   "scope": "Visual publishing review of the cleaned PDF renders and the exact page screenshots. Offline GitHub frame is an approximation; not a claim of live publication."
 }

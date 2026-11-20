@@ -20,13 +20,15 @@ try:
     audit=exercise(out/'book.epub',mapping,out)
     dump(out/'negative-tests.json',{'schema_version':1,'tests':negative(inp,out/'book.epub'),'input_contracts':contracts()})
     print(f'PASS: {len(audit["runs"])} browser tap-and-return journeys at narrow/wide widths and enlarged text',flush=True)
-    # The proof image is cropped actual EPUB content, never re-typeset prose.
-    first=Image.open(out/'passage-detail.png').convert('RGB')
-    note=Image.open(out/'note-detail.png').convert('RGB')
-    # Keep the opening sentence and complete first note with its return destinations.
-    first=first.crop((0,0,first.width,min(first.height,30)))
-    hero=Image.new('RGB',(max(first.width,note.width),first.height+note.height+10),'#fffdf8')
-    hero.paste(first,(0,0));hero.paste(note,(0,first.height+10));hero.save(out/'hero.png')
+    # First-screen image: two unscaled screenshots of the browser reader at 390 CSS px, 100% text. Nothing is redrawn.
+    from PIL import ImageDraw, ImageFont
+    shots=[(Image.open(out/'reader-passage.png').convert('RGB'),'Passage: tap the marker 1'),(Image.open(out/'reader-note-390-100.png').convert('RGB'),'Note 1 opens, with its three return links')]
+    font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',20)
+    hero=Image.new('RGB',(sum(s.width for s,_ in shots)+60,max(s.height for s,_ in shots)+70),'#e9edf0');draw=ImageDraw.Draw(hero)
+    x=20
+    for s,label in shots:
+        draw.text((x,16),label,font=font,fill='#243b49');hero.paste(s,(x,50));x+=s.width+20
+    hero.save(out/'hero.png')
     shutil.copy('/opt/packages.tsv',out/'packages.tsv')
     shutil.copy('/usr/share/doc/fonts-dejavu-core/copyright',out/'font-license.txt')
     (out/'pip-freeze.txt').write_text(run(['pip','freeze']))
@@ -43,7 +45,7 @@ try:
         {'claim':'No EPUBCheck errors or warnings','kind':'machine','evidence':[{'path':'output/epubcheck.log','line':2},{'path':'output/report.json','pointer':'/tools/epubcheck'}]},
         {'claim':'Body, Unicode, lists and notes preserved under documented normalization','kind':'machine','evidence':[{'path':'output/source-map.json','pointer':''},{'path':'output/report.json','pointer':'/checks/1'}]},
         {'claim':'Damaged links and text are rejected','kind':'machine','evidence':[{'path':'output/negative-tests.json','pointer':'/tests'}]},
-        {'claim':'Hero and reader images show delivered EPUB content; numbers in the figures identify notes and return passages','kind':'render','evidence':[{'path':'output/hero.png','frame':'complete image: passage and first note crops'},{'path':'output/browser-audit.json','pointer':'/runs'},{'path':'output/source-map.json','pointer':'/references'}]},
+        {'claim':'Hero and reader images are browser-reader screenshots of delivered EPUB content; numbers in the figures identify notes and return passages','kind':'render','evidence':[{'path':'output/hero.png','frame':'complete image: reader screenshots of the passage and of the first note'},{'path':'output/browser-audit.json','pointer':'/runs'},{'path':'output/source-map.json','pointer':'/references'}]},
         {'claim':'Visual readability review is separate from automated link checks','kind':'visual review','evidence':[{'path':'proof/visual-review.json','pointer':'/images'}]},
         {'claim':'Kindle device, Previewer, native popup and KDP acceptance not tested','kind':'untested compatibility','evidence':[{'path':'output/report.json','pointer':'/uncertainties/0'}]}
     ]})

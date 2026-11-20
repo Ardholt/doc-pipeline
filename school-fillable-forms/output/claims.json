@@ -52,7 +52,7 @@
       "calculation": "Maximum absolute x/y difference of matching PDF label word boxes; threshold 0.5 pt"
     },
     {
-      "claim": "Preview uses actual PDF rasterizations; see crop mapping for selected fields",
+      "claim": "First-screen image is the first form's filled page rendered from its PDF, cut below the last content; see the crop record",
       "evidence": [
         {
           "path": "output/preview-map.json",
@@ -60,7 +60,7 @@
         },
         {
           "path": "output/hero.png",
-          "frame": "text and checkbox crops from first form blank and filled PDF rasterizations"
+          "frame": "complete image: filled form page, top to just below the last content"
         }
       ]
     },

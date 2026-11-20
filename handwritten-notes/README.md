@@ -4,9 +4,9 @@
 
 The input is a page of digital pen strokes I made for this case, not a photo or scan of paper. I rendered the DOCX in LibreOffice; Microsoft Word was not run.
 
-[![Typed by a person from a drawn page: the pen-stroke note says Move, an unresolved mark, shelf; the typed note says Move [unclear] shelf.](media/hero.png)](media/hero.png)
+[![The finished typed page: the heading Shelf check, the line Keep 12 boxes., and the bullet Move [unclear] shelf.](media/hero.png)](output/preview.png)
 
-*Typed by a person from a drawn page.*
+*The finished typed page, rendered from `notes.docx` to PDF. The page I typed it from is a demo page I drew for this case.*
 
 ## What was wrong
 
@@ -23,11 +23,13 @@ The input is a page of digital pen strokes I made for this case, not a photo or 
 
 ## Proof and downloads
 
-The [source crop and PDF crop](media/hero.png) above come from the [original page](input/page-01.png) and [rendered PDF](output/preview.pdf). These are original digital strokes, not a photograph of physical writing; the [editable strokes](source/pen-strokes.svg) and [authorship record](source/authorship.md) explain their origin.
+The image at the top is the [rendered PDF](output/preview.pdf), cropped to its content. The [page I drew](input/page-01.png) is below: three lines of digital pen strokes, with a scribbled mark in place of the second word of the last line. These are original digital strokes, not a photograph of physical writing; the [editable strokes](source/pen-strokes.svg) and [authorship record](source/authorship.md) explain their origin.
 
 The [report](output/report.json) records **1 source page, 3 text blocks and 1 unresolved token**, measured from JSON, DOCX XML and PDF text with Python 3.11.2, python-docx 0.8.11 and pypdf 5.1.0. This is a content-preservation check, not a handwriting accuracy score. Manual review time was not measured.
 
 Downloads: [editable DOCX](https://github.com/Ardholt/doc-pipeline/raw/refs/heads/main/handwritten-notes/output/notes.docx) · [plain text](output/notes.txt) · [PDF preview](output/preview.pdf) · [full rendered page](output/preview.png).
+
+<a href="input/page-01.png"><img src="input/page-01.png" width="480" alt="The drawn page: Shelf check, Keep 12 boxes., then Move, a scribbled mark and shelf."></a>
 
 Audit: [page/block map](output/mapping.json) · [uncertainty list](output/uncertainties.json) · [reviewed transcript](input/transcript.json) · [source manifest](input/pages.json) · [runtime](output/runtime.json) · [claim evidence](proof/claims.json).
 

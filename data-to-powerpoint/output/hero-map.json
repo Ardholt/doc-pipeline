@@ -7,11 +7,12 @@
     10
   ],
   "render": "output/slides/slide-04.png",
+  "department": "C",
   "crop_inches": [
     8.950000000000001,
     2.35,
     12.950000000000001,
     6.9
   ],
-  "display": "Source cells reformatted with thousands separators; output is a crop of the LibreOffice-rendered chart. Month numbers on chart retain the source year in the footer."
+  "display": "hero.png is the whole rendered slide, scaled to 1280 px wide. chart-detail.png is the crop of the department chart named here. Month numbers on the charts retain the source year in the footer."
 }

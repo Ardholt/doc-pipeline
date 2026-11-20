@@ -4,7 +4,9 @@
 
 The input is a three-page PDF I generated for this case. I checked the result with Poppler, Ghostscript and qpdf; Acrobat and Microsoft Office were not tested.
 
-<a href="output/previews/comparison-1.png"><img src="media/hero.png" width="614" alt="Same-scale detail: the input hides the start of each line; the repaired PDF reads Check every edge and Keep the outer rule."></a>
+<a href="output/previews/comparison-1.png"><img src="media/hero.png" width="700" alt="The top of page 1 twice, at the same scale. Before: the heading and the start of every line are cut off at the left. After: Keep every edge readable, Check every edge, Keep the outer rule and the two item lines, complete inside a margin."></a>
+
+*The top of page 1 before and after, cut from the same rectangle at the same scale. [Whole-page pairs for all three sheets](output/previews/all-pages.png).*
 
 ## What was wrong
 

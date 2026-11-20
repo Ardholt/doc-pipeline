@@ -83,8 +83,8 @@
     },
     {
       "path": "pdf-layout-compression/README.md",
-      "bytes": 3771,
-      "sha256": "dd52c4193cab06002cf9c1482bf9a61a132de88183d47c9a0b4055ec17a359c9"
+      "bytes": 4043,
+      "sha256": "12c8a33ac47dcbeda6c5ff0669e5993525e933944dc57a5dfe9779096441a40e"
     },
     {
       "path": "pdf-layout-compression/input/input.pdf",
@@ -103,8 +103,8 @@
     },
     {
       "path": "pdf-layout-compression/media/hero.png",
-      "bytes": 14772,
-      "sha256": "b43b37809f364d25348449c1a7209a4b472c18166f03ad7828c516140964d9ad"
+      "bytes": 176612,
+      "sha256": "64f201d3dbeedeac1390b8fc88d0303b66c0d528713d26b8976316ac71b758dd"
     },
     {
       "path": "pdf-layout-compression/output/adversarial.json",
@@ -128,28 +128,28 @@
     },
     {
       "path": "pdf-layout-compression/output/page-previews/github-1366.png",
-      "bytes": 101828,
-      "sha256": "3cf57137d9737a3c1e3ef2fe7e6e62680f4632da1a881195dfb85e454c01c67d"
+      "bytes": 116304,
+      "sha256": "d910297cb4736806543c513f56b3bb568b27e511e2c8d88b0c8481c03fe6b5b0"
     },
     {
       "path": "pdf-layout-compression/output/page-previews/github-390.png",
-      "bytes": 66672,
-      "sha256": "a655f137a5f92f6a604ef7a3d71af43efafb801d071c983bf26e3f86c9755fdd"
+      "bytes": 64905,
+      "sha256": "0cca09c3bc0707f3f267fceecd3e52d779caf98b66d692bca57a3f15ccc6365e"
     },
     {
       "path": "pdf-layout-compression/output/page-previews/pages-1366.png",
-      "bytes": 92989,
-      "sha256": "d23ae99b56f67d351b4dde2327362d052b002e6daf827a2147a393cddabc0c95"
+      "bytes": 122457,
+      "sha256": "a62ffb60ae8873ce60eb3b2d96d5958be8352e091f799eb4774a3eaa4a8b2899"
     },
     {
       "path": "pdf-layout-compression/output/page-previews/pages-390.png",
-      "bytes": 74571,
-      "sha256": "89d2470406794c48927b0dec9f25b9da8dd48292bf8f2074f191f4840dec9462"
+      "bytes": 103841,
+      "sha256": "c28fb7879a467e7f5dd511dacdd53fde5078c59b9874e871a98a2c053ad426a0"
     },
     {
       "path": "pdf-layout-compression/output/page-previews/screenshots.json",
       "bytes": 1977,
-      "sha256": "cf4484cf92f1b7659f8b60d41312653ef3c5f0fbe763bd8b717592181b9129a2"
+      "sha256": "5d748481fc3cf46148309702c9ff69d3af772265e677232dabab7c8dd760a8eb"
     },
     {
       "path": "pdf-layout-compression/output/previews/after-1.png",
@@ -218,13 +218,13 @@
     },
     {
       "path": "pdf-layout-compression/output/previews/frames.json",
-      "bytes": 435,
-      "sha256": "8ef4668529c89d7b929301c09aeb5f3cf726852aab3d821077fe12d4c05bdf3f"
+      "bytes": 545,
+      "sha256": "73f5b68984f99acca8fcd054f58e787498613085c28bc5ed651b1963b22ccff4"
     },
     {
       "path": "pdf-layout-compression/output/previews/hero.png",
-      "bytes": 14772,
-      "sha256": "b43b37809f364d25348449c1a7209a4b472c18166f03ad7828c516140964d9ad"
+      "bytes": 176612,
+      "sha256": "64f201d3dbeedeac1390b8fc88d0303b66c0d528713d26b8976316ac71b758dd"
     },
     {
       "path": "pdf-layout-compression/output/previews/image-detail-1.png",
@@ -249,7 +249,7 @@
     {
       "path": "pdf-layout-compression/output/runtime.json",
       "bytes": 261,
-      "sha256": "6dde9d8c18f897a1b3c6cf96f7848ed0a66eb3ebbea754463b59bc380a0cafd5"
+      "sha256": "c3688b735d5055fa22f45babd3756d0f6add69da09a6250b5d432914b72eeea5"
     },
     {
       "path": "pdf-layout-compression/proof/adversarial.log",
@@ -294,12 +294,12 @@
     {
       "path": "pdf-layout-compression/proof/runtime.json",
       "bytes": 261,
-      "sha256": "6dde9d8c18f897a1b3c6cf96f7848ed0a66eb3ebbea754463b59bc380a0cafd5"
+      "sha256": "c3688b735d5055fa22f45babd3756d0f6add69da09a6250b5d432914b72eeea5"
     },
     {
       "path": "pdf-layout-compression/proof/visual-review.json",
-      "bytes": 1127,
-      "sha256": "e9d5efbecb4980dd5c98470d3060d0475f0182ed2c513321804d0ead59f48030"
+      "bytes": 1332,
+      "sha256": "8dec38a1f14563766d88f369b0c9d5f7e88daf3f05a01481ad0d14aea2e5708b"
     },
     {
       "path": "pdf-layout-compression/run.sh",
@@ -338,8 +338,8 @@
     },
     {
       "path": "pdf-layout-compression/source/render.py",
-      "bytes": 3529,
-      "sha256": "92c2c729ca430b2fb848c1755ead2c1fac26f5f7a5d6b586a696c4752a698e3d"
+      "bytes": 3879,
+      "sha256": "1547c4cc9adfb0740b4877673f7eb8427e2d8ef532a76b5535dd61e0145eb49b"
     },
     {
       "path": "pdf-layout-compression/tests/README.md",
@@ -391,8 +391,8 @@
   "pngs": [
     {
       "path": "pdf-layout-compression/media/hero.png",
-      "width": 614,
-      "height": 119,
+      "width": 960,
+      "height": 924,
       "text_exif_absent": true
     },
     {
@@ -499,8 +499,8 @@
     },
     {
       "path": "pdf-layout-compression/output/previews/hero.png",
-      "width": 614,
-      "height": 119,
+      "width": 960,
+      "height": 924,
       "text_exif_absent": true
     },
     {
@@ -533,6 +533,10 @@
     },
     {
       "target": "media/hero.png",
+      "status": "local target exists"
+    },
+    {
+      "target": "output/previews/all-pages.png",
       "status": "local target exists"
     },
     {

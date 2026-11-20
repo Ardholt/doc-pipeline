@@ -60,7 +60,7 @@
     }
   ],
   "measured_files": {
-    "README.md": "a47cd4e1c2c7d583f58443d08fe65af196223f25fbd45ca3955b1cc237b599a6",
+    "README.md": "8bc120f664b0993a2a32a97406b8f5dfbefa4d29ee5d5ac737546f6818962eac",
     "site.css": "33c4674d5459057b900b67bc4e6c339e64edf4fc8b13751fe75f76e5a4e830b3"
   },
   "surface": "offline local render in a local GitHub-style frame, not a live github.com capture",

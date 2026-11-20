@@ -31,46 +31,14 @@ def clean_pdf(path):
 
 
 def make_preview(out, fid):
-    from PIL import Image, ImageDraw, ImageFont
-    # Use measured label positions so replacement inputs do not inherit fixed crops.
-    from check import pdf_words, locate
-    spec, _ = load_inputs(Path('/input'))
-    form = next(f for f in spec['forms'] if f['id'] == fid)
-    text_field = next((f for f in form['fields'] if f['type'] == 'text'), None)
-    # Prefer a multiline field for the delivered proof.
-    text_fields = [f for f in form['fields'] if f['type'] == 'text']
-    if len(text_fields) > 1: text_field = text_fields[1]
-    checkbox = next((f for f in form['fields'] if f['type'] == 'checkbox'), None)
-    if text_field is None or checkbox is None:
-        image = Image.open(out / (fid + '-filled.png')).convert('RGB')
-        image.save(out / 'hero.png')
-        write_json(out / 'preview-map.json', {'schema_version': 1, 'source': fid + '-filled.png', 'crop': 'full page; input has no text/checkbox pair'})
-        return
-    font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 19)
-    canvas = Image.new('RGB', (392, 192), 'white')
-    draw = ImageDraw.Draw(canvas); records = []
-    draw.text((5, 4), 'Text field', fill='#183B45', font=font)
-    draw.text((284, 4), 'Permission', fill='#183B45', font=font)
-    for index, mode in enumerate(('blank', 'filled')):
-        name = fid + '-' + mode
-        image = Image.open(out / (name + '.png')).convert('RGB')
-        _, words = pdf_words(out / (name + '.pdf'))
-        scale = image.height / 841.889764
-        text_label = locate(words, text_field['label'])[0]
-        check_label = locate(words, checkbox['label'])[0]
-        y = 32 + index * 80
-        draw.text((5, y), 'Blank DOCX' if mode == 'blank' else 'Filled in LibreOffice', fill='#183B45', font=font)
-        # The actual text and check glyph are independent crops from their own fields.
-        # Captions identify them; full-page links retain the original layout context.
-        crops = [('text', (54, text_label['yMin'] + 25, 272, text_label['yMin'] + 59), (5, y+27)),
-                 ('checkbox', (54, check_label['yMin'] + 22, 78, check_label['yMin'] + 48), (318, y+27))]
-        for kind, box, destination in crops:
-            pixels = tuple(round(v*scale) for v in box)
-            part = image.crop(pixels)
-            canvas.paste(part, destination)
-            records.append({'state': mode, 'kind': kind, 'source': name + '.png', 'source_pdf': name + '.pdf', 'crop_pixels': pixels, 'destination_pixels': destination})
-    canvas.save(out / 'hero.png')
-    write_json(out / 'preview-map.json', {'schema_version': 1, 'composition': 'Unscaled crops of text and checkbox fields; captions outside document pixels', 'crops': records})
+    from PIL import Image, ImageChops
+    # First-screen image: the whole filled form page as rendered by Poppler, cut below its last content so
+    # the empty lower part of the sheet is not shown. Nothing is redrawn.
+    image = Image.open(out / (fid + '-filled.png')).convert('RGB')
+    ink = ImageChops.invert(image.convert('L')).point(lambda v: 255 if v > 24 else 0).getbbox() or (0, 0, image.width, image.height)
+    bottom = min(image.height, ink[3] + 60)
+    image.crop((0, 0, image.width, bottom)).save(out / 'hero.png')
+    write_json(out / 'preview-map.json', {'schema_version': 1, 'source': fid + '-filled.png', 'source_pdf': fid + '-filled.pdf', 'crop_pixels': [0, 0, image.width, bottom], 'crop': 'full page width, from the top edge to 60 px below the last content; the empty lower part of the sheet is left out'})
 
 
 def main(indir, out):
@@ -136,7 +104,7 @@ def main(indir, out):
             {'claim': str(report['counts']['forms']) + ' forms and ' + str(report['counts']['controls']) + ' leaf fields' , 'evidence': [{'path': 'output/report.json', 'pointer': '/counts'}, {'path': 'output/roundtrip.json', 'pointer': '/forms'}], 'calculation': 'Sum of inspected leaf controls across the forms; XML container wrappers recorded separately'},
             {'claim': 'Fields survive a LibreOffice save, close and reopen', 'evidence': [{'path': 'output/roundtrip.json', 'pointer': '/forms'}, {'path': 'output/report.json', 'pointer': '/tools/LibreOffice'}]},
             {'claim': 'Fixed-height rows and label positions within half a point', 'evidence': [{'path': 'output/report.json', 'pointer': '/transformations/0'}, {'path': 'output/report.json', 'pointer': '/measurements'}, {'path': 'output/report.json', 'pointer': '/layout_tolerance_pt'}, {'path': 'output/report.json', 'pointer': '/tools/Poppler'}], 'calculation': 'Maximum absolute x/y difference of matching PDF label word boxes; threshold 0.5 pt'},
-            {'claim': 'Preview uses actual PDF rasterizations; see crop mapping for selected fields' , 'evidence': [{'path': 'output/preview-map.json', 'pointer': ''}, {'path': 'output/hero.png', 'frame': 'text and checkbox crops from first form blank and filled PDF rasterizations'}]},
+            {'claim': 'First-screen image is the first form\'s filled page rendered from its PDF, cut below the last content; see the crop record', 'evidence': [{'path': 'output/preview-map.json', 'pointer': ''}, {'path': 'output/hero.png', 'frame': 'complete image: filled form page, top to just below the last content'}]},
             {'claim': 'Microsoft Word was not available or tested; LibreOffice was run', 'evidence': [{'path': 'output/report.json', 'pointer': '/uncertainties/0'}, {'path': 'output/report.json', 'pointer': '/tools/LibreOffice'}]},
             {'claim': 'Invalid inputs and damaged saved values, links and pages are rejected', 'evidence': [{'path': 'output/selftest.json', 'pointer': '/checks'}, {'path': 'output/rendered-negative.json', 'pointer': '/checks'}]},
             {'claim': 'Document workload runs offline, with separate read-only input and writable output', 'evidence': [{'path': '../harness/run-container.sh', 'lines': 'Docker run network and bind-mount arguments'}, {'path': 'run.sh', 'lines': 'shared runner invocation'}]},

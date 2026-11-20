@@ -63,39 +63,18 @@ def make_media(out,inspection,cfg):
     for number in sorted(chosen):
         subprocess.run(['pdftoppm','-f',str(number),'-l',str(number),'-r','144','-singlefile','-png',str(out/'interior.pdf'),str(details/f'page-{number:02}')],check=True,timeout=60)
         p=details/f'page-{number:02}.png'; Image.open(p).convert('RGB').save(p)
-    # Close crops use actual rendered pages; no text is redrawn over the evidence.
+    # The first-screen image is one finished interior page, rendered from the PDF; nothing is redrawn over it.
     first=inspection['chapters'][0]['start_page']
     after=Image.open(details/f'page-{first:02}.png')
     subprocess.run(['pdftoppm','-f','1','-l','1','-r','144','-singlefile','-png',str(out/'before.pdf'),str(out/'before-detail')],check=True,timeout=60)
     before=Image.open(out/'before-detail.png').convert('RGB'); before.save(out/'before-detail.png')
-    # Source crop and output crop show the same opening passage. A separate full-page pair retains the folio.
-    scale=144/25.4; x=int((cfg['bleed_mm']+cfg['margin_mm'])*scale)
-    heading_lines=[line for line in extract(out/'interior.pdf')[first-1] if line['box'][3]-line['box'][1]>18]
-    y=int(heading_lines[0]['box'][1]*2) if heading_lines else int((cfg['bleed_mm']+cfg['margin_mm']+26)*scale)
-    opening_lines=extract(out/'interior.pdf')[first-1]
-    heading_bottom=max((line['box'][3] for line in heading_lines),default=0)
-    first_sentence=next((line for line in opening_lines if line['box'][1]>heading_bottom and line['box'][3]-line['box'][1]<18),None)
-    crop_bottom=int(first_sentence['box'][3]*2)+12 if first_sentence else y+220
-    aftercrop=after.crop((x,y-6,min(after.width-x,x+300),min(after.height,crop_bottom)))
-    beforecrop=before.crop((int((cfg['margin_mm']+cfg['bleed_mm'])*144/25.4),int((cfg['margin_mm']+cfg['bleed_mm'])*144/25.4),int((cfg['margin_mm']+cfg['bleed_mm'])*144/25.4)+225,int((cfg['margin_mm']+cfg['bleed_mm'])*144/25.4)+98))
-    hero=Image.new('RGB',(1200,520),'#f0ede6'); draw=ImageDraw.Draw(hero)
-    titlefont=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',44)
-    for xx,caption,im in [(24,'BEFORE',beforecrop),(624,'AFTER',aftercrop)]:
-        draw.text((xx,22),caption,font=titlefont,fill='#282828')
-        im=im.resize((552,round(im.height*552/im.width)))
-        hero.paste(im,(xx,80))
-    # The real folio is cropped from the same rendered after page, with context stated in the caption.
-    folio_line=next(line for line in opening_lines if line['text']==str(first) and line['box'][1]>cfg['trim_height_mm']*72/25.4/2)
-    fx0,fy0,fx1,fy1=folio_line['box']
-    folio=after.crop((int(fx0*2)-4,int(fy0*2)-4,int(fx1*2)+4,int(fy1*2)+4))
-    folio=folio.resize((round(folio.width*65/folio.height),65)); hero.paste(folio,(900-folio.width//2,390))
-    draw.text((624,465),'Folio from the same page',font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',30),fill='#555')
-    hero.save(out/'hero.png')
+    figure_page=next(n for n,lines in enumerate(extract(out/'interior.pdf'),1) if any('observation page:' in l['text'] for l in lines))
+    shutil.copyfile(details/f'page-{figure_page:02}.png',out/'hero.png')
     pair=Image.new('RGB',(1200,930),'#e9e6df')
     for xx,im in [(20,before),(620,after)]:
         im=im.copy();im.thumbnail((560,880));pair.paste(im,(xx,25))
     pair.save(out/'page-pair.png')
-    dump(out/'render-map.json',{'schema_version':1,'renderer':'pdftoppm','dpi':96,'detail_dpi':144,'detail_pages':sorted(chosen),'hero':{'before':'before-detail.png','after':f'details/page-{first:02}.png','kind':'close crops plus folio crop; full pages in page-pair.png'},'contact_sheet':'all interior pages in file order'})
+    dump(out/'render-map.json',{'schema_version':1,'renderer':'pdftoppm','dpi':96,'detail_dpi':144,'detail_pages':sorted(chosen),'hero':{'page':figure_page,'source':f'details/page-{figure_page:02}.png','kind':'one finished interior page, unedited; the raw-Markdown first page and the first chapter opening side by side are in page-pair.png'},'contact_sheet':'all interior pages in file order'})
 
 
 def run(root,out):
